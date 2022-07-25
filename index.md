@@ -17,6 +17,13 @@
 +------------+
 ```
 
+安装和测试:
+
+1. 安装 [Clang](https://clang.llvm.org), 确保本地 `clang` 命令有效
+2. `go install github.com/wa-lang/wa@latest`
+3. `wa init -name=_examples/hi`
+4. `wa run _examples/hi`
+
 ## 设计目标
 
 - 披着 Go 和 Rust 语法外衣的 C++ 语言；
@@ -47,7 +54,27 @@ fn main() {
 }
 ```
 
-更多例子: [_examples/hello](_examples/hello)
+运行并输出结果:
+
+```
+$ go run main.go run _examples/prime
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+```
+
+## 更多例子
+
+[_examples](_examples)
+
+![](wa-run-demo.gif)
 
 ## 版权
 

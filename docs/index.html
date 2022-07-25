@@ -24,7 +24,8 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/asciinema-player.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
@@ -75,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">主页</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">主页</a></li><li class="chapter-item expanded affix "><a href="goals.html">项目目标</a></li><li class="chapter-item expanded affix "><a href="changelog.html">版本日志</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -156,6 +157,13 @@
 |            |
 +------------+
 </code></pre>
+<p>安装和测试:</p>
+<ol>
+<li>安装 <a href="https://clang.llvm.org">Clang</a>, 确保本地 <code>clang</code> 命令有效</li>
+<li><code>go install github.com/wa-lang/wa@latest</code></li>
+<li><code>wa init -name=_examples/hi</code></li>
+<li><code>wa run _examples/hi</code></li>
+</ol>
 <h2 id="设计目标"><a class="header" href="#设计目标">设计目标</a></h2>
 <ul>
 <li>披着 Go 和 Rust 语法外衣的 C++ 语言；</li>
@@ -182,7 +190,22 @@ fn main() {
 	}
 }
 </code></pre>
-<p>更多例子: <a href="_examples/hello">_examples/hello</a></p>
+<p>运行并输出结果:</p>
+<pre><code>$ go run main.go run _examples/prime
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+</code></pre>
+<h2 id="更多例子"><a class="header" href="#更多例子">更多例子</a></h2>
+<p><a href="_examples">_examples</a></p>
+<p><img src="wa-run-demo.gif" alt="" /></p>
 <h2 id="版权"><a class="header" href="#版权">版权</a></h2>
 <p>版权 @2019 凹语言™ 作者。保留所有权利。</p>
 
@@ -194,12 +217,18 @@ fn main() {
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="next" href="goals.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="next" href="goals.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -219,7 +248,8 @@ fn main() {
 
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript" src="js/custom.js"></script>
-        <script type="text/javascript" src="js/bigPicture.js"></script>
+        <script type="text/javascript" src="static/js/custom.js"></script>
+        <script type="text/javascript" src="static/js/bigPicture.js"></script>
+        <script type="text/javascript" src="static/js/asciinema-player.js"></script>
     </body>
 </html>

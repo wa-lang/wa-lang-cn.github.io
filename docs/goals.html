@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>凹语言™</title>
-        <meta name="robots" content="noindex" />
+        <title>项目目标 - 凹语言™</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="披着 Go 和 Rust 语法外衣的 C++ 语言">
@@ -77,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">主页</a></li><li class="chapter-item expanded affix "><a href="goals.html">项目目标</a></li><li class="chapter-item expanded affix "><a href="changelog.html">版本日志</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">主页</a></li><li class="chapter-item expanded affix "><a href="goals.html" class="active">项目目标</a></li><li class="chapter-item expanded affix "><a href="changelog.html">版本日志</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -115,6 +114,9 @@
                         <a href="https://github.com/wa-lang/wa-lang.github.io" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
+                        <a href="https://github.com/wa-lang/wa-lang.github.io/edit/master/./goals.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -141,72 +143,7 @@
                     <!-- Page table of contents -->
                     <div class="sidetoc"><nav class="pagetoc"></nav></div>
                     <main>
-                        <h1 id="凹语言"><a class="header" href="#凹语言">凹语言™</a></h1>
-<p><a href="https://github.com/wa-lang/wa/actions/workflows/wa.yml"><img src="https://github.com/wa-lang/wa/actions/workflows/wa.yml/badge.svg" alt="Build Status" /></a>
-<a href="https://goreportcard.com/report/github.com/wa-lang/wa"><img src="https://goreportcard.com/badge/github.com/wa-lang/wa" alt="Go Report Card" /></a>
-<a href="https://coveralls.io/github/wa-lang/wa"><img src="https://coveralls.io/repos/github/wa-lang/wa/badge.svg" alt="Coverage Status" /></a>
-<a href="https://github.com/wa-lang/wa/releases"><img src="https://img.shields.io/github/v/tag/wa-lang/wa.svg?label=release" alt="GitHub release" /></a></p>
-<p>凹语言™（凹读音“Wa”）是<a href="https://github.com/chai2010">柴树杉</a>、<a href="https://github.com/3dgen">丁尔男</a>和<a href="https://github.com/benshi001">史斌</a>设计的实验性编程语言。</p>
-<pre><code>+---+    +---+
-| o |    | o |
-|   +----+   |
-|            |
-|     Wa     |
-|            |
-+------------+
-</code></pre>
-<p>安装和测试:</p>
-<ol>
-<li>安装 <a href="https://clang.llvm.org">Clang</a>, 确保本地 <code>clang</code> 命令有效</li>
-<li><code>go install github.com/wa-lang/wa@latest</code></li>
-<li><code>wa init -name=_examples/hi</code></li>
-<li><code>wa run _examples/hi</code></li>
-</ol>
-<h2 id="设计目标"><a class="header" href="#设计目标">设计目标</a></h2>
-<ul>
-<li>披着 Go 和 Rust 语法外衣的 C++ 语言；</li>
-<li>凹语言™源码文件后缀为 <code>.wa</code>；</li>
-<li>凹语言™编译器兼容 WaGo 语法。WaGo 是 Go 真子集。使用 WaGo 语法的源码文件后缀为 <code>.wa.go</code>。凹语法与 WaGo 语法在 AST 层面一致；</li>
-<li>凹语言™支持中文/英文双语关键字，即任一关键字均有中文及英文版，二者在语法层面等价。</li>
-<li>更多内容位于：docs/goals.md</li>
-</ul>
-<h2 id="例子-打印素数"><a class="header" href="#例子-打印素数">例子: 打印素数</a></h2>
-<p>打印 30 以内的素数：</p>
-<pre><code>// 版权 @2021 凹语言™ 作者。保留所有权利。
-
-fn main() {
-	for n := 2; n &lt;= 30; n = n + 1 {
-		let isPrime int = 1
-		for i := 2; i*i &lt;= n; i = i + 1 {
-			if x := n % i; x == 0 {
-				isPrime = 0
-			}
-		}
-		if isPrime != 0 {
-			println(n)
-		}
-	}
-}
-</code></pre>
-<p>运行并输出结果:</p>
-<pre><code>$ go run main.go run _examples/prime
-2
-3
-5
-7
-11
-13
-17
-19
-23
-29
-</code></pre>
-<h2 id="更多例子"><a class="header" href="#更多例子">更多例子</a></h2>
-<p><a href="_examples">_examples</a></p>
-<p><img src="wa-run-demo.gif" alt="" /></p>
-<h2 id="版权"><a class="header" href="#版权">版权</a></h2>
-<p>版权 @2019 凹语言™ 作者。保留所有权利。</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="凹语言项目目标"><a class="header" href="#凹语言项目目标">凹语言™项目目标</a></h1>
+                        <h1 id="凹语言项目目标"><a class="header" href="#凹语言项目目标">凹语言™项目目标</a></h1>
 <p>本项目的发起人均是Gopher，柴树杉和史斌更是 Go 社区贡献者，在开发实践中，因为不同的原因，先后萌生了发展一门新语言的想法，Go 语言克制的风格是我们对于编程语言审美的最大公约数，因此选择它作为初始的蓝本。不必讳言：本项目启动时大量借鉴了 Go 的设计思想和具体实现——这是在有限投入下不得不作出的折衷，我们希望随着项目的发展，积累更多原创的设计，为自主创新的大潮贡献一点力量。</p>
 <p>纵观编程界，没有哪门被广泛使用的通用语言诞生于KPI制度之下。本项目作为个人业余项目，不存在明确的指标，从成果分类的角度，我们希望在第一阶段完成以下目标：</p>
 <ul>
@@ -256,10 +193,6 @@ fn main() {
 <p>当任一后端模块覆盖“可用最小集”，我们将尝试开发一些简单的网页示例，待选的方向有交互式图形图像、在线编译等。</p>
 <hr />
 <p>2022.7.23</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="版本日志"><a class="header" href="#版本日志">版本日志</a></h1>
-<ul>
-<li>v0.1.0 (2022-07-24) - 开源, 包含 LLVM 后端, 可运行简单例子</li>
-</ul>
 
                         <div id="giscus-container"></div>
                         <footer class="page-footer">
@@ -269,12 +202,24 @@ fn main() {
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="changelog.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="changelog.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -289,7 +234,7 @@ fn main() {
         <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
-        var pagePath = "print.md"
+        var pagePath = "goals.md"
         </script>
 
 
@@ -297,10 +242,5 @@ fn main() {
         <script type="text/javascript" src="static/js/custom.js"></script>
         <script type="text/javascript" src="static/js/bigPicture.js"></script>
         <script type="text/javascript" src="static/js/asciinema-player.js"></script>
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
     </body>
 </html>
