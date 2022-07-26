@@ -76,6 +76,10 @@ $ go run main.go run _examples/prime
 
 ![](wa-run-demo.gif)
 
+## 微信群
+
+![微信群二维码](static/images/wechatgroup.jpg)
+
 ## 版权
 
 版权 @2019 凹语言™ 作者。保留所有权利。
