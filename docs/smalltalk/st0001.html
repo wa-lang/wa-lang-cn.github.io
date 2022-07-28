@@ -3,35 +3,34 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Page not found - 凹语言™</title>
-        <base href="/">
+        <title>凹语言™——由来和寓意 - 凹语言™</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="披着 Go 和 Rust 语法外衣的 C++ 语言">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="../favicon.svg">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="static/css/style.css">
-        <link rel="stylesheet" href="static/css/asciinema-player.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/asciinema-player.css">
     </head>
     <body>
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
-            var path_to_root = "";
+            var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -77,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 主页</a></li><li class="chapter-item expanded "><a href="goals.html"><strong aria-hidden="true">2.</strong> 项目目标</a></li><li class="chapter-item expanded "><a href="smalltalk/index.html"><strong aria-hidden="true">3.</strong> 爱好者的碎碎念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="smalltalk/st0001.html"><strong aria-hidden="true">3.1.</strong> 凹语言™——由来和寓意</a></li></ol></li><li class="chapter-item expanded "><a href="changelog.html"><strong aria-hidden="true">4.</strong> 版本日志</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 主页</a></li><li class="chapter-item expanded "><a href="../goals.html"><strong aria-hidden="true">2.</strong> 项目目标</a></li><li class="chapter-item expanded "><a href="../smalltalk/index.html"><strong aria-hidden="true">3.</strong> 爱好者的碎碎念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../smalltalk/st0001.html" class="active"><strong aria-hidden="true">3.1.</strong> 凹语言™——由来和寓意</a></li></ol></li><li class="chapter-item expanded "><a href="../changelog.html"><strong aria-hidden="true">4.</strong> 版本日志</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -109,11 +108,14 @@
                     <h1 class="menu-title">凹语言™</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
                         <a href="https://github.com/wa-lang/wa-lang.github.io" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/wa-lang/wa-lang.github.io/edit/master/./smalltalk/st0001.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                     </div>
                 </div>
@@ -141,8 +143,32 @@
                     <!-- Page table of contents -->
                     <div class="sidetoc"><nav class="pagetoc"></nav></div>
                     <main>
-                        <h1 id="document-not-found-404"><a class="header" href="#document-not-found-404">Document not found (404)</a></h1>
-<p>This URL is invalid, sorry. Please use the navigation bar or search to continue.</p>
+                        <h1 id="凹语言由来和寓意"><a class="header" href="#凹语言由来和寓意">凹语言™——由来和寓意</a></h1>
+<blockquote>
+<p><strong>凹</strong> 在此念：wā</p>
+</blockquote>
+<p>先讲个故事。</p>
+<p>2016年受命开发一个Web应用，作为一个C系老炮/Go新手/JS菜鸡，当真是一脸懵逼，然后就发现了Emscripten这个狼牙棒，最终以C内核+JS界面组成脸、Go组成屁股的形式交活了事。期间踩坑无数罄竹难书，我们开了一个仓库——<a href="https://github.com/3dgen/cppwasm-book">https://github.com/3dgen/cppwasm-book</a>，记录下Emscripten的使用经验并在机械工业出版社的帮助下出版了《面向WebAssembly编程》一书。</p>
+<p>后来陆续鼓捣一些小玩具，在技术栈选型的时候，老坑依然在：</p>
+<ul>
+<li>不想再手动管理内存了</li>
+<li>总有几个关键组件只有C系版本但是cgo性能太弱鸡了</li>
+<li>不想同一套处理逻辑在前后端用两种不同的语言分别实现了</li>
+</ul>
+<p>所以我们的期望包括：</p>
+<ol>
+<li>简单、克制、易于上手</li>
+<li>足够的表达力，但使用时没有过高的心智负担</li>
+<li>适用于多人协作开发</li>
+<li>可以同时用于前后端的主业务逻辑构建</li>
+</ol>
+<p>123都在Go的射程之内，但确实不适合“并发不是标配”的Web前端场景，用于网页开发需要针对WebAssembly进行友好化的深度改造——那么，我们干脆创造一门新语言吧。</p>
+<hr />
+<p>从形状上看，“凹”字与形似wasm图标（方块上部缺个口）；</p>
+<p>从读音上看，“凹”正好是wasm的前半部；</p>
+<p>从结构上看，实心的“凹”字约等于字母“C”逆时针旋转90度——C可以理解为C语言，也可以理解为Coder，那么“凹”是不是可以暗示躺平的的C/躺平的Coder……</p>
+<p>啊，这伟大的象形文字！</p>
+<hr />
 
                         <div id="giscus-container"></div>
                         <footer class="page-footer">
@@ -152,12 +178,24 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../smalltalk/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../changelog.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../smalltalk/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../changelog.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>
@@ -165,20 +203,20 @@
         <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
-        var pagePath = "404.md"
+        var pagePath = "smalltalk/st0001.md"
         </script>
 
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript" src="static/js/custom.js"></script>
-        <script type="text/javascript" src="static/js/bigPicture.js"></script>
-        <script type="text/javascript" src="static/js/asciinema-player.js"></script>
+        <script type="text/javascript" src="../static/js/custom.js"></script>
+        <script type="text/javascript" src="../static/js/bigPicture.js"></script>
+        <script type="text/javascript" src="../static/js/asciinema-player.js"></script>
     </body>
 </html>
