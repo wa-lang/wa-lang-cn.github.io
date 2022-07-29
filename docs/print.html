@@ -112,7 +112,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/wa-lang/wa-lang.github.io" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/wa-lang/wa" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                     </div>
@@ -227,13 +227,15 @@ fn main() {
 <li>WaGo 没有内置标准库——即使有，规模也极其有限</li>
 </ul>
 <p>WaGo 的数据类型如下表：</p>
-<table><thead><tr><th style="text-align: center">字符串（string）</th><th style="text-align: center">数组（array）</th><th style="text-align: center">切片（slice）</th><th style="text-align: center">复数（complex）</th><th style="text-align: center">哈希表（map）</th><th style="text-align: center">结构体（struct）</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">字符串（string）</th><th style="text-align: center">数组（array）</th><th style="text-align: center">切片（slice）</th><th style="text-align: center">复数（complex）</th><th style="text-align: center">哈希表（map）</th><th style="text-align: center">结构体（struct）</th></tr></thead><tbody>
 <tr><td style="text-align: center">有</td><td style="text-align: center">有</td><td style="text-align: center">有</td><td style="text-align: center">可能有</td><td style="text-align: center">可能有</td><td style="text-align: center">有</td></tr>
 </tbody></table>
+</div>
 <p>WaGo 的其他特性如下表：</p>
-<table><thead><tr><th style="text-align: center">多返回值</th><th style="text-align: center">方法</th><th style="text-align: center">方法值</th><th style="text-align: center">接口</th><th style="text-align: center">闭包</th><th style="text-align: center">反射</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">多返回值</th><th style="text-align: center">方法</th><th style="text-align: center">方法值</th><th style="text-align: center">接口</th><th style="text-align: center">闭包</th><th style="text-align: center">反射</th></tr></thead><tbody>
 <tr><td style="text-align: center">有</td><td style="text-align: center">有</td><td style="text-align: center">可能无</td><td style="text-align: center">有</td><td style="text-align: center">可能有</td><td style="text-align: center">可能有</td></tr>
 </tbody></table>
+</div>
 <blockquote>
 <p>各特性的实现可能性从高到底排列为：有 &gt; 可能无 &gt; 可能有 &gt; 无</p>
 </blockquote>
@@ -258,13 +260,15 @@ fn main() {
 <p>当任一后端模块覆盖“可用最小集”，我们将尝试开发一些简单的网页示例，待选的方向有交互式图形图像、在线编译等。</p>
 <hr />
 <p>2022.7.23</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="碎碎念"><a class="header" href="#碎碎念">碎碎念</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="爱好者的碎碎念"><a class="header" href="#爱好者的碎碎念">爱好者的碎碎念</a></h1>
+<hr />
+<p><a href="smalltalk/st0001.html">凹语言™——由来和寓意</a> - 2022.7.28</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="凹语言由来和寓意"><a class="header" href="#凹语言由来和寓意">凹语言™——由来和寓意</a></h1>
 <blockquote>
 <p><strong>凹</strong> 在此念：wā</p>
 </blockquote>
 <p>先讲个故事。</p>
-<p>2016年受命开发一个Web应用，作为一个C系老炮/Go新手/JS菜鸡，当真是一脸懵逼，然后就发现了Emscripten这个狼牙棒，最终以C内核+JS界面组成脸、Go组成屁股的形式交活了事。期间踩坑无数罄竹难书，我们开了一个仓库——<a href="https://github.com/3dgen/cppwasm-book">https://github.com/3dgen/cppwasm-book</a>，记录下Emscripten的使用经验并在机械工业出版社的帮助下出版了《面向WebAssembly编程》一书。</p>
+<p>2016年受命开发一个Web应用，作为一个C系老炮/Go新手/JS菜鸡，当真是一脸懵逼，然后就发现了Emscripten这个狼牙棒，最终以C内核+JS界面组成脸、Go组成屁股的形式交活了事。期间踩坑无数罄竹难书，我们开了一个仓库——<a href="https://github.com/3dgen/cppwasm-book">https://github.com/3dgen/cppwasm-book</a>，记录下Emscripten的使用经验并在机械工业出版社的帮助下出版了<a href="https://item.jd.com/13045744.html">《面向WebAssembly编程》</a>一书。</p>
 <p>后来陆续鼓捣一些小玩具，在技术栈选型的时候，老坑依然在：</p>
 <ul>
 <li>不想再手动管理内存了</li>
