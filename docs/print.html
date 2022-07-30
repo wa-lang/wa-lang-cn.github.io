@@ -77,7 +77,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 主页</a></li><li class="chapter-item expanded "><a href="goals.html"><strong aria-hidden="true">2.</strong> 项目目标</a></li><li class="chapter-item expanded "><a href="smalltalk/index.html"><strong aria-hidden="true">3.</strong> 爱好者的碎碎念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="smalltalk/st0001.html"><strong aria-hidden="true">3.1.</strong> 凹语言™——由来和寓意</a></li></ol></li><li class="chapter-item expanded "><a href="changelog.html"><strong aria-hidden="true">4.</strong> 版本日志</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> 主页</a></li><li class="chapter-item expanded "><a href="goals.html"><strong aria-hidden="true">2.</strong> 项目目标</a></li><li class="chapter-item expanded "><a href="smalltalk/index.html"><strong aria-hidden="true">3.</strong> 爱好者的碎碎念</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="smalltalk/st0001.html"><strong aria-hidden="true">3.1.</strong> 凹语言™——由来和寓意</a></li><li class="chapter-item expanded "><a href="smalltalk/st0002.html"><strong aria-hidden="true">3.2.</strong> 开源十日小计——兼2022下半年线路简介</a></li><li class="chapter-item expanded "><a href="smalltalk/submission_rules.html"><strong aria-hidden="true">3.3.</strong> 爱好者的碎碎念 投稿规则</a></li></ol></li><li class="chapter-item expanded "><a href="changelog.html"><strong aria-hidden="true">4.</strong> 版本日志</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -206,6 +206,8 @@ fn main() {
 <p><img src="wa-run-demo.gif" alt="" /></p>
 <h2 id="微信群"><a class="header" href="#微信群">微信群</a></h2>
 <p><img src="static/images/wechatgroup.jpg" alt="微信群二维码" /></p>
+<h2 id="爱好者的碎碎念栏目投稿规则"><a class="header" href="#爱好者的碎碎念栏目投稿规则">爱好者的碎碎念栏目投稿规则</a></h2>
+<p><a href="smalltalk/submission_rules.html">投稿规则</a></p>
 <h2 id="版权"><a class="header" href="#版权">版权</a></h2>
 <p>版权 @2019 凹语言™ 作者。保留所有权利。</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="凹语言项目目标"><a class="header" href="#凹语言项目目标">凹语言™项目目标</a></h1>
@@ -261,8 +263,10 @@ fn main() {
 <hr />
 <p>2022.7.23</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="爱好者的碎碎念"><a class="header" href="#爱好者的碎碎念">爱好者的碎碎念</a></h1>
+<p>本栏目支持投稿，详见：<a href="smalltalk/submission_rules.html">投稿规则</a></p>
 <hr />
 <p><a href="smalltalk/st0001.html">凹语言™——由来和寓意</a> - 2022.7.28</p>
+<p><a href="smalltalk/st0002.html">开源十日小计——兼2022下半年线路简介</a> - 2022.7.30</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="凹语言由来和寓意"><a class="header" href="#凹语言由来和寓意">凹语言™——由来和寓意</a></h1>
 <blockquote>
 <p><strong>凹</strong> 在此念：wā</p>
@@ -289,6 +293,37 @@ fn main() {
 <p>从结构上看，实心的“凹”字约等于字母“C”逆时针旋转90度——C可以理解为C语言，也可以理解为Coder，那么“凹”是不是可以暗示躺平的的C/躺平的Coder……</p>
 <p>啊，这伟大的象形文字！</p>
 <hr />
+<p>撰稿：丁尔男</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="开源十日小计兼2022下半年线路简介"><a class="header" href="#开源十日小计兼2022下半年线路简介">开源十日小计——兼2022下半年线路简介</a></h1>
+<p>开源十日，项目组的心情——惊讶外加压力山大。</p>
+<p>虽然对于凹语言™的构想始于2018年，但开发工作真正启动的时间，也不过2022年1月。如果把<strong>造出一个CPU</strong>作为目标，目前完成的工作也就相当于<strong>刚刚造出了可用的晶体管</strong>。然而以这样不成熟的早期状态，项目竟然出现在了CSDN、51CTO技术栈、InfoQ等媒体的资讯新闻中，我们的心情不能说惊讶吧，只能说非常惊讶。惊讶之余，面对Star数、群人数双双破百，项目组感到了巨大的压力：</p>
+<p>我们很清楚，这一切关注的原因是什么。</p>
+<hr />
+<p>除编译框架搭建、基础组件搜集及验证之外，目前：</p>
+<ul>
+<li>LLIR后端实验性支持了字符串操作、四则运算、函数调用、包管理等</li>
+<li>C/C++后端实验性支持了结构体、切片、函数及方法、流控制指令、多返回值等</li>
+</ul>
+<p>二者从长线来说有各自的战位，但短期内难以直接生成可执行程序，不便于爱好者测试及参与。接下来项目组工作重心将切换至wasm后端，这不仅是目前视野内生成可执行程序的最短路径，也是我们的主战场。</p>
+<p>wasm后端第一阶段预计于3个月后（即2022年10月底）完成，届时它可能包含以下特性：</p>
+<ul>
+<li>布尔、8/16/32/64位整数、单双精度浮点数、字符串基本类型</li>
+<li>切片类型</li>
+<li>常用数值/逻辑单双目运算</li>
+<li>常用流控制操作</li>
+<li>结构体，匿名包含</li>
+<li>函数及方法</li>
+<li>基于RC的内存自动管理</li>
+</ul>
+<p>PS：LLIR后端实质启动预计将于2023年春节前后开始。</p>
+<hr />
+<p>撰稿：丁尔男</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="爱好者的碎碎念-栏目投稿规则"><a class="header" href="#爱好者的碎碎念-栏目投稿规则">爱好者的碎碎念 栏目投稿规则</a></h1>
+<ol>
+<li>在仓库 <a href="https://github.com/wa-lang/wa-lang.github.io">https://github.com/wa-lang/wa-lang.github.io</a> 的<code>smalltalk/</code> 目录下新建MarkDown文件 <code>stXXXX.md</code>，<code>XXXX</code>为紧跟现有最大文件编码的下一个数字，比如当前最大编码文件为 <code>st0002.md</code>，则新建的文件名应为<code>st0003.md</code>；</li>
+<li>发起pr等待审批；</li>
+<li>投稿末尾可以&quot;撰稿人：XXX&quot;的形式署名，投稿人保留著作权。投稿人投稿后视同授权本网站使用并发布该稿件，pr通过后该授权自动生效。</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="版本日志"><a class="header" href="#版本日志">版本日志</a></h1>
 <ul>
 <li>v0.1.0 (2022-07-24) - 开源, 包含 LLVM 后端, 可运行简单例子</li>
