@@ -81,6 +81,9 @@ $ go run main.go run _examples/prime
 
 ![微信群二维码](static/images/wechatgroup.jpg)
 
+## 爱好者的碎碎念栏目投稿规则
+[投稿规则](smalltalk/submission_rules.md)
+
 ## 版权
 
 版权 @2019 凹语言™ 作者。保留所有权利。
