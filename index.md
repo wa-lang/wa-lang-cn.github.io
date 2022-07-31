@@ -79,6 +79,7 @@ $ go run main.go run _examples/prime
 
 ## 微信群
 
+群已超过200人，请田间加群助手微信号后拉入：
 ![微信群二维码](static/images/wechatgroup.jpg)
 
 ## 爱好者的碎碎念栏目投稿规则
