@@ -82,7 +82,7 @@ $ go run main.go run _examples/prime
 
 ## 微信群
 
-群已超过200人，请添加群助手微信号后拉入：
+群已超过200人，请添加群助手微信号后拉入，添加群助手微信时注明“加凹语言群”：
 
 ![微信群二维码](static/images/wechatgroup.jpg)
 
