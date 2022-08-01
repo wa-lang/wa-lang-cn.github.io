@@ -24,6 +24,8 @@
 3. `wa init -name=_examples/hi`
 4. `wa run _examples/hi`
 
+> 项目尚处于原型开源阶段，如果有共建和PR需求请入群交流。
+
 ## 设计目标
 
 - 披着 Go 和 Rust 语法外衣的 C++ 语言；
@@ -73,7 +75,7 @@ $ go run main.go run _examples/prime
 
 ## 更多例子
 
-[_examples](_examples)
+[_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
 ![](wa-run-demo.gif)
 
