@@ -4,7 +4,7 @@
 
 ## 关键字
 
-凹语言删除了Go语言中的 `package`、`fallthrough`、`goto` 等关键字关键字，同时删除了 `go`、`chan`、`select` 等并发关键字，同时将 `func` 关键字简化为 `fn`。因此凹语言目前有19个关键字：
+凹语言删除了Go语言中的 `package`、`fallthrough`、`goto` 等关键字，同时删除了 `go`、`chan`、`select` 等并发关键字，同时将 `func` 关键字简化为 `fn`。因此凹语言目前有19个关键字：
 
 ```go
 break     defer  import     struct
