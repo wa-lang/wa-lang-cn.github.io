@@ -75,18 +75,6 @@ $ go run main.go run _examples/prime
 
 更多例子 [_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
-## QQ群
-群号：112919306
-
-## 微信群
-
-群已超过200人，请添加群助手微信号后拉入，添加群助手微信时注明“加凹语言群”：
-
-![微信群二维码](static/images/wechatgroup.jpg)
-
-## 爱好者的碎碎念栏目投稿规则
-[投稿规则](smalltalk/submission_rules.md)
-
 ## 版权
 
 版权 @2019 凹语言™ 作者。保留所有权利。
