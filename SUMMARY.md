@@ -11,4 +11,5 @@
   - [凹语言™讨论群日常——2022-08-06](smalltalk/st0003.md)
   - [凹语言™开发组工作会议记录——2022-08-07](smalltalk/st0004.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
+- [凹语言社区](community/readme.md)
 - [版本日志](changelog.md)
