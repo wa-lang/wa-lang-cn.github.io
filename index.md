@@ -73,11 +73,7 @@ $ go run main.go run _examples/prime
 29
 ```
 
-## 更多例子
-
-[_examples](https://github.com/wa-lang/wa/tree/master/_examples)
-
-![](wa-run-demo.gif)
+更多例子 [_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
 ## QQ群
 群号：112919306
