@@ -1,8 +1,7 @@
 # 凹语言社区
 
-## QQ群
-
-群号：112919306
+- [Github 凹语言论坛](https://github.com/wa-lang/wa/discussions)
+- QQ群：112919306
 
 ## 微信群
 
