@@ -4,7 +4,7 @@
 [book]
 title = "凹语言™"
 authors = ["柴树杉", "丁尔男", "史斌"]
-description = "披着 Go 和 Rust 语法外衣的 C++ 语言"
+description = "披着 Go 语法外衣的 C 语言"
 language = "zh"
 multilingual = false
 src = "."

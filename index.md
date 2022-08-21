@@ -24,7 +24,9 @@
 3. `wa init -name=_examples/hi`
 4. `wa run _examples/hi`
 
-> 项目尚处于原型开源阶段，如果有共建和PR需求请入群交流。
+> 项目尚处于原型开源阶段，如果有共建和PR需求请 [入群交流](https://wa-lang.org/community/index.html)。
+
+> [VS Code 插件支持](https://marketplace.visualstudio.com/items?itemName=xxxDeveloper.vscode-wa)
 
 ## 设计目标
 
@@ -42,9 +44,9 @@
 ```
 // 版权 @2021 凹语言™ 作者。保留所有权利。
 
-fn main() {
+函数#main() {
 	for n := 2; n <= 30; n = n + 1 {
-		let isPrime int = 1
+		变量#isPrime int = 1
 		for i := 2; i*i <= n; i = i + 1 {
 			if x := n % i; x == 0 {
 				isPrime = 0
@@ -73,23 +75,7 @@ $ go run main.go run _examples/prime
 29
 ```
 
-## 更多例子
-
-[_examples](https://github.com/wa-lang/wa/tree/master/_examples)
-
-![](wa-run-demo.gif)
-
-## QQ群
-群号：112919306
-
-## 微信群
-
-群已超过200人，请添加群助手微信号后拉入，添加群助手微信时注明“加凹语言群”：
-
-![微信群二维码](static/images/wechatgroup.jpg)
-
-## 爱好者的碎碎念栏目投稿规则
-[投稿规则](smalltalk/submission_rules.md)
+更多例子 [_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
 ## 版权
 
