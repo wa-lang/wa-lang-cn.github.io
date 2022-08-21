@@ -10,5 +10,6 @@
   - [凹语言™开源十日小计——兼路线图预览](smalltalk/st0002.md)
   - [凹语言™讨论群日常——2022-08-06](smalltalk/st0003.md)
   - [凹语言™开发组工作会议记录——2022-08-07](smalltalk/st0004.md)
+  - [凹语言™开发组例行工作会议安排——2022-08-21](smalltalk/st0005.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
 - [版本日志](changelog.md)
