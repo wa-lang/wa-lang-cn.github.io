@@ -12,6 +12,7 @@
   - [凹语言™开发组工作会议记录——2022-08-07](smalltalk/st0004.md)
   - [凹语言™开发组例行工作会议安排](smalltalk/st0005.md)
   - [凹语言™开发组例会——2022-08-21](smalltalk/st0006.md)
+  - [凹语言™支持脚本模式执行](smalltalk/st0007.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
 - [凹语言社区](community/readme.md)
 - [版本日志](changelog.md)
