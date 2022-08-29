@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/wa-lang/wa/badge.svg)](https://coveralls.io/github/wa-lang/wa)
 [![GitHub release](https://img.shields.io/github/v/tag/wa-lang/wa.svg?label=release)](https://github.com/wa-lang/wa/releases)
 
-凹语言™（凹读音“Wa”）是[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)和[史斌](https://github.com/benshi001)设计的实验性编程语言。
+凹语言™（凹读音“Wa”）是[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)和[史斌](https://github.com/benshi001)设计的专注于 WASM 平台的实验性通用编程语言。
 
 ```
 +---+    +---+
@@ -45,7 +45,7 @@ hello.wa:
 # 版权 @2019 凹语言 作者。保留所有权利。
 
 fn main() {
-	println("老凹，吃了吗")
+	println("凹凹，吃了吗")
 }
 ```
 
@@ -53,7 +53,7 @@ fn main() {
 
 ```
 $ wa hello.wa 
-老凹，吃了吗
+凹凹，吃了吗
 ```
 
 ## 例子: 打印素数
