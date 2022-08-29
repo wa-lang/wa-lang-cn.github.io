@@ -13,8 +13,8 @@ src = "."
 build-dir = "book"
 
 [output.html]
-additional-css = ["static/css/style.css", "static/css/asciinema-player.css"]
-additional-js = ["static/js/custom.js", "static/js/bigPicture.js", "static/js/asciinema-player.js"]
+additional-css = ["static/css/style.css"]
+additional-js = ["static/js/custom.js", "static/js/bigPicture.js"]
 git-repository-url = "https://github.com/wa-lang/wa"
 edit-url-template = "https://github.com/wa-lang/wa-lang.github.io/edit/master/{path}"
 git-repository-icon = "fa-github"
