@@ -25,10 +25,9 @@
 
 安装和测试:
 
-1. 安装 [Clang](https://clang.llvm.org), 确保本地 `clang` 命令有效
-2. `go install github.com/wa-lang/wa@latest`
-3. `wa init -name=_examples/hi`
-4. `wa run _examples/hi`
+1. `go install github.com/wa-lang/wa@latest`
+2. `wa init -name=_examples/hi`
+3. `wa run _examples/hi`
 
 > 项目尚处于原型开源阶段，如果有共建和PR需求请 [入群交流](https://wa-lang.org/community/index.html)。
 
