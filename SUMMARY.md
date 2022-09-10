@@ -15,6 +15,7 @@
   - [凹语言™支持脚本模式执行](smalltalk/st0007.md)
   - [凹语言™IDE 插件指南](smalltalk/st0008.md)
   - [凹语言™开发组例会——2022-09-04](smalltalk/st0009.md)
+  - [祝大家中秋快乐](smalltalk/st0010.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
 - [凹语言社区](community/readme.md)
 - [版本日志](changelog.md)
