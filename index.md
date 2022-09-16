@@ -103,6 +103,27 @@ $ go run main.go run _examples/prime
 
 更多例子 [_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
+
+## 作为脚本执行
+
+凹语言本身也可以像 Lua 语言被嵌入 Go 宿主语言环境执行：
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/wa-lang/wa/api"
+)
+
+func main() {
+	output, err := api.RunCode("hello.wa", "fn main() { println(40+2) }")
+	fmt.Print(string(output), err)
+}
+```
+
+注：作为脚本执行目前只支持本地环境。
+
 ## 版权
 
 版权 @2019 凹语言™ 作者。保留所有权利。
