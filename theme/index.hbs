@@ -136,13 +136,12 @@
                     <h1 class="menu-title">{{ book_title }}</h1>
 
                     <div class="right-buttons">
-                        <a href="https://wa-lang.org/playground" title="Play" aria-label="Play">
-                            <i id="play-button" class="fa fa-play"></i>
-                        </a>
                         {{#if print_enable}}
+                        <!--
                         <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+                        -->
                         {{/if}}
                         {{#if git_repository_url}}
                         <a href="{{git_repository_url}}" title="Git repository" aria-label="Git repository">
@@ -154,6 +153,9 @@
                             <i id="git-edit-button" class="fa fa-edit"></i>
                         </a>
                         {{/if}}
+                        <a href="https://wa-lang.org/playground" title="Play" aria-label="Play">
+                            <i id="play-button" class="fa fa-play"></i>
+                        </a>
 
                     </div>
                 </div>
