@@ -4,7 +4,7 @@
 
 ```wa
 fn main() {
-	println("你好, 凹语言!")
+	println(42)
 }
 ```
 

@@ -12,6 +12,13 @@ src = "."
 [build]
 build-dir = "book"
 
+[output.html.playground]
+editable = true
+copyable = true
+copy-js = true
+line-numbers = true
+runable = true
+
 [output.html]
 additional-css = ["static/css/style.css"]
 additional-js = ["static/js/custom.js", "static/js/bigPicture.js"]

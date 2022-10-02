@@ -6,7 +6,7 @@
 
 凹语言删除了Go语言中的 `package`、`fallthrough`、`goto` 等关键字，同时删除了 `go`、`chan`、`select` 等并发关键字，同时将 `func` 关键字简化为 `fn`。因此凹语言目前有19个关键字：
 
-```go
+```wa
 break     defer  import     struct
 case      else   interface  switch
 const     for    map        type
@@ -16,7 +16,7 @@ default   if     return
 
 在英文关键字的基础上，凹语言同时为不同的区域提供本地的关键字。比如中文和和拼音地区对应关键字如下（最终形态会由对应语言的社区投票决定）：
 
-```go
+```wa
 //  zh/zh_pinyin => 中文/中文拼音
 //  1. break     => 跳出/tiaochu
 //  2. case      => 有辙/youzhe
@@ -45,7 +45,7 @@ default   if     return
 
 增加了 `#` 作为行注释。删除了 `<-`、`~` 运算符：
 
-```go
+```wa
 +    &     +=    &=     &&    ==    !=    (    )
 -    |     -=    |=     ||    <     <=    [    ]
 *    ^     *=    ^=     <-    >     >=    {    }
@@ -56,7 +56,7 @@ default   if     return
 
 同时支持的全角符号：
 
-```go
+```wa
 // #   => #
 // ... => …
 // <<  =>《
