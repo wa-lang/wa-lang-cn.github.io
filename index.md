@@ -10,15 +10,6 @@
 - 开发工具 (Develop Tools): [Playground](https://wa-lang.org/playground), [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=xxxDeveloper.vscode-wa), [Notepad++ 插件](https://github.com/wa-lang/notepadplus-wa)
 - 开发组成员：[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)、[史斌](https://github.com/benshi001)、[扈梦明](https://github.com/xxxDeveloper)、[刘云峰](https://github.com/leaftree)、[宋汝阳](https://github.com/ShiinaOrez)
 
-
-安装和测试:
-
-1. `go install github.com/wa-lang/wa@latest`
-2. `wa init -name=_examples/hi`
-3. `wa run _examples/hi`
-
-> 项目尚处于原型开源阶段，如果有共建和PR需求请 [入群交流](https://wa-lang.org/community/index.html)。
-
 ## 设计目标
 
 - 披着 Go 语法外衣的 C 语言；
@@ -27,6 +18,18 @@
 - 凹语言™支持中文/英文双语关键字，即任一关键字均有中文及英文版，二者在语法层面等价。
 
 更多细节请参考 [凹语言™项目目标](goals.md)
+
+## Playground 在线预览
+
+![[Playground](https://wa-lang.org/playground)](static/images/playground.gif)
+
+## 本地安装和测试
+
+1. `go install github.com/wa-lang/wa@latest`
+2. `wa init -name=_examples/hi`
+3. `wa run _examples/hi`
+
+> 项目尚处于原型开源阶段，如果有共建和PR需求请 [入群交流](https://wa-lang.org/community/index.html)。
 
 ## 例子: 你好, 凹语言
 
