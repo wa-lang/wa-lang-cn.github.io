@@ -21,7 +21,9 @@
 
 ## Playground 在线预览
 
-![[Playground](https://wa-lang.org/playground)](static/images/playground.gif)
+[https://wa-lang.org/playground](https://wa-lang.org/playground)
+
+![[![](https://wa-lang.org/smalltalk/images/st0011-01.png)](https://wa-lang.org/playground)](static/images/playground.gif)
 
 ## 本地安装和测试
 
