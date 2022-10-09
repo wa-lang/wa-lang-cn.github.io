@@ -2,6 +2,7 @@
 
 - [Github 凹语言论坛](https://github.com/wa-lang/wa/discussions)
 - QQ群：112919306
+- Twitter: [@wayuyan](https://twitter.com/wayuyan)
 
 ## 微信群
 
