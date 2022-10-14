@@ -1,0 +1,162 @@
+/*****************************************
+*                                        *
+*                 Colors                 *
+*                                        *
+*****************************************/
+:root {
+  /* TODO */
+  --vp-c-brand: #00B5AB;
+  --vp-c-brand-light: #00B5AB;
+  --vp-c-brand-lighter: #00B5AB;
+  --vp-c-brand-lightest: #00B5AB;
+  --vp-c-brand-dark: #00B5AB;
+  --vp-c-brand-darker: #00B5AB;
+  --vp-c-brand-dimm: rgba(0, 184, 172, 0.08);
+}
+
+/*****************************************
+*                                        *
+*            Component: Button           *
+*                                        *
+*****************************************/
+:root {
+  --vp-button-brand-border: var(--vp-c-brand-light);
+  --vp-button-brand-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-border: var(--vp-c-brand-light);
+  --vp-button-brand-hover-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  --vp-button-brand-active-border: var(--vp-c-brand-light);
+  --vp-button-brand-active-text: var(--vp-c-text-dark-1);
+  --vp-button-brand-active-bg: var(--vp-button-brand-bg);
+}
+
+/*****************************************
+*                                        *
+*             Component: Home            *
+*                                        *
+*****************************************/
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #00B5AB 30%,
+    #6EF8EC
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #00B5AB60 30%,
+    #6EF8EC60 50%
+  );
+  --vp-home-hero-image-filter: blur(40px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(72px);
+  }
+}
+
+/*****************************************
+*                                        *
+*         Component: Custom Block        *
+*                                        *
+*****************************************/
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/*****************************************
+*                                        *
+*           Component: Algolia           *
+*                                        *
+*****************************************/
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}
+
+.dark .vp-doc a,
+.dark .vp-doc a > code,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
+.dark .link.link:hover,
+.dark .link.link.active,
+.dark .edit-link-button.edit-link-button,
+.dark .pager-link .title {
+  color: var(--vp-c-brand-lighter);
+}
+
+.dark .vp-doc a:hover,
+.dark .vp-doc a > code:hover {
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
+}
+
+.dark .vp-doc .custom-block a {
+  transition: color 0.25s;
+}
+
+/*****************************************
+*                                        *
+*              VPTeamMembers             *
+*                                        *
+*****************************************/
+.VPTeamMembersItem.small .profile .data .affiliation {
+  min-height: 2rem;
+}
+
+.VPTeamMembersItem.small .profile .data .desc {
+  min-height: 2rem;
+}
+
+@media (min-width: 1064px) and (max-width: 1143px) {
+  .VPTeamMembersItem.small .profile .data .affiliation {
+    min-height: 3rem;
+  }
+  .VPTeamMembersItem.small .profile .data .desc {
+    min-height: 3rem;
+  }
+}
+
+@media (min-width: 815px) and (max-width: 875px) {
+  .VPTeamMembersItem.small .profile .data .affiliation {
+    min-height: 3rem;
+  }
+  .VPTeamMembersItem.small .profile .data .desc {
+    min-height: 3rem;
+  }
+}
+
+@media (max-width: 612px) {
+  .VPTeamMembersItem.small .profile .data .affiliation {
+    min-height: 3rem;
+  }
+  .VPTeamMembersItem.small .profile .data .desc {
+    min-height: 3rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .VPTeamMembersItem.small .profile .data .affiliation {
+    min-height: unset;
+  }
+  .VPTeamMembersItem.small .profile .data .desc {
+    min-height: unset;
+  }
+}
+
