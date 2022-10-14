@@ -9,6 +9,11 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.svg',
 
+    editLink: {
+      pattern: 'https://github.com/wa-lang/wa-lang.github.io/edit/main/docs/:path',
+      text: '为此页提供修改建议'
+    },
+
     algolia: {
       appId: '70KN18OOKV',
       apiKey: '8e276c9c1e442e23ad6f922e8ffbb90e',
