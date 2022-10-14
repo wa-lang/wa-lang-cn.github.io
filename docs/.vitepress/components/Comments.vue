@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import Giscus from '@giscus/vue';
+import { onMounted } from 'vue';
+onMounted(() => {
+  import('giscus');
+});
 </script>
 
 <template>
   <div class="comments">
-    <Giscus
+    <giscus-widget
       repo="wa-lang/wa-lang.github.io"
       repoId="MDEwOlJlcG9zaXRvcnkxNjI5NDU2MDU="
       category="General"
@@ -21,7 +24,7 @@ import Giscus from '@giscus/vue';
   </div>
 </template>
 
-<style scoped>
+<style>
 .comments {
   margin-top: 2em
 }
