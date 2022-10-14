@@ -7,7 +7,7 @@
 - 主页：[https://wa-lang.org](https://wa-lang.org)
 - 代码仓库 (Github): [https://github.com/wa-lang/wa](https://github.com/wa-lang/wa)
 - 代码仓库 (Gitee):  [https://gitee.com/wa-lang/wa](https://gitee.com/wa-lang/wa)
-- 开发工具 (Develop Tools): [Playground](https://wa-lang.org/playground), [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=xxxDeveloper.vscode-wa), [Notepad++ 插件](https://github.com/wa-lang/notepadplus-wa)
+- 开发工具 (Develop Tools): [Playground](https://wa-lang.org/playground), [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=xxxDeveloper.vscode-wa), [Vim 插件](https://github.com/wa-lang/vim-wa)
 - 开发组成员：[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)、[史斌](https://github.com/benshi001)、[扈梦明](https://github.com/xxxDeveloper)、[刘云峰](https://github.com/leaftree)、[宋汝阳](https://github.com/ShiinaOrez)
 
 ## 设计目标
