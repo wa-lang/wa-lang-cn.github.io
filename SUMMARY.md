@@ -20,6 +20,7 @@
   - [凹语言 Windows 增加 exe 图标 ](smalltalk/st0012.md)
   - [凹语言™开发组例会——2022-10-02](smalltalk/st0013.md)
   - [凹语言 VIM 语法高亮](smalltalk/st0014.md)
+  - [凹语言 JetBrains Fleet 语法高亮](smalltalk/st0015.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
 - [凹语言社区](community/readme.md)
 - [版本日志](changelog.md)
