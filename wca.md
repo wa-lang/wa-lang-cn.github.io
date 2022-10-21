@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# 凹语言贡献者协议（意见征求稿·征求意见期间暂不生效）
+凹语言贡献者协议
 
 甲方：https://github.com/         （       ）所有者          邮箱:                         
 乙方：https://github.com/wa-lang（凹语言组织）所有者          邮箱：wca@wa-lang.org
