@@ -1,5 +1,10 @@
 # 版本日志
 
+- v0.3.0 (dev)
+  - 启用 [AGPLv3](https://wa-lang.org/community/license.html) 开源协议
+  - 增加 [如何贡献代码](https://wa-lang.org/community/contribute.html) 机制
+  - 网站: TODO
+  - 语言: TODO
 - v0.2.3 (2022-10-18)
   - 支持 [JetBrains Fleet](https://github.com/wa-lang/fleet-wa) 语法高亮
   - Wat 后端改善对 [Slice](https://github.com/wa-lang/wa/blob/master/slice.wa) 支持
