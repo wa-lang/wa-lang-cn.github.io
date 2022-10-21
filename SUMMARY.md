@@ -23,4 +23,7 @@
   - [凹语言 JetBrains Fleet 语法高亮](smalltalk/st0015.md)
   - [爱好者的碎碎念 投稿规则](smalltalk/submission_rules.md)
 - [凹语言社区](community/readme.md)
+  - [如何贡献代码](community/contribute.md)
+  - [凹语言贡献者协议](community/wca.md)
+  - [版权信息](community/license.md)
 - [版本日志](changelog.md)
