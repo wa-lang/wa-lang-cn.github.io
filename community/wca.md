@@ -1,4 +1,6 @@
-凹语言贡献者协议
+# 凹语言贡献者协议（意见征求稿·尚未生效）
+
+**请选择 PDF 版本打印后签署：[https://wa-lang.org/community/wca.pdf](https://wa-lang.org/community/wca.pdf)**
 
 甲方：https://github.com/          所有者(           )   邮箱:                         
 乙方：武汉市江夏区凹语言开发工作室                         邮箱：wca@wa-lang.org
