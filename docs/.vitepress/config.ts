@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: WA_NAME,
   description: WA_DESC,
+  appearance: true,
 
   themeConfig: {
     logo: '/logo.svg',
@@ -55,6 +56,7 @@ export default defineConfig({
       '/daily/': [
         {
           text: '碎碎念',
+          collapsible: true,
           items: [
             { text: '由来和寓意', link: '/daily/' },
             { text: '开源十日小计—兼路线图预览', link: '/daily/smalltalk/st0001' },
@@ -69,6 +71,7 @@ export default defineConfig({
         },
         {
           text: '开发组会议',
+          collapsible: true,
           items: [
             { text: '会议安排', link: '/daily/conference/c0001' },
             { text: '2022-08-07', link: '/daily/conference/c0002' },

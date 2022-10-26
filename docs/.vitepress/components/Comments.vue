@@ -33,7 +33,7 @@ onBeforeUnmount(() => {
       inputPosition="top"
       lang="zh-CN"
       loading="lazy"
-      :theme="isDark ? 'dark' : 'light'"
+      :theme="isDark ? 'transparent_dark' : 'light'"
     />
   </div>
 </template>
