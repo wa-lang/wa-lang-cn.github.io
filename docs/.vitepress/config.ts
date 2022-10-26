@@ -14,11 +14,12 @@ export default defineConfig({
       text: '为此页提供修改建议'
     },
 
-    algolia: {
-      appId: '70KN18OOKV',
-      apiKey: '8e276c9c1e442e23ad6f922e8ffbb90e',
-      indexName: 'dev_wa',
-    },
+    // TODO：上线后进行爬取
+    // algolia: {
+    //   appId: '70KN18OOKV',
+    //   apiKey: '8e276c9c1e442e23ad6f922e8ffbb90e',
+    //   indexName: 'dev_wa',
+    // },
 
     nav: [
       { text: '指南', link: '/guide/', activeMatch: '/guide/' },

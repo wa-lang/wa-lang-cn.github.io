@@ -30,12 +30,16 @@ hero:
       link: https://github.com/wa-lang/wa
 
 features:
-  - title: WASM
-    details: 不依赖后台 Web 服务，纯 WASM 环境编译并执行
-  - title: FEAT-XXX
+  - icon: ⚡️
+    title: FEAT
     details: 功能特性简介
-  - title: FEAT-XXX
+  - icon: ⚡️
+    title: FEAT
     details: 功能特性简介
-  - title: FEAT-XXX
+  - icon: ⚡️
+    title: FEAT
+    details: 功能特性简介
+  - icon: ⚡️
+    title: FEAT
     details: 功能特性简介
 ---
