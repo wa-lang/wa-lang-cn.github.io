@@ -1,7 +1,21 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-onMounted(() => {
-  import('giscus');
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+
+const checkDark = () => document.documentElement.classList.contains('dark');
+const isDark = ref(checkDark());
+
+const observer = new MutationObserver(() => {
+  isDark.value = checkDark();
+});
+observer.observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ['class'],
+});
+
+onMounted(() => { import('giscus'); });
+
+onBeforeUnmount(() => {
+  observer.disconnect();
 });
 </script>
 
@@ -12,19 +26,19 @@ onMounted(() => {
       repoId="MDEwOlJlcG9zaXRvcnkxNjI5NDU2MDU="
       category="General"
       categoryId="DIC_kwDOCbZaRc4CQYyU"
-      mapping="pathname"
+      mapping="specifics"
       term="Welcome to wa!"
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
-      theme="preferred_color_scheme"
       lang="zh-CN"
       loading="lazy"
+      :theme="isDark ? 'dark' : 'light'"
     />
   </div>
 </template>
 
-<style>
+<style scoped>
 .comments {
   margin-top: 2em
 }
