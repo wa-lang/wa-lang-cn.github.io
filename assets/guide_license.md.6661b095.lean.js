@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as e,a}from"./app.5b32177d.js";const u=JSON.parse('{"title":"\u7248\u6743\u4FE1\u606F","description":"","frontmatter":{},"headers":[],"relativePath":"guide/license.md"}'),o={name:"guide/license.md"},l=a("",3),p=[l];function t(r,i,c,d,f,y){return e(),n("div",null,p)}const m=s(o,[["render",t]]);export{u as __pageData,m as default};

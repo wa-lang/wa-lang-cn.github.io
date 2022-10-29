@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as r}from"./app.5b32177d.js";const p=JSON.parse('{"title":"\u5982\u4F55\u8D21\u732E\u4EE3\u7801","description":"","frontmatter":{},"headers":[],"relativePath":"guide/contribute.md"}'),i={name:"guide/contribute.md"},o=r("",2),c=[o];function n(l,s,_,d,h,u){return a(),t("div",null,c)}const f=e(i,[["render",n]]);export{p as __pageData,f as default};
