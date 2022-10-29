@@ -41,7 +41,7 @@ title: 指南
 
 打印字符和调用函数：
 
-```go
+```wa
 fn main() {
 	print('凹')
 	print('语')
@@ -58,17 +58,17 @@ fn add(a: i32, b: i32) => i32 {
 
 运行并输出结果:
 
-```
+```go
 $ go run main.go hello.wa 
-凹语言
-42
+// 凹语言
+// 42
 ```
 
 ## 例子: 打印素数
 
 打印 30 以内的素数：
 
-```go
+```wa
 # 版权 @2021 凹语言™ 作者。保留所有权利。
 
 fn main() {
@@ -88,7 +88,7 @@ fn main() {
 
 运行并输出结果:
 
-```
+```go
 $ go run main.go run _examples/prime
 2
 3

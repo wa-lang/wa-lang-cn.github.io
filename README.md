@@ -1,15 +1,5 @@
 # 凹语言™主页
 
-> 完成后删除 TODOs
-
-## TODOs
- - [ ] 支持搜素
- - [ ] 支持评论
- - [ ] wa 语法高亮
- - [ ] 文档优化 
-
-<!-- # 凹语言™主页
-
 凹语言™（凹读音“Wa”）主页：https://wa-lang.org
 
 ## Playground 在线预览
@@ -20,4 +10,4 @@
 
 ## 微信群
 
-![微信群二维码](/docs/public//wechatgroup.jpg) -->
+![微信群二维码](/docs/public//wechatgroup.jpg)
