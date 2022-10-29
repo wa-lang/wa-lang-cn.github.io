@@ -4,6 +4,7 @@ export const WA_DESC = '针对 WASM 平台设计的通用编程语言'
 export const TEAM_MEMBERS = [
   {
     avatar: 'https://www.github.com/chai2010.png',
+    title: '发起人、wago',
     name: '柴树杉',
     desc: '新时代码农',
     links: [
@@ -14,7 +15,7 @@ export const TEAM_MEMBERS = [
   {
     avatar: 'https://github.com/3dgen.png',
     name: '丁尔男',
-    desc: '《面向WebAssembly编程》作者',
+    title: '发起人、wat 后端',
     links: [
       { icon: 'github', link: 'https://github.com/3dgen' },
     ],
@@ -22,22 +23,24 @@ export const TEAM_MEMBERS = [
   {
     avatar: 'https://github.com/benshi001.png',
     name: '史斌',
-    desc: '',
+    title: '发起人、llvm 后端',
     links: [
       { icon: 'github', link: 'https://github.com/benshi001' },
     ],
   },
   {
-    avatar: 'https://www.github.com/iiiiiixxx.png',
+    avatar: 'https://www.github.com/xxx002.png',
+    title: "VS Code 插件、Playground",
     name: '扈梦明',
     desc: 'Interesting is more meaningful than useful',
     links: [
-      { icon: 'github', link: 'https://github.com/iiiiiixxx' },
+      { icon: 'github', link: 'https://github.com/xxx002' },
     ],
   },
   {
     avatar: 'https://github.com/leaftree.png',
     name: '刘云峰',
+    title: '包管理',
     links: [
       { icon: 'github', link: 'https://github.com/leaftree' },
     ],
@@ -45,6 +48,7 @@ export const TEAM_MEMBERS = [
   {
     avatar: 'https://github.com/ShiinaOrez.png',
     name: '宋汝阳',
+    title: '',
     desc: '日积代码千行，则无往而不利也@字节跳动当韭菜中，本账号将鲜有提交',
     links: [
       { icon: 'github', link: 'https://github.com/ShiinaOrez' },

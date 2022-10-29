@@ -5,8 +5,8 @@ title: 日常
 # 凹语言™—由来和寓意
 
 - 时间：2022-07-28
-- 撰稿：[丁尔男](https://github.com/3dgen)@凹语言™开发组
-- 转载请注明原文链接：[https://wa-lang.org/smalltalk/st0001.html](https://wa-lang.org/smalltalk/st0001.html)
+- 撰稿：@凹语言™开发组
+- 转载请注明原文链接：[https://wa-lang.org/daily/index.html](https://wa-lang.org/daily/index.html)
 
 ---
 
