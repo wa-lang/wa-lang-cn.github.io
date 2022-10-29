@@ -27,7 +27,7 @@ title: 指南
 
 [https://wa-lang.org/playground](https://wa-lang.org/playground)
 
-![[![](https://wa-lang.org/smalltalk/images/st0011-01.png)](https://wa-lang.org/playground)](/playground.gif)
+![[![](https://wa-lang.org/smalltalk/st0011-01.png)](https://wa-lang.org/playground)](/playground.gif)
 
 ## 本地安装和测试
 
