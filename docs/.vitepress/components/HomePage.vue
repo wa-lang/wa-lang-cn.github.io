@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { VPTeamMembers } from 'vitepress/theme'
-import { TEAM_MEMBERS } from '../constants'
+import { membersConf } from '../../docsConf/members'
 </script>
 
 <template>
   <div class="content">
     <div class="title">开发组成员</div>
-    <VPTeamMembers size="small" :members="TEAM_MEMBERS" />
+    <VPTeamMembers size="small" :members="membersConf" />
   </div>
 </template>
 
