@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
 import { WA_DESC, WA_NAME } from './constants'
+import HighlightedExt from './plugins/highlightedExt'
 
-export default defineConfig({
+export default async () => defineConfig({
   lang: 'zh-CN',
   title: WA_NAME,
   description: WA_DESC,
@@ -82,5 +83,10 @@ export default defineConfig({
         }
       ]
     }
-  }
+  },
+
+  markdown: {
+    highlight: await HighlightedExt()
+  },
+  
 })

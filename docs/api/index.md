@@ -6,7 +6,7 @@ title: APIs
 
 新建名为 `hello` 的目录，并创建 `hello/src/main.wa` 文件：
 
-```go
+```wa
 fn main() {
 	println(42)
 }

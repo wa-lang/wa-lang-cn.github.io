@@ -9,9 +9,11 @@
     "serve": "vitepress serve docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "xxx002",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.7",
+    "shiki": "^0.11.1",
     "vitepress": "1.0.0-alpha.19",
     "vue": "^3.2.40"
   },
