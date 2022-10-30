@@ -35,19 +35,15 @@ title: 指南
 2. `wa init -name=_examples/hi`
 3. `wa run _examples/hi`
 
-> 项目尚处于原型开源阶段，如果有共建和PR需求请 [入群交流](https://wa-lang.org/community/index.html)。
+> 项目尚处于原型开源阶段，如果有共建和PR需求请参考 [如何贡献代码](https://wa-lang.org/community/contribute.html)。
 
 ## 例子: 你好, 凹语言
 
 打印字符和调用函数：
 
 ```wa
-fn main() {
-	print('凹')
-	print('语')
-	print('言')
-	print('\n')
-
+fn main {
+	println("你好，凹语言！")
 	println(add(40, 2))
 }
 
@@ -60,8 +56,8 @@ fn add(a: i32, b: i32) => i32 {
 
 ```go
 $ go run main.go hello.wa 
-// 凹语言
-// 42
+你好，凹语言！
+42
 ```
 
 ## 例子: 打印素数
