@@ -6,8 +6,8 @@
 
 [https://wa-lang.org/playground](https://wa-lang.org/playground)
 
-![[![](https://wa-lang.org/smalltalk/images/st0011-01.png)](https://wa-lang.org/playground)](static/images/playground.gif)
+![[![](https://wa-lang.org/smalltalk/st0011-01.png)](https://wa-lang.org/playground)](/docs/public/playground.gif)
 
 ## 微信群
 
-![微信群二维码](static/images/wechatgroup.jpg)
+![微信群二维码](/docs/public//wechatgroup.jpg)

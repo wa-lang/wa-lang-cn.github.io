@@ -1,0 +1,23 @@
+{
+  "name": "wa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs --port 3000 --open",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "keywords": [],
+  "author": "xxx002",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "shiki": "^0.11.1",
+    "vitepress": "1.0.0-alpha.19",
+    "vue": "^3.2.40"
+  },
+  "dependencies": {
+    "giscus": "^1.2.0"
+  }
+}
