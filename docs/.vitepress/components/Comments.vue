@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useRoute } from "vitepress";
 
 const checkDark = () => document.documentElement.classList.contains('dark');
 const isDark = ref(checkDark());
+const route = useRoute();
 
 const observer = new MutationObserver(() => {
   isDark.value = checkDark();
@@ -27,7 +29,7 @@ onBeforeUnmount(() => {
       category="General"
       categoryId="DIC_kwDOCbZaRc4CQYyU"
       mapping="specifics"
-      term="Welcome to wa!"
+      :term="route.path"
       reactionsEnabled="1"
       emitMetadata="0"
       inputPosition="top"
