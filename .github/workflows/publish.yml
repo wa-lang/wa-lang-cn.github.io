@@ -55,5 +55,6 @@ jobs:
           personal_token: ${{ secrets.WA_DEPLOY }}
           publish_dir: docs/.vitepress/dist
           publish_branch: gh-pages
+          cname: wa-lang.org
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
