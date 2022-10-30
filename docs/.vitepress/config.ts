@@ -4,7 +4,7 @@ import HighlightedExt from './plugins/highlightedExt'
 
 export default async () => defineConfig({
   lang: 'zh-CN',
-  title: 'Wa',
+  title: '凹语言',
   description: '针对 WASM 平台设计的通用编程语言',
   appearance: true,
 
