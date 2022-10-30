@@ -3,12 +3,11 @@ layout: home
 sidebar: false
 
 title: Wa
-titleTemplate: 专注于 WASM 平台的简单、可维护的编译型通用语言
+titleTemplate: WebAssembly 平台的 Go 语言
 
 hero:
-  name: Wa
-  text: 专注于 WASM 平台的编译型通用语言
-  tagline: 支持 Linux、macOS 和 Windows 等主流操作系统和 Chrome 等浏览器环境，同时也支持作为独立Shell脚本和被嵌入脚本模式执行！
+  name: 凹
+  text: WebAssembly 平台的 Go 语言
   image:
     src: /logo-shadow.svg
     alt: Wa
@@ -20,26 +19,19 @@ hero:
       text: 碎碎念
       link: /daily/
     - theme: alt
-      text: API
-      link: /api/
-    - theme: alt
       text: Playground
-      link: https://github.com/wa-lang/playground
+      link: https://wa-lang.org/playground/
     - theme: alt
-      text: GitHub
-      link: https://github.com/wa-lang/wa
+      text: 版本日志
+      link: /changelog/
 
 features:
   - icon: ⚡️
-    title: FEAT
-    details: 功能特性简介
-  - icon: ⚡️
-    title: FEAT
-    details: 功能特性简介
-  - icon: ⚡️
-    title: FEAT
-    details: 功能特性简介
-  - icon: ⚡️
-    title: FEAT
-    details: 功能特性简介
+    title: 简单易用、中文编程
+  - icon: 🇨🇳
+    title: 自主可控，纯中文国内社区
+  - icon: 🛠️
+    title: 多操作系统平台、多编程语言支持
+  - icon: 📦
+    title: WASM 原生，针对 WebAssembly 平台设计
 ---
