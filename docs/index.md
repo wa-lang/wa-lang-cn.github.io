@@ -2,15 +2,15 @@
 layout: home
 sidebar: false
 
-title: Wa
-titleTemplate: WebAssembly 平台的 Go 语言
+title: 凹语言
+titleTemplate: WASM 平台的 Go 语言
 
 hero:
-  name: 凹
-  text: WebAssembly 平台的 Go 语言
+  name: 凹语言
+  text: WASM 平台的 Go 语言
   image:
     src: /logo-shadow.svg
-    alt: Wa
+    alt: 凹语言
   actions:
     - theme: brand
       text: 指南
