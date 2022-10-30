@@ -9,7 +9,7 @@ export default async () => defineConfig({
   appearance: true,
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/favicon.svg',
 
     editLink: {
       pattern: 'https://github.com/wa-lang/wa-lang.github.io/edit/main/docs/:path',
