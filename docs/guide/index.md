@@ -54,7 +54,7 @@ fn add(a: i32, b: i32) => i32 {
 
 运行并输出结果:
 
-```go
+```
 $ go run main.go hello.wa 
 你好，凹语言！
 42
@@ -84,7 +84,7 @@ fn main() {
 
 运行并输出结果:
 
-```go
+```
 $ go run main.go run _examples/prime
 2
 3
