@@ -31,7 +31,7 @@ features:
   - icon: 🇨🇳
     title: 自主可控、纯中文国内社区
   - icon: 🛠️
-    title: 多操作系统支持、多硬件平台支持
+    title: 多操作系统、多硬件平台支持
   - icon: 📦
-    title: WASM 原生、针对 WebAssembly 平台设计
+    title: 专为 WebAssembly 平台设计
 ---
