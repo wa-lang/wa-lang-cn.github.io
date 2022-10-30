@@ -19,11 +19,11 @@ hero:
       text: 碎碎念
       link: /daily/
     - theme: alt
-      text: Playground
-      link: https://wa-lang.org/playground/
-    - theme: alt
       text: 版本日志
       link: /changelog/
+    - theme: alt
+      text: Playground
+      link: https://wa-lang.org/playground/
 
 features:
   - icon: ⚡️
@@ -31,7 +31,7 @@ features:
   - icon: 🇨🇳
     title: 自主可控，纯中文国内社区
   - icon: 🛠️
-    title: 多操作系统平台、多编程语言支持
+    title: 多操作系统支持，多硬件平台支持
   - icon: 📦
     title: WASM 原生，针对 WebAssembly 平台设计
 ---

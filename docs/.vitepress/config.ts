@@ -88,8 +88,16 @@ export default async () => defineConfig({
           items: []
         }
       ],
+    },
+
+    footer: {
+      copyright: '版权 ©️ 凹语言开发组 2018，保留权利'
     }
   },
+
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.svg' }]
+  ],
 
   markdown: {
     highlight: await HighlightedExt()
