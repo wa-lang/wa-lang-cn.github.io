@@ -68,7 +68,7 @@ export default async () => defineConfig({
           text: '开发组会议',
           collapsible: true,
           items: [
-            { text: '会议安排', link: '/daily/conference/c0001' },
+            { text: '会议安排', link: '/daily/conference/' },
             ...generateSidebarItems('conference'),
           ]
         }
