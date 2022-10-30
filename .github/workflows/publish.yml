@@ -3,12 +3,10 @@ name: Deploy
 on:
   push:
     branches:
-      # - master
-      - feat/new-website
+      - master
   pull_request:
     branches:
-      # - master
-      - feat/new-website
+      - master
     types:
       - closed
 
@@ -56,6 +54,6 @@ jobs:
         with:
           personal_token: ${{ secrets.WA_DEPLOY }}
           publish_dir: docs/.vitepress/dist
-          publish_branch: new-website
+          publish_branch: gh-pages
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
