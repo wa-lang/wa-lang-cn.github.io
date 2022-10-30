@@ -11,10 +11,6 @@
 :::
 
 ::: info 第三步
-找到 `docs/docsConf/smalltalk.ts` 文件，将 `stXXXX.md` 内容写入到配置中。`text`：文章标题、`link`：文字地址
-:::
-
-::: info 第四步
 发起 PR 等待审批
 :::
 

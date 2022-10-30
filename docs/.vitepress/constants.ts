@@ -1,4 +1,4 @@
-export const membersConf =  [
+export const TEAM_MEMBERS =  [
   {
     avatar: 'https://www.github.com/chai2010.png',
     title: '发起人、wago',

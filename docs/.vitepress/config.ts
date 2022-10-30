@@ -1,8 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { apiConf } from '../docsConf/api'
-import { communityConf } from '../docsConf/community'
-import { conferenceConf } from '../docsConf/conference'
-import { smalltalkConf } from '../docsConf/smalltalk'
+import { generateSidebarItems } from './helper/sidebarItems'
 import HighlightedExt from './plugins/highlightedExt'
 
 export default async () => defineConfig({
@@ -50,7 +47,11 @@ export default async () => defineConfig({
         },
         {
           text: '社区',
-          items: communityConf
+          items: [
+            { text: '如何贡献代码', link: '/guide/contribute' },
+            { text: '凹语言贡献者协议', link: '/guide/wca' },
+            { text: '版权信息', link: '/guide/license' }
+          ]
         }
       ],
       '/daily/': [
@@ -58,20 +59,27 @@ export default async () => defineConfig({
           text: '碎碎念',
           collapsible: true,
           items: [
-            ...smalltalkConf,
+            { text: '凹语言 由来和寓意', link: '/daily/' },
+            ...generateSidebarItems('smalltalk'),
             { text: '爱好者的碎碎念 栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
           ]
         },
         {
           text: '开发组会议',
           collapsible: true,
-          items: conferenceConf
+          items: [
+            { text: '会议安排', link: '/daily/conference/c0001' },
+            ...generateSidebarItems('conference'),
+          ]
         }
       ],
       '/api/': [
         {
           text: 'API',
-          items: apiConf
+          items: [
+            { text: '快速入门', link: '/api/' },
+            { text: '语言规范', link: '/api/spec' },
+          ]
         }
       ],
       '/changelog/': [
