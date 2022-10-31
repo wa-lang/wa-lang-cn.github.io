@@ -59,9 +59,9 @@ export default async () => defineConfig({
           text: '碎碎念',
           collapsible: true,
           items: [
+            { text: '爱好者的碎碎念 栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
             { text: '凹语言 由来和寓意', link: '/daily/' },
             ...generateSidebarItems('smalltalk'),
-            { text: '爱好者的碎碎念 栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
           ]
         },
         {
