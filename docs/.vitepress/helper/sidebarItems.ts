@@ -7,7 +7,7 @@ const CF_RE = /\bc(\d{4})\b(.*)\.md/
 
 const DOCS_PATH = {
   'smalltalk': '/daily/smalltalk',
-  'conference': '/daily/conference',
+  'conference': '/community/conference',
 }
 
 const DOCS_RE = {
