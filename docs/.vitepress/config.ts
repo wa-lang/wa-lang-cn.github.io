@@ -24,10 +24,11 @@ export default async () => defineConfig({
     // },
 
     nav: [
-      { text: '指南', link: '/guide/', activeMatch: '/guide/' },
-      { text: '日常', link: '/daily/', activeMatch: '/daily/' },
-      { text: 'API', link: '/api/', activeMatch: '/api/' },
-      { text: '版本日志', link: '/changelog/', activeMatch: '/changelog/' },
+      { text: '开始', link: '/guide/', activeMatch: '/guide/' },
+      { text: '文档', link: '/reference/', activeMatch: '/reference/' },
+      { text: '案例', link: '/examples/', activeMatch: '/examples/' },
+      { text: '碎碎念', link: '/daily/', activeMatch: '/daily/' },
+      { text: '社区', link: '/community/', activeMatch: '/community/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
 
@@ -39,19 +40,27 @@ export default async () => defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: '指南',
+          text: '开始',
           items: [
             { text: '简介', link: '/guide/' },
             { text: '项目目标', link: '/guide/goals' },
+            { text: '历史版本', link: '/guide/changelog' },
           ]
-        },
+        }
+      ],
+      '/reference/': [
         {
-          text: '社区',
+          text: '文档',
           items: [
-            { text: '如何贡献代码', link: '/guide/contribute' },
-            { text: '凹语言贡献者协议', link: '/guide/wca' },
-            { text: '版权信息', link: '/guide/license' }
+            { text: '快速入门', link: '/reference/' },
+            { text: '语言规范', link: '/reference/spec' },
           ]
+        }
+      ],
+      '/examples/': [
+        {
+          text: '小游戏',
+          items: []
         }
       ],
       '/daily/': [
@@ -59,33 +68,27 @@ export default async () => defineConfig({
           text: '碎碎念',
           collapsible: true,
           items: [
-            { text: '爱好者的碎碎念 栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
-            { text: '凹语言 由来和寓意', link: '/daily/' },
+            { text: '栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
             ...generateSidebarItems('smalltalk'),
+          ]
+        }
+      ],
+      '/community/': [
+        {
+          text: '社区',
+          items: [
+            { text: '如何贡献代码', link: '/community/contribute' },
+            { text: '凹语言贡献者协议', link: '/community/wca' },
+            { text: '版权信息', link: '/community/license' }
           ]
         },
         {
           text: '开发组会议',
           collapsible: true,
           items: [
-            { text: '会议安排', link: '/daily/conference/' },
+            { text: '开发组会议安排', link: '/community/conference/' },
             ...generateSidebarItems('conference'),
           ]
-        }
-      ],
-      '/api/': [
-        {
-          text: 'API',
-          items: [
-            { text: '快速入门', link: '/api/' },
-            { text: '语言规范', link: '/api/spec' },
-          ]
-        }
-      ],
-      '/changelog/': [
-        {
-          text: '历史版本',
-          items: []
         }
       ],
     },
