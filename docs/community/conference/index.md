@@ -2,7 +2,7 @@
 
 - 时间：2022-08-21
 - 撰稿：凹语言™开发组
-- 转载请注明原文链接：[https://wa-lang.org/daily/conference](https://wa-lang.org/daily/conference)
+- 转载请注明原文链接：[https://wa-lang.org/community/conference](https://wa-lang.org/community/conference)
 
 ---
 
