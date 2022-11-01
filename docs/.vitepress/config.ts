@@ -60,8 +60,10 @@ export default async () => defineConfig({
       ],
       '/examples/': [
         {
-          text: '小游戏',
-          items: []
+          text: '案例',
+          items: [
+            { text: '小游戏', link: '/examples/' },
+		  ]
         }
       ],
       '/daily/': [
@@ -78,6 +80,7 @@ export default async () => defineConfig({
         {
           text: '社区',
           items: [
+            { text: '凹语言社区', link: '/community/' },
             { text: '如何贡献代码', link: '/community/contribute' },
             { text: '凹语言贡献者协议', link: '/community/wca' },
             { text: '版权信息', link: '/community/license' }
