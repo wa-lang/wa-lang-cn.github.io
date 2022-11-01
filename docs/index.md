@@ -13,14 +13,14 @@ hero:
     alt: 凹语言
   actions:
     - theme: brand
-      text: 指南
+      text: 简介
       link: /guide/
+    - theme: alt
+      text: 快速开始
+      link: /guide/quick-start
     - theme: alt
       text: 碎碎念
       link: /daily/
-    - theme: alt
-      text: 版本日志
-      link: /changelog/
     - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/

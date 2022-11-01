@@ -1,5 +1,5 @@
 ---
-title: APIs
+title: 文档
 ---
 
 # 快速入门

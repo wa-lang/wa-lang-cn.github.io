@@ -43,6 +43,7 @@ export default async () => defineConfig({
           text: '开始',
           items: [
             { text: '简介', link: '/guide/' },
+            { text: '快速开始', link: '/guide/quick-start' },
             { text: '项目目标', link: '/guide/goals' },
             { text: '历史版本', link: '/guide/changelog' },
           ]
@@ -68,7 +69,7 @@ export default async () => defineConfig({
           text: '碎碎念',
           collapsible: true,
           items: [
-            { text: '栏目投稿规则', link: '/daily/smalltalk/submission_rules' },
+            { text: '栏目投稿规则', link: '/daily/' },
             ...generateSidebarItems('smalltalk'),
           ]
         }
