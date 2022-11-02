@@ -27,7 +27,7 @@ hero:
 
 features:
   - icon: ⚡️
-    title: 简单易用、支持中文编程
+    title: 简单易用、中文编程友好
   - icon: 🇨🇳
     title: 自主可控、纯中文国内社区
   - icon: 🛠️
