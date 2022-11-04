@@ -8,7 +8,7 @@ title: 文档
 
 ```wa
 fn main() {
-	println(42)
+	println("你好, 凹语言!")
 }
 ```
 
