@@ -27,7 +27,7 @@ export default async () => defineConfig({
       { text: '开始', link: '/guide/', activeMatch: '/guide/' },
       { text: '文档', link: '/reference/', activeMatch: '/reference/' },
       { text: '案例', link: '/examples/', activeMatch: '/examples/' },
-      { text: '碎碎念', link: '/daily/', activeMatch: '/daily/' },
+      { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
@@ -66,12 +66,12 @@ export default async () => defineConfig({
 		  ]
         }
       ],
-      '/daily/': [
+      '/smalltalk/': [
         {
           text: '碎碎念',
           collapsible: true,
           items: [
-            { text: '栏目投稿规则', link: '/daily/' },
+            { text: '栏目投稿规则', link: '/smalltalk/' },
             ...generateSidebarItems('smalltalk'),
           ]
         }

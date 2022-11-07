@@ -5,7 +5,7 @@
 ---
 
 ::: info 第一步 
-找到仓库 [wa-lang.github.io](https://github.com/wa-lang/wa-lang.github.io) 的`/docs/daily/smalltalk/` 目录
+找到仓库 [wa-lang.github.io](https://github.com/wa-lang/wa-lang.github.io) 的`/docs/smalltalk/` 目录
 :::
 
 ::: info 第二步

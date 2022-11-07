@@ -6,7 +6,7 @@ const ST_RE = /\bst(\d{4})\b(.*)\.md/
 const CF_RE = /\bc(\d{4})\b(.*)\.md/
 
 const DOCS_PATH = {
-  'smalltalk': '/daily/smalltalk',
+  'smalltalk': '/smalltalk',
   'conference': '/community/conference',
 }
 

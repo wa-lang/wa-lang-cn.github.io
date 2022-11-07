@@ -20,7 +20,7 @@ hero:
       link: /guide/quick-start
     - theme: alt
       text: 碎碎念
-      link: /daily/
+      link: /smalltalk/
     - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/
