@@ -3,11 +3,11 @@ layout: home
 sidebar: false
 
 title: 凹语言
-titleTemplate: WASM 平台的 Go 语言
+titleTemplate: 为 WASM 而生的语言
 
 hero:
   name: 凹语言
-  text: WASM 平台的 Go 语言
+  text: 为 WASM 而生的语言
   image:
     src: /logo-shadow.svg
     alt: 凹语言
