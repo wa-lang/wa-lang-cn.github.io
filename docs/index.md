@@ -3,11 +3,11 @@ layout: home
 sidebar: false
 
 title: 凹语言
-titleTemplate: 为 WASM 而生的语言
+titleTemplate: 为WebAssembly而生
 
 hero:
   name: 凹语言
-  text: 为 WASM 而生的语言
+  text: 为WebAssembly而生
   image:
     src: /logo-shadow.svg
     alt: 凹语言
