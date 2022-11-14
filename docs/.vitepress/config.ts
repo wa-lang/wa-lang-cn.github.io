@@ -34,8 +34,7 @@ export default async () => defineConfig({
 
     socialLinks: [
       { icon: 'twitter', link: 'https://twitter.com/wayuyan' },
-      { icon: 'github', link: 'https://github.com/wa-lang/wa/' },
-      { icon: 'gitee', link: 'https://gitee.com/wa-lang/wa' }
+      { icon: 'github', link: 'https://github.com/wa-lang/wa/' }
     ],
 
     sidebar: {
