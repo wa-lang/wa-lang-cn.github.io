@@ -32,7 +32,7 @@
       "patterns": [
         {
           "name": "keyword.storage.wa",
-          "match": "\\b(break|defer|import|struct|case|else|interface|switch|const|for|map|type|continue|fn|range|var|default|if|return)\\b"
+          "match": "\\b(break|defer|import|struct|case|else|interface|switch|const|for|map|type|continue|fn|range|var|default|if|return|this)\\b"
         },
         {
           "name": "keyword.storage.wa",
