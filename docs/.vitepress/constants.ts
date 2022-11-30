@@ -5,7 +5,6 @@ export const TEAM_MEMBERS = [
     avatar: '/avatars/chai2010.jpeg',
     title: '发起人、wago',
     name: '柴树杉',
-    desc: '新时代码农',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/chai2010' },
       { icon: 'github', link: 'https://github.com/chai2010' },
@@ -32,9 +31,8 @@ export const TEAM_MEMBERS = [
   },
   {
     avatar: '/avatars/xxx002.jpeg',
-    title: "VS Code 插件、Playground",
+    title: "VS Code、Playground",
     name: '扈梦明',
-    desc: 'Interesting is more meaningful than useful',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/xxx002' },
       { icon: 'github', link: 'https://github.com/xxx002' },
@@ -53,10 +51,27 @@ export const TEAM_MEMBERS = [
     avatar: '/avatars/shiinaorez.jpeg',
     name: '宋汝阳',
     title: '',
-    desc: '日积代码千行，则无往而不利也@字节跳动当韭菜中，本账号将鲜有提交',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/shiinaorez' },
       { icon: 'github', link: 'https://github.com/ShiinaOrez' },
+    ],
+  },
+  {
+    avatar: '/avatars/imaginemiracle_wxn_1.jpeg',
+    name: '王潇南',
+    title: '',
+    links: [
+      { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/imaginemiracle_wxn_1' },
+      { icon: 'github', link: 'https://github.com/ImagineMiracle-wxn' },
+    ],
+  },
+  {
+    avatar: '/avatars/zhaopuming.jpeg',
+    name: '赵普明',
+    title: '',
+    links: [
+      { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/visus' },
+      { icon: 'github', link: 'https://github.com/zhaopuming' },
     ],
   },
 ]
