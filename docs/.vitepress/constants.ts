@@ -2,7 +2,7 @@ const GITEE_ICON = `<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-
 
 export const TEAM_MEMBERS = [
   {
-    avatar: 'https://www.github.com/chai2010.png',
+    avatar: '/avatars/chai2010.jpeg',
     title: '发起人、wago',
     name: '柴树杉',
     desc: '新时代码农',
@@ -13,7 +13,7 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: 'https://github.com/3dgen.png',
+    avatar: '/avatars/3dgen.jpeg',
     name: '丁尔男',
     title: '发起人、wat 后端',
     links: [
@@ -22,7 +22,7 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: 'https://github.com/benshi001.png',
+    avatar: '/avatars/benshi001.jpeg',
     name: '史斌',
     title: '发起人、llvm 后端',
     links: [
@@ -31,7 +31,7 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: 'https://www.github.com/xxx002.png',
+    avatar: '/avatars/xxx002.jpeg',
     title: "VS Code 插件、Playground",
     name: '扈梦明',
     desc: 'Interesting is more meaningful than useful',
@@ -41,7 +41,7 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: 'https://github.com/leaftree.png',
+    avatar: '/avatars/leaftree.jpeg',
     name: '刘云峰',
     title: '包管理',
     links: [
@@ -50,7 +50,7 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: 'https://github.com/ShiinaOrez.png',
+    avatar: '/avatars/shiinaorez.jpeg',
     name: '宋汝阳',
     title: '',
     desc: '日积代码千行，则无往而不利也@字节跳动当韭菜中，本账号将鲜有提交',
