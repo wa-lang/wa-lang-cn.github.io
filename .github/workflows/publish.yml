@@ -56,5 +56,6 @@ jobs:
           publish_dir: docs/.vitepress/dist
           publish_branch: gh-pages
           cname: wa-lang.org
+          force_orphan: true
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
