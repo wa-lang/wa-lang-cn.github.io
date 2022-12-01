@@ -12,12 +12,12 @@
   "author": "xxx002",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.11.7",
+    "@types/node": "^18.11.9",
     "shiki": "^0.11.1",
-    "vitepress": "1.0.0-alpha.19",
-    "vue": "^3.2.40"
+    "vitepress": "1.0.0-alpha.29",
+    "vue": "^3.2.45"
   },
   "dependencies": {
-    "giscus": "^1.2.0"
+    "giscus": "^1.2.4"
   }
 }

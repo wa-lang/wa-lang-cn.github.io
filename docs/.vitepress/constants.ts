@@ -50,7 +50,7 @@ export const TEAM_MEMBERS = [
   {
     avatar: '/avatars/shiinaorez.jpeg',
     name: '宋汝阳',
-    title: '',
+    title: ' ',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/shiinaorez' },
       { icon: 'github', link: 'https://github.com/ShiinaOrez' },
@@ -59,7 +59,7 @@ export const TEAM_MEMBERS = [
   {
     avatar: '/avatars/imaginemiracle_wxn_1.jpeg',
     name: '王潇南',
-    title: '',
+    title: ' ',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/imaginemiracle_wxn_1' },
       { icon: 'github', link: 'https://github.com/ImagineMiracle-wxn' },
@@ -68,10 +68,15 @@ export const TEAM_MEMBERS = [
   {
     avatar: '/avatars/zhaopuming.jpeg',
     name: '赵普明',
-    title: '',
+    title: ' ',
     links: [
       { icon: { svg: GITEE_ICON }, link: 'https://gitee.com/visus' },
       { icon: 'github', link: 'https://github.com/zhaopuming' },
     ],
   },
 ]
+
+export const NAV_BANNER = {
+  title: '🎉🎉🎉 凹语言点亮 Arduino Nano 33',
+  link: 'https://wa-lang.org/smalltalk/st0015.html'
+}

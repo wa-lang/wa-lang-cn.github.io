@@ -47,3 +47,25 @@ docs
 |     ├─components // 自定义组件
 ```
 
+
+## 横幅设置
+
+第一步：配置 ID
+
+```
+// 在 `docs/.vitepress/inlined-scripts/restorePreference.js` 修改当前的 banner id
+// 这里的 id 一定要是唯一且不能重复的，可以使用 docs 中 md ID，如：st0015
+
+window.__WA_BANNER_ID__ = 'xxx'
+```
+
+第二步
+
+```
+// 在 docs/.vitepress/constants.ts 中 NAV_BANNER 进行通知内容更新
+
+export const NAV_BANNER = {
+  title: '这横幅的标题',
+  link: '这是横幅的跳转地址'
+}
+```

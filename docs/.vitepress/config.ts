@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import { defineConfig } from 'vitepress'
 import { generateSidebarItems } from './helper/sidebarItems'
 import HighlightedExt from './plugins/highlightedExt'
@@ -108,7 +110,15 @@ export default async () => defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    [
+      'script',
+      {},
+      fs.readFileSync(
+        path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
+        'utf-8'
+      )
+    ],
   ],
 
   markdown: {
