@@ -4,10 +4,18 @@ title: 版本日志
 
 # 版本日志
 
+::: info v0.4.0 (2022-12-03)
+  - 开通 [开源中国机构号](https://my.oschina.net/walang) 和 [微信公众号](https://wa-lang.org/community/), 主仓库迁到 Gitee
+  - 包路径调整为 wa-lang.org/wa
+  - 改进类型方法语法, 支持平台特定源文件
+  - WAT 后端支持多返回值, 支持闭包和方法值, [支持 Arduino Nano 33](https://wa-lang.org/smalltalk/st0015.html)
+  - LLVM 后端支持多返回值, [点亮 Arduino 单片机](https://wa-lang.org/smalltalk/st0014.html)
+  - 已经初步 [图灵完备](https://wa-lang.org/smalltalk/st0013.html)
+:::
+
 ::: info v0.3.1 (2022-11-16)
   - 完善 WAT 后端, 支持多包
   - LLVM 后端支持基本数值运算 (依赖 clang 和 llc)
-  - wazero 更新到 [v1.0.0-pre.3](https://github.com/wa-lang/wa/pull/37)
 :::
 
 ::: info v0.3.0 (2022-10-28)
