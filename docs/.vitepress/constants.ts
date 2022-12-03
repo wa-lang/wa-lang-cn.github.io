@@ -81,6 +81,6 @@ export const TEAM_MEMBERS = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉🎉🎉 凹语言点亮 Arduino Nano 33',
-  link: 'https://wa-lang.org/smalltalk/st0015.html'
+  title: '🎉🎉🎉 凹语言 v0.4.0 发布, 入驻 开源中国',
+  link: 'https://wa-lang.org/guide/changelog.html'
 }

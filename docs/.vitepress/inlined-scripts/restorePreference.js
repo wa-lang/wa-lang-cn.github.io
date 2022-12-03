@@ -6,6 +6,6 @@
     }
   }
 
-  window.__WA_BANNER_ID__ = 'st0015'
+  window.__WA_BANNER_ID__ = 'v0.4.0'
   restore(`wa-docs-banner-${__WA_BANNER_ID__}`, 'banner-dismissed')
 })()
