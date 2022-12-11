@@ -103,9 +103,13 @@ export default async () => defineConfig({
       ],
       '/en/': [
         {
-          text: 'Doc',
+          text: 'Guide',
           items: [
-            { text: 'Doc', link: '/en/doc/' },
+            { text: 'Index', link: '/en/' },
+            { text: 'Quick Start', link: '/en/guide/quick-start' },
+            { text: 'Playground', link: '/en/guide/playground' },
+            { text: 'Example: Prime', link: '/en/guide/example-prime' },
+            { text: 'Run as Go Script', link: '/en/guide/as-go-script' },
           ],
         },
         {
