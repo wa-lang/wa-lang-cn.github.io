@@ -97,7 +97,7 @@ $ go run main.go run _examples/prime
 29
 ```
 
-More examples [_examples](_examples)
+More examples [_examples](https://github.com/wa-lang/wa/tree/master/_examples)
 
 ## Execut as a script
 
