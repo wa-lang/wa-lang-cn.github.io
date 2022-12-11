@@ -11,25 +11,22 @@ Instead of requiring complex toolchains to set up, you can simply go install it 
 
 ![](/favicon.svg)
 
-- Playground: [https://wa-lang.org/playground](https://wa-lang.org/playground)
-- Core Team: [柴树杉(chai2010)](https://github.com/chai2010)、[丁尔男(Ending)](https://github.com/3dgen)、[史斌(Benshi)](https://github.com/benshi001)、[扈梦明(xxx)](https://github.com/ohhooxxx)、[刘云峰(leaftree)](https://github.com/leaftree)、[宋汝阳(ShiinaOrez)](https://github.com/ShiinaOrez)
+> **Note:** Our canonical Git repository is located at https://gitee.com/wa-lang/wa. There is a mirror of the repository at https://github.com/wa-lang/wa. Unless otherwise noted, the Wa source files are distributed under the AGPL-v3 license found in the LICENSE file.
 
-> Note: Our canonical Git repository is located at https://gitee.com/wa-lang/wa. There is a mirror of the repository at https://github.com/wa-lang/wa. Unless otherwise noted, the Wa source files are distributed under the AGPL-v3 license found in the LICENSE file.
+> **Note:** The Wa project is still in very early stage. If you want to submit PR, please read the [Contribution Guide(Chinese)](https://wa-lang.org/community/contribute.html). We do not accept PR only about 3rdparty changes.
+
 
 ## Playground
 
 [https://wa-lang.org/playground](https://wa-lang.org/playground)
 
-![[![](https://wa-lang.org/smalltalk/images/st0011-01.png)](https://wa-lang.org/playground)](https://wa-lang.org/static/images/playground.gif)
-
+![](https://wa-lang.org/playground.gif)
 
 ## Install and Run:
 
 1. `go install wa-lang.org/wa@latest`
 2. `wa init -name=_examples/hi`
 3. `wa run _examples/hi`
-
-> The Wa project is still in very early stage. If you want to submit PR, please read the [Contribution Guide(Chinese)](https://wa-lang.org/community/contribute.html). We do not accept PR only about 3rdparty changes.
 
 ## Example: Print Wa
 
@@ -65,7 +62,7 @@ hello, Wa!
 
 Print prime numbers up to 30:
 
-```
+```wa
 fn main {
 	for n := 2; n <= 30; n = n + 1 {
 		var isPrime int = 1
@@ -117,4 +114,5 @@ func main() {
 }
 ```
 
-Note: Executing as a script currently only supports native environments.
+> **Note:** Executing as a script currently only supports native environments.
+
