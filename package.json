@@ -9,7 +9,7 @@
     "serve": "vitepress serve docs"
   },
   "keywords": [],
-  "author": "xxx002",
+  "author": "xxx",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.9",

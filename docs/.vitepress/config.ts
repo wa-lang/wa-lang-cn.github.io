@@ -32,6 +32,7 @@ export default async () => defineConfig({
       { text: '案例', link: '/examples/', activeMatch: '/examples/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
+      { text: 'English', link: '/en/', activeMatch: '/en/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
     
@@ -100,6 +101,20 @@ export default async () => defineConfig({
           ]
         }
       ],
+      '/en/': [
+        {
+          text: 'Doc',
+          items: [
+            { text: 'Doc', link: '/en/doc/' },
+          ],
+        },
+        {
+          text: 'Blog',
+          items: [
+            { text: 'Blog', link: '/en/blog/' },
+          ],
+        },
+      ]
     },
 
     footer: {
