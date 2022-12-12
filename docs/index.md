@@ -22,16 +22,19 @@ hero:
       text: 碎碎念
       link: /smalltalk/
     - theme: alt
+      text: English
+      link: /en/
+    - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/
 
 features:
   - icon: ⚡️
-    title: 简单易用、中文编程友好
-  - icon: 🇨🇳
-    title: 自主可控、纯中文国内社区
+    title: 简单易用、中英文编程友好
+  - icon: 📦
+    title: 静态类型、编译型通用语言
   - icon: 🛠️
     title: 多操作系统、多硬件平台支持
-  - icon: 📦
+  - icon: 🌏
     title: 专为 WebAssembly 平台设计
 ---
