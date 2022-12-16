@@ -32,6 +32,7 @@ export default async () => defineConfig({
       { text: '案例', link: '/examples/', activeMatch: '/examples/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
+      { text: 'English', link: '/en/', activeMatch: '/en/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
     
@@ -100,6 +101,24 @@ export default async () => defineConfig({
           ]
         }
       ],
+      '/en/': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Index', link: '/en/' },
+            { text: 'Quick Start', link: '/en/guide/quick-start' },
+            { text: 'Playground', link: '/en/guide/playground' },
+            { text: 'Example: Prime', link: '/en/guide/example-prime' },
+            { text: 'Run as Go Script', link: '/en/guide/as-go-script' },
+          ],
+        },
+        {
+          text: 'Blog',
+          items: [
+            { text: 'Blog', link: '/en/blog/' },
+          ],
+        },
+      ]
     },
 
     footer: {

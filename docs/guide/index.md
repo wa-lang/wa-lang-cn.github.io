@@ -12,7 +12,7 @@ title: 指南
 - 代码仓库 (Gitee):  [https://gitee.com/wa-lang/wa](https://gitee.com/wa-lang/wa)
 - 代码仓库 (Github): [https://github.com/wa-lang/wa](https://github.com/wa-lang/wa)
 - 开发工具 (Develop Tools): [Playground](https://wa-lang.org/playground), [VSCode 插件](https://marketplace.visualstudio.com/items?itemName=xxxDeveloper.vscode-wa)
-- 开发组成员：[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)、[史斌](https://github.com/benshi001)、[扈梦明](https://github.com/xxx002)、[刘云峰](https://github.com/leaftree)、[宋汝阳](https://github.com/ShiinaOrez)
+- 开发组成员：[柴树杉](https://github.com/chai2010)、[丁尔男](https://github.com/3dgen)、[史斌](https://github.com/benshi001)、[扈梦明](https://github.com/ohhooxxx)、[刘云峰](https://github.com/leaftree)、[宋汝阳](https://github.com/ShiinaOrez)
 
 ## 设计目标
 
