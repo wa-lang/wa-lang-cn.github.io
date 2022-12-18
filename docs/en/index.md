@@ -9,7 +9,9 @@ title: The Wa Programming Language
 Wa is a general-purpose programming language designed for developing robustness and maintainability WebAssembly software.
 Instead of requiring complex toolchains to set up, you can simply go install it - or run it in a browser.
 
-![](/favicon.svg)
+<div align="center">
+	<img src="/favicon.svg" alt="Wa Logo">
+</div>
 
 > **Note:** Our canonical Git repository is located at https://gitee.com/wa-lang/wa. There is a mirror of the repository at https://github.com/wa-lang/wa. Unless otherwise noted, the Wa source files are distributed under the AGPL-v3 license found in the LICENSE file.
 
