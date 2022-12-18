@@ -116,6 +116,7 @@ export default async () => defineConfig({
           text: 'Blog',
           items: [
             { text: 'Blog', link: '/en/blog/' },
+            { text: 'Fleet: Wa Highlight', link: '/en/blog/blog0001.md' },
           ],
         },
       ]
