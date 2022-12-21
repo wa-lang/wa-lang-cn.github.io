@@ -1,7 +1,3 @@
 # 如何贡献代码
 
-1. 贡献者签署 [凹语言贡献者协议](https://wa-lang.org/community/wca.html)，完成后以 Gitee 绑定邮箱发送邮件到 `wca@wa-lang.org`
-1. 凹语言项目组验证签署信息的 Gitee 账号和邮箱一致性和有效性，然后在相应 Git 仓库存档签署材料
-1. 凹语言组织确认签署信息有效，回复签署成功
-1. 贡献者重新创建 PR 并进入代码评审
-1. 评审通过并合并后锁定 PR
+感谢您对凹语言项目的关注和支持！在贡献代码之前，请移步至gitee CLA系统[https://gitee.com/organizations/wa-lang/cla/wca](https://gitee.com/organizations/wa-lang/cla/wca)查看 **凹语言贡献者协议**，若您对协议无异议，通过gitee CLA系统签署后，即可提交PR并等待代码评审。
