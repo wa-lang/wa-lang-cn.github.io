@@ -37,8 +37,8 @@ export const TEAM_MEMBERS = [
     title: "VS Code、Playground",
     name: '扈梦明',
     links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/ohhooxxx' },
-      { icon: 'github', link: 'https://github.com/ohhooxxx' },
+      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/ohxxx' },
+      { icon: 'github', link: 'https://github.com/ohxxx' },
     ],
   },
   {
