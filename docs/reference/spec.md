@@ -6,7 +6,7 @@
 
 凹语言语法使用扩展的巴克斯-诺尔范式（EBNF）定义：
 
-```ebnf
+```
 Production  = production_name "=" [ Expression ] "." .
 Expression  = Alternative { "|" Alternative } .
 Alternative = Term { Term } .
