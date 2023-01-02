@@ -117,7 +117,7 @@ export default async () => defineConfig({
           items: [
             { text: 'The Wa Blog', link: '/en/blog/' },
             { text: 'Fleet: Wa Highlight', link: '/en/blog/blog0001.md' },
-            { text: 'Wa Language and Turing & BrainFuck', link: '/en/blog/blog0002.md' },
+            { text: 'Wa(sm) Language and Turing & BrainFuck', link: '/en/blog/blog0002.md' },
           ],
         },
       ]
