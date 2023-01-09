@@ -1,4 +1,4 @@
-; (() => {
+(() => {
   const restore = (key, cls, def = false) => {
     const saved = localStorage.getItem(key)
     if (saved ? saved !== 'false' : def) {
@@ -7,5 +7,5 @@
   }
 
   window.__WA_BANNER_ID__ = 'st0017'
-  restore(`wa-docs-banner-${__WA_BANNER_ID__}`, 'banner-dismissed')
+  restore(`wa-docs-banner-${window.__WA_BANNER_ID__}`, 'banner-dismissed')
 })()

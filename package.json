@@ -2,22 +2,25 @@
   "name": "wa",
   "version": "1.0.0",
   "description": "",
+  "author": "xxx",
+  "license": "MIT",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev docs --port 3000 --open",
     "build": "vitepress build docs",
     "serve": "vitepress serve docs"
   },
-  "keywords": [],
-  "author": "xxx",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^18.11.9",
-    "shiki": "^0.11.1",
-    "vitepress": "1.0.0-alpha.29",
-    "vue": "^3.2.45"
-  },
   "dependencies": {
     "giscus": "^1.2.4"
+  },
+  "devDependencies": {
+    "@ohxxx/eslint-config": "^0.0.4",
+    "@types/node": "^18.11.9",
+    "eslint": "^8.31.0",
+    "shiki": "^0.11.1",
+    "typescript": "^4.9.4",
+    "vitepress": "1.0.0-alpha.29",
+    "vue": "^3.2.45"
   }
 }
