@@ -94,6 +94,8 @@ export default async () => defineConfig({
         },
         {
           text: '凹语言提案',
+          collapsible: true,
+          collapsed: true,
           items: [...generateSidebarItems('proposal')],
         },
         {
