@@ -12,10 +12,10 @@ export default {
     return h(Theme.Layout, null, {
       'layout-top': () => h(Banner),
       'home-features-after': () => h(HomePage),
-      'doc-after': () => h(Comments)
+      'doc-after': () => h(Comments),
     })
   },
   enhanceApp({ app }) {
     app.component('SvgImage', SvgImage)
-  }
+  },
 }
