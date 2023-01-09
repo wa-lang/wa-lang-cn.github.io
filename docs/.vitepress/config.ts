@@ -16,7 +16,7 @@ export default async () => defineConfig({
 
     editLink: {
       pattern: 'https://github.com/wa-lang/wa-lang.github.io/edit/master/docs/:path',
-      text: '为此页提供修改建议'
+      text: '为此页提供修改建议',
     },
 
     // TODO：上线后进行爬取
@@ -35,7 +35,7 @@ export default async () => defineConfig({
       { text: 'English', link: '/en/', activeMatch: '/en/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
-    
+
     socialLinks: [
       { icon: { svg: ICONS.oschina }, link: 'https://my.oschina.net/walang' },
       { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/wa-lang/wa' },
@@ -52,8 +52,8 @@ export default async () => defineConfig({
             { text: '快速开始', link: '/guide/quick-start' },
             { text: '项目目标', link: '/guide/goals' },
             { text: '历史版本', link: '/guide/changelog' },
-          ]
-        }
+          ],
+        },
       ],
       '/reference/': [
         {
@@ -61,16 +61,16 @@ export default async () => defineConfig({
           items: [
             { text: '快速入门', link: '/reference/' },
             { text: '语言规范', link: '/reference/spec' },
-          ]
-        }
+          ],
+        },
       ],
       '/examples/': [
         {
           text: '案例',
           items: [
             { text: '小游戏', link: '/examples/' },
-		  ]
-        }
+          ],
+        },
       ],
       '/smalltalk/': [
         {
@@ -79,8 +79,8 @@ export default async () => defineConfig({
           items: [
             { text: '栏目投稿规则', link: '/smalltalk/' },
             ...generateSidebarItems('smalltalk'),
-          ]
-        }
+          ],
+        },
       ],
       '/community/': [
         {
@@ -89,8 +89,12 @@ export default async () => defineConfig({
             { text: '凹语言社区', link: '/community/' },
             { text: '如何贡献代码', link: '/community/contribute' },
             { text: '凹语言贡献者协议', link: '/community/wca' },
-            { text: '版权信息', link: '/community/license' }
-          ]
+            { text: '版权信息', link: '/community/license' },
+          ],
+        },
+        {
+          text: '凹语言提案',
+          items: [...generateSidebarItems('proposal')],
         },
         {
           text: '开发组会议',
@@ -98,8 +102,8 @@ export default async () => defineConfig({
           items: [
             { text: '开发组会议安排', link: '/community/conference/' },
             ...generateSidebarItems('conference'),
-          ]
-        }
+          ],
+        },
       ],
       '/en/': [
         {
@@ -120,12 +124,12 @@ export default async () => defineConfig({
             { text: 'Wa Language and Turing & BrainFuck', link: '/en/blog/blog0002.md' },
           ],
         },
-      ]
+      ],
     },
 
     footer: {
-      copyright: '版权 ©️ 凹语言开发组 2018，保留权利'
-    }
+      copyright: '版权 ©️ 凹语言开发组 2018，保留权利',
+    },
   },
 
   head: [
@@ -135,13 +139,13 @@ export default async () => defineConfig({
       {},
       fs.readFileSync(
         path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
-        'utf-8'
-      )
+        'utf-8',
+      ),
     ],
   ],
 
   markdown: {
-    highlight: await HighlightedExt()
+    highlight: await HighlightedExt(),
   },
-  
+
 })
