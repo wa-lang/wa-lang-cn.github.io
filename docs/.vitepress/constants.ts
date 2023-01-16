@@ -80,6 +80,6 @@ export const TEAM_MEMBERS = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉🎉🎉 喜报: 凹语言获InfoQ 2022十大开源项目',
-  link: 'https://wa-lang.org/smalltalk/st0017.html',
+  title: '🎉🎉🎉 凹语言 预祝大家2023癸卯年新春快乐！',
+  link: 'https://wa-lang.org/smalltalk/st0019.html',
 }
