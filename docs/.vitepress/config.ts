@@ -74,7 +74,7 @@ export default async () => defineConfig({
       '/smalltalk/': [
         {
           text: '碎碎念',
-          collapsible: true,
+          collapsed: true,
           items: [
             { text: '栏目投稿规则', link: '/smalltalk/' },
             ...generateSidebarItems('smalltalk'),
@@ -93,13 +93,12 @@ export default async () => defineConfig({
         },
         {
           text: '凹语言提案',
-          collapsible: true,
           collapsed: true,
           items: [...generateSidebarItems('proposal')],
         },
         {
           text: '开发组会议',
-          collapsible: true,
+          collapsed: false,
           items: [
             { text: '开发组会议安排', link: '/community/conference/' },
             ...generateSidebarItems('conference'),

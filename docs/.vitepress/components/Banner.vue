@@ -1,43 +1,47 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
 import { NAV_BANNER } from '../constants'
 
-let open = ref(true)
+const open = ref(true)
 const banner = ref(NAV_BANNER)
+let dismissFn
 
-function dismiss() {
-  open = false
-  document.documentElement.classList.add('banner-dismissed')
-  localStorage.setItem(
+onMounted(() => {
+  dismissFn = () => {
+    open.value = false
+    document.documentElement.classList.add('banner-dismissed')
+    localStorage.setItem(
     `wa-docs-banner-${window.__WA_BANNER_ID__}`,
-    'true'
-  )
-}
+    'true',
+    )
+  }
+})
 
 function openLink() {
   window.open(banner.value.link, '_self')
 }
-
 </script>
 
 <template>
-  <div class="banner" v-if="open">
-    <div id="vt-top">
-      <div class="vt-background-wrapper">
-        <div class="vt-core">
-          <div class="vt-title-wrapper">
-            <div class="vt-title" v-html="banner.title" />
-          </div>
-          <div class="vt-button-wrapper">
-            <div class="vt-button" @click.prevent.stop="openLink">
-              立即查看
+  <ClientOnly>
+    <div v-if="open" class="banner">
+      <div id="vt-top">
+        <div class="vt-background-wrapper">
+          <div class="vt-core">
+            <div class="vt-title-wrapper">
+              <div class="vt-title" v-html="banner.title" />
+            </div>
+            <div class="vt-button-wrapper">
+              <div class="vt-button" @click.prevent.stop="openLink">
+                立即查看
+              </div>
             </div>
           </div>
+          <div class="vt-close" @click.prevent.stop="dismissFn" />
         </div>
-        <div class="vt-close" @click.prevent.stop="dismiss"></div>
       </div>
     </div>
-  </div>
+  </ClientOnly>
 </template>
 
 <style>
@@ -58,7 +62,7 @@ html:not(.banner-dismissed) {
   --c-b-c1: var(--banner-l-c1);
   --c-b-c2: var(--banner-l-c2);
   --c-b-c3: var(--banner-l-c3);
-  --c-b-c4: #0000; 
+  --c-b-c4: #0000;
 }
 
 .dark {
@@ -196,7 +200,6 @@ html:not(.banner-dismissed) {
 </style>
 
 <style scoped>
-
 .banner {
   --s: 37px;
   --_g: var(--c-b-c3) 0 120deg,var(--c-b-c4) 0;

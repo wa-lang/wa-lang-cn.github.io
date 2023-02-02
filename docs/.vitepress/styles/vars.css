@@ -81,15 +81,6 @@
   --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
 }
 
-/*****************************************
-*                                        *
-*           Component: Algolia           *
-*                                        *
-*****************************************/
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand) !important;
-}
-
 .dark .vp-doc a,
 .dark .vp-doc a > code,
 .dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
@@ -160,3 +151,11 @@
   }
 }
 
+/*****************************************
+*                                        *
+*           Component: Algolia           *
+*                                        *
+*****************************************/
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand) !important;
+}

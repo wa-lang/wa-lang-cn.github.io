@@ -16,4 +16,4 @@ node_modules
 
 # Build
 dist
-  
+docs/.vitepress/cache

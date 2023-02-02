@@ -5,7 +5,9 @@ import { TEAM_MEMBERS } from '../constants'
 
 <template>
   <div class="content">
-    <div class="title">开发组成员</div>
+    <div class="title">
+      开发组成员
+    </div>
     <VPTeamMembers size="small" :members="TEAM_MEMBERS" />
   </div>
 </template>

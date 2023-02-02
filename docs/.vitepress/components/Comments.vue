@@ -1,43 +1,47 @@
 <script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-import { useRoute } from "vitepress";
+import { onBeforeUnmount, onMounted, ref } from 'vue'
+import { useRoute } from 'vitepress'
 
-const checkDark = () => document.documentElement.classList.contains('dark');
-const isDark = ref(checkDark());
-const route = useRoute();
+let checkDark, isDark, observerClass
+const route = useRoute()
 
-const observer = new MutationObserver(() => {
-  isDark.value = checkDark();
-});
-observer.observe(document.documentElement, {
-  attributes: true,
-  attributeFilter: ['class'],
-});
-
-onMounted(() => { import('giscus'); });
+onMounted(() => {
+  import('giscus')
+  checkDark = () => document.documentElement.classList.contains('dark')
+  isDark = ref(checkDark())
+  observerClass = new MutationObserver(() => {
+    isDark.value = checkDark()
+  })
+  observerClass.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  })
+})
 
 onBeforeUnmount(() => {
-  observer.disconnect();
-});
+  observerClass.disconnect()
+})
 </script>
 
 <template>
-  <div class="comments">
-    <giscus-widget
-      repo="wa-lang/wa-lang.github.io"
-      repoId="MDEwOlJlcG9zaXRvcnkxNjI5NDU2MDU="
-      category="General"
-      categoryId="DIC_kwDOCbZaRc4CQYyU"
-      mapping="specifics"
-      :term="route.path"
-      reactionsEnabled="1"
-      emitMetadata="0"
-      inputPosition="top"
-      lang="zh-CN"
-      loading="lazy"
-      :theme="isDark ? 'transparent_dark' : 'light'"
-    />
-  </div>
+  <ClientOnly>
+    <div class="comments">
+      <giscus-widget
+        repo="wa-lang/wa-lang.github.io"
+        repo-id="MDEwOlJlcG9zaXRvcnkxNjI5NDU2MDU="
+        category="General"
+        category-id="DIC_kwDOCbZaRc4CQYyU"
+        mapping="specifics"
+        :term="route.path"
+        reactions-enabled="1"
+        emit-metadata="0"
+        input-position="top"
+        lang="zh-CN"
+        loading="lazy"
+        :theme="isDark ? 'transparent_dark' : 'light'"
+      />
+    </div>
+  </ClientOnly>
 </template>
 
 <style scoped>
