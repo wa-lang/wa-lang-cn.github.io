@@ -19,12 +19,11 @@ export default async () => defineConfig({
       text: '为此页提供修改建议',
     },
 
-    // TODO：上线后进行爬取
-    // algolia: {
-    //   appId: '70KN18OOKV',
-    //   apiKey: '8e276c9c1e442e23ad6f922e8ffbb90e',
-    //   indexName: 'dev_wa',
-    // },
+    algolia: {
+      appId: '3401L2T8D6',
+      apiKey: '98dd501bfa6f60574e303792007e262c',
+      indexName: 'wa-lang',
+    },
 
     nav: [
       { text: '开始', link: '/guide/', activeMatch: '/guide/' },
