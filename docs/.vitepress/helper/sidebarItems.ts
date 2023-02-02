@@ -2,7 +2,6 @@ import { readFileSync, readdirSync } from 'node:fs'
 
 const TITLE_RE = /# (.*)/
 const TIME_RE = /\- 时间[:：]\s*(\d{4}-\d{1,2}-\d{1,2})(.*)/
-// 匹配 提案编号：5号 中的数字
 const NUMBER_RE = /\- 提案编号[:：]\s*(\d+)号/
 const ST_RE = /\bst(\d{4})\b(.*)\.md/
 const CF_RE = /\bc(\d{4})\b(.*)\.md/
