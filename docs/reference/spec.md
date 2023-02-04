@@ -69,7 +69,7 @@ _x9
 break     defer  import     struct
 case      else   interface  switch
 const     for    map        type
-continue  fn     range      var
+continue  func   range      var
 default   if     return
 ```
 
@@ -370,7 +370,7 @@ BaseType    = Type .
 凹语言函数类型表示所有带相同形参和返回类型的集合。未初始化的函数类型变量的值为 nil。
 
 ```
-FunctionType   = "fn" Signature .
+FunctionType   = "func" Signature .
 Signature      = Parameters [ "=>" Result ] .
 Result         = Parameters | ":" Type .
 Parameters     = "(" [ ParameterList [ "," ] ] ")" .
@@ -383,14 +383,14 @@ ParameterDecl  = [ IdentifierList ] ":" [ "..." ] Type .
 函数签名中加入的最后一个形参可能有一个带 `...` 前缀的类型。 带这样形参的函数被称为变参函数，它可接受零个或多个实参。
 
 ```
-fn()
-fn(x :int) => int
-fn(a, _ :int, z :f32) => bool
-fn(a, b :int, z :f32) => (bool)
-fn(prefix :string, values :...int)
-fn(a, b :int, z :f64, opt :...any) => (success bool)
-fn(int, int, f64) => (f64, *[]int)
-fn(n :int) => fn(p :*T)
+func()
+func(x :int) => int
+func(a, _ :int, z :f32) => bool
+func(a, b :int, z :f32) => (bool)
+func(prefix :string, values :...int)
+func(a, b :int, z :f64, opt :...any) => (success bool)
+func(int, int, f64) => (f64, *[]int)
+func(n :int) => func(p :*T)
 ```
 
 函数的类型可以用于全局函数、闭包函数、方法值等地方。
@@ -420,9 +420,9 @@ interface {
 如果 T 类型有着接口定义的方法，那么就表示实现了接口：
 
 ```
-fn T.Read(p :[]byte) => (n :int, err :error)
-fn T.Write(p :[]byte) => (n :int, err :error)
-fn T.Close() error
+func T.Read(p :[]byte) => (n :int, err :error)
+func T.Write(p :[]byte) => (n :int, err :error)
+func T.Close() error
 ```
 
 其中没有定义方法集的 `interface{}` 接口可以包含任何类型的值，同时它有一个 `any` 别名。

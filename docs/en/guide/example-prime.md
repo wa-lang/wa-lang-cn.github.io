@@ -4,7 +4,7 @@
 Print prime numbers up to 30:
 
 ```wa
-fn main {
+func main {
 	for n := 2; n <= 30; n = n + 1 {
 		var isPrime int = 1
 		for i := 2; i*i <= n; i = i + 1 {

@@ -13,12 +13,12 @@
 打印字符和调用函数：
 
 ```wa
-fn main {
+func main {
 	println("你好，凹语言！")
 	println(add(40, 2))
 }
 
-fn add(a: i32, b: i32) => i32 {
+func add(a: i32, b: i32) => i32 {
 	return a+b
 }
 ```

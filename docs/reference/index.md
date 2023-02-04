@@ -7,7 +7,7 @@ title: 文档
 新建名为 `hello` 的目录，并创建 `hello/src/main.wa` 文件：
 
 ```wa
-fn main() {
+func main {
 	println("你好, 凹语言!")
 }
 ```

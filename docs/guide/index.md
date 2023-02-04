@@ -42,12 +42,12 @@ title: 指南
 打印字符和调用函数：
 
 ```wa
-fn main {
+func main {
 	println("你好，凹语言！")
 	println(add(40, 2))
 }
 
-fn add(a: i32, b: i32) => i32 {
+func add(a: i32, b: i32) => i32 {
 	return a+b
 }
 ```
@@ -67,7 +67,7 @@ $ go run main.go hello.wa
 ```wa
 # 版权 @2021 凹语言™ 作者。保留所有权利。
 
-fn main() {
+func main() {
 	for n := 2; n <= 30; n = n + 1 {
 		var isPrime: i32 = 1
 		for i := 2; i*i <= n; i = i + 1 {
@@ -114,7 +114,7 @@ import (
 )
 
 func main() {
-	output, err := api.RunCode("hello.wa", "fn main() { println(40+2) }")
+	output, err := api.RunCode("hello.wa", "func main() { println(40+2) }")
 	fmt.Print(string(output), err)
 }
 ```
