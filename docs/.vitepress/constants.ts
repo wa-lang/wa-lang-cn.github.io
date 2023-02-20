@@ -80,6 +80,6 @@ export const TEAM_MEMBERS = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉🎉🎉 凹语言 预祝大家2023癸卯年新春快乐！',
-  link: 'https://wa-lang.org/smalltalk/st0019.html',
+  title: '凹语言 Docker + WebAssembly 3 分钟入门',
+  link: 'https://wa-lang.org/smalltalk/st0020.html',
 }
