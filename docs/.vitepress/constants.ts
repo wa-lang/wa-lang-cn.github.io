@@ -80,6 +80,6 @@ export const TEAM_MEMBERS = [
 ]
 
 export const NAV_BANNER = {
-  title: '凹语言 Docker + WebAssembly 3 分钟入门',
-  link: 'https://wa-lang.org/smalltalk/st0020.html',
+  title: '凹语言版本 yacc 简介 - 以表达式解析为例',
+  link: 'https://wa-lang.org/smalltalk/st0021.html',
 }
