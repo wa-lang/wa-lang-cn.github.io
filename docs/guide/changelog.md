@@ -4,6 +4,13 @@ title: 版本日志
 
 # 版本日志
 
+::: v0.5.1 (2023-03-25)
+  - 凹禁止 package 语法, 仅作为一个保留关键字
+  - wasi: 支持 命令行参数后环境变量(基于 `os` 包)
+  - 命令行增加实验性单元测试功能
+  - 完善空参数函数格式化
+:::
+
 ::: info v0.5.0 (2023-03-06)
   - 根据 [5号提案](https://wa-lang.org/community/proposal/p0005.html) 将 `fn` 改成 `func`，`#` 作为特殊指令而非注释
   - 支持 wasi 规范, 输出的 [支持 Docker 环境运行](https://wa-lang.org/smalltalk/st0020.html)
