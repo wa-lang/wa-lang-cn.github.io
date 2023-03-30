@@ -36,6 +36,7 @@ export default async () => defineConfig({
     ],
 
     socialLinks: [
+      { icon: { svg: ICONS.discourse }, link: 'https://zh-lang.osanswer.net/c/walang' },
       { icon: { svg: ICONS.oschina }, link: 'https://my.oschina.net/walang' },
       { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/wa-lang/wa' },
       { icon: 'github', link: 'https://github.com/wa-lang/wa/' },
