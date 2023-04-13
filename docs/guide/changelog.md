@@ -24,7 +24,7 @@ title: 版本日志
   - 根据 [5号提案](https://wa-lang.org/community/proposal/p0005.html) 将 `fn` 改成 `func`，`#` 作为特殊指令而非注释
   - 支持 wasi 规范, 输出的 [支持 Docker 环境运行](https://wa-lang.org/smalltalk/st0020.html)
   - 支持 build-tag 条件编译
-  - [Play](https://wa-lang.org/playground/) 增加检索功能
+  - [主页](https://wa-lang.org/) 增加检索功能
   - 增加 [yacc](https://wa-lang.org/smalltalk/st0021.html) 子命令
 :::
 
