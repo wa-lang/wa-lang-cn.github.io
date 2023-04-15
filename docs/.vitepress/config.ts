@@ -61,6 +61,7 @@ export default async () => defineConfig({
           items: [
             { text: '快速入门', link: '/reference/' },
             { text: '语言规范', link: '/reference/spec' },
+            { text: '语法设计(中文)', link: '/reference/design-wz' },
           ],
         },
       ],
