@@ -72,7 +72,7 @@ export const TEAM_MEMBERS = [
   {
     avatar: '/avatars/zhaopuming.jpeg',
     name: '赵普明',
-    title: ' ',
+    title: '凹中文语法设计',
     links: [
       { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/visus' },
       { icon: 'github', link: 'https://github.com/zhaopuming' },
