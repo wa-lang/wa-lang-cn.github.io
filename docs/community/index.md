@@ -4,6 +4,7 @@ title: 社区
 
 # 凹语言社区
 
+- [OpenTEKr社区·凹语言](http://opentekr.com/enterprisedetail?id=239)
 - [国产语言论坛·凹语言(板块)](https://zh-lang.osanswer.net/c/walang)
 - [开源中国·博客](https://my.oschina.net/walang)
 - [开源中国·代码仓库](https://gitee.com/wa-lang/wa)
