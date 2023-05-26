@@ -82,6 +82,6 @@ export const TEAM_MEMBERS = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉🎉 凹语言晋级“2022 年中国开源创新大赛”决赛 🎉🎉',
-  link: 'https://wa-lang.org/smalltalk/st0023.html',
+  title: '🎉🎉 凹语言2023纪念胸章发行 🎉🎉',
+  link: 'https://wa-lang.org/smalltalk/st0026.html',
 }
