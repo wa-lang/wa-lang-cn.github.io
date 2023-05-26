@@ -44,12 +44,12 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
-    avatar: '/avatars/leaftree.jpeg',
-    name: '刘云峰',
-    title: '包管理',
+    avatar: '/avatars/zhaopuming.jpeg',
+    name: '赵普明',
+    title: '凹中文语法设计',
     links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/leaftree' },
-      { icon: 'github', link: 'https://github.com/leaftree' },
+      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/visus' },
+      { icon: 'github', link: 'https://github.com/zhaopuming' },
     ],
   },
   {
@@ -62,21 +62,21 @@ export const TEAM_MEMBERS = [
     ],
   },
   {
+    avatar: '/avatars/leaftree.jpeg',
+    name: '刘云峰',
+    title: '包管理',
+    links: [
+      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/leaftree' },
+      { icon: 'github', link: 'https://github.com/leaftree' },
+    ],
+  },
+  {
     avatar: '/avatars/imaginemiracle_wxn_1.jpeg',
     name: '王潇南',
     title: ' ',
     links: [
       { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/imaginemiracle_wxn_1' },
       { icon: 'github', link: 'https://github.com/ImagineMiracle-wxn' },
-    ],
-  },
-  {
-    avatar: '/avatars/zhaopuming.jpeg',
-    name: '赵普明',
-    title: '凹中文语法设计',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/visus' },
-      { icon: 'github', link: 'https://github.com/zhaopuming' },
     ],
   },
 ]
