@@ -16,7 +16,7 @@ import { COMMUNITIES, CONTRIBUTORS } from '../constants'
         target="_blank"
         :style="{ cursor: 'pointer' }"
       >
-        <img class="card__logo" :src="`/public/c-logo/${comms.logoName}.png`">
+        <img class="card__logo" :src="`/c-logo/${comms.logoName}.png`">
         <span class="card__name" :style="{ marginTop: '8px' }">{{ comms.name }}</span>
       </a>
     </div>
