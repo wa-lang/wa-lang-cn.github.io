@@ -27,22 +27,22 @@ export default async () => defineConfig({
 
     nav: [
       { text: '开始', link: '/guide/', activeMatch: '/guide/' },
-      { text: '文档', link: '/reference/', activeMatch: '/reference/' },
+      { text: '手册', link: 'https://wa-lang.org/man/' },
       { text: '案例', link: '/examples/', activeMatch: '/examples/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
-      { text: 'English', link: '/en/', activeMatch: '/en/' },
+      // { text: 'English', link: '/en/', activeMatch: '/en/' },
       { text: 'Play', link: 'https://wa-lang.org/playground/' },
     ],
 
     socialLinks: [
-      { icon: { svg: ICONS.discourse }, link: 'https://zh-lang.osanswer.net/c/walang' },
-      { icon: { svg: ICONS.oschina }, link: 'https://my.oschina.net/walang' },
+      // { icon: { svg: ICONS.discourse }, link: 'https://zh-lang.osanswer.net/c/walang' },
+      // { icon: { svg: ICONS.oschina }, link: 'https://my.oschina.net/walang' },
       // TODO: fix opentekr icon
-      { icon: { svg: ICONS.opentekr }, link: 'http://opentekr.com/enterprisedetail?id=239' },
+      // { icon: { svg: ICONS.opentekr }, link: 'http://opentekr.com/enterprisedetail?id=239' },
       { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/wa-lang/wa' },
       { icon: 'github', link: 'https://github.com/wa-lang/wa/' },
-      { icon: 'twitter', link: 'https://twitter.com/wayuyan' },
+      // { icon: 'twitter', link: 'https://twitter.com/wayuyan' },
     ],
 
     sidebar: {
@@ -53,17 +53,9 @@ export default async () => defineConfig({
             { text: '简介', link: '/guide/' },
             { text: '快速开始', link: '/guide/quick-start' },
             { text: '项目目标', link: '/guide/goals' },
+            { text: '语言规范', link: '/guide/spec' },
+            { text: '语法设计(中文)', link: '/guide/design-wz' },
             { text: '历史版本', link: '/guide/changelog' },
-          ],
-        },
-      ],
-      '/reference/': [
-        {
-          text: '文档',
-          items: [
-            { text: '快速入门', link: '/reference/' },
-            { text: '语言规范', link: '/reference/spec' },
-            { text: '语法设计(中文)', link: '/reference/design-wz' },
           ],
         },
       ],
@@ -138,14 +130,8 @@ export default async () => defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
-    [
-      'script',
-      {},
-      fs.readFileSync(
-        path.resolve(__dirname, './inlined-scripts/restorePreference.js'),
-        'utf-8',
-      ),
-    ],
+    ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/redirectDocsPath.js'), 'utf-8')],
+    ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/restorePreference.js'), 'utf-8')],
   ],
 
   markdown: {
