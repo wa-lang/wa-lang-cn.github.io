@@ -5,6 +5,28 @@ export const ICONS = {
   opentekr: '<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --><svg width="800px" height="800px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"><path fill="currentColor" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"></path><path fill="#FFF" d="M7.336 17.962c0-6.449 4.341-11.41 10.666-11.41c6.232 0 10.666 5.116 10.666 11.41c0 6.418-4.31 11.41-10.666 11.41c-6.294 0-10.666-4.992-10.666-11.41zm16.496 0c0-3.752-1.954-7.131-5.83-7.131c-3.876 0-5.829 3.379-5.829 7.131c0 3.782 1.891 7.132 5.829 7.132c3.938 0 5.83-3.35 5.83-7.132z"></path></svg>',
 }
 
+export const CONTRIBUTORS = [
+  { name: '柴树杉', points: 35000 },
+  { name: '丁尔男', points: 42500 },
+  { name: '史斌', points: 29000 },
+  { name: '扈梦明', points: 14000 },
+  { name: '赵普明', points: 17000 },
+  { name: '宋汝阳', points: 2000 },
+  { name: '刘云峰', points: 1000 },
+  { name: '王湘南', points: 1000 },
+  { name: '王泽龙', points: 1000 },
+  { name: '吴烜', points: 3000 },
+  { name: '刘斌', points: 2500 },
+  { name: '尹贻浩', points: 2000 },
+]
+
+export const COMMUNITIES = [
+  { name: '国产语言论坛', logoName: 'zhlang', link: 'https://zh-lang.osanswer.net/c/walang' },
+  { name: '中文开源技术交流社区', logoName: 'oschina', link: 'https://my.oschina.net/walang' },
+  { name: '开放科技社区', logoName: 'opentekr', link: 'http://opentekr.com/enterprisedetail?id=239' },
+  { name: '推特', logoName: 'twitter', link: 'https://twitter.com/wayuyan' },
+]
+
 export const TEAM_MEMBERS = [
   {
     avatar: '/avatars/chai2010.jpeg',
