@@ -55,7 +55,7 @@ func add(a: i32, b: i32) => i32 {
 运行并输出结果:
 
 ```
-$ go run main.go hello.wa 
+$ wa run hello.wa 
 你好，凹语言！
 42
 ```
@@ -85,7 +85,7 @@ func main() {
 运行并输出结果:
 
 ```
-$ go run main.go run _examples/prime
+$ wa run _examples/prime
 2
 3
 5

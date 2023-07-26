@@ -26,7 +26,7 @@ func add(a: i32, b: i32) => i32 {
 运行并输出结果:
 
 ```
-$ go run main.go hello.wa 
+$ wa run hello.wa 
 你好，凹语言！
 42
 ```

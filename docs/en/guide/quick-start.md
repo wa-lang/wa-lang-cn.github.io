@@ -31,7 +31,7 @@ func add(a: i32, b: i32) => i32 {
 Execute the program:
 
 ```
-$ go run main.go hello.wa 
+$ wa run hello.wa 
 hello, Wa!
 42
 2
