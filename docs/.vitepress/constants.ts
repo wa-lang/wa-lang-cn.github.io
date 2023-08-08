@@ -28,12 +28,7 @@ export const COMMUNITIES = [
 ]
 
 export const FRIENDLY_LINK = [
-  {
-    name: '洛书',
-    desc: '洛书是一款由社区主导的开源、高效、强大、轻量、平台无关的程序设计语言。支持绝大多数操作系统与CPU，包括但不限于 Windows 、Linux 、RTOS、MCU。您可以在任何受支持的平台编写代码，并运行在目标平台之上。',
-    logoName: 'losu.jpg',
-    link: 'https://losu.tech/',
-  },
+  { name: '洛书', logoName: 'losu.png', link: 'https://losu.tech/' },
 ]
 
 export const NAV_BANNER = {

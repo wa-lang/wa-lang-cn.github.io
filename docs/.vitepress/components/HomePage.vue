@@ -41,9 +41,8 @@ import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
         target="_blank"
         :style="{ cursor: 'pointer', maxWidth: '300px' }"
       >
-        <img class="card__logo" :style="{ height: '65px' }" :src="`/c-logo/${friend.logoName}`">
-        <span class="card__name" :style="{ margin: '18px 0 12px', fontSize: '26px' }">{{ friend.name }}</span>
-        <span class="card__desc">{{ friend.desc }}</span>
+        <img class="card__logo" :src="`/c-logo/${friend.logoName}`">
+        <span class="card__name" :style="{ margin: '18px 0 12px', fontSize: '22px' }">{{ friend.name }}</span>
       </a>
     </div>
   </div>
@@ -92,16 +91,6 @@ import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
 .card__logo {
   height: 34px;
   margin: 0 auto;
-}
-
-.card__desc {
-  font-size: 14px;
-  color: var(--vp-c-text-2);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
 }
 
 .title {
