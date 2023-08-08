@@ -39,9 +39,9 @@ import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
         class="card"
         :href="friend.link"
         target="_blank"
-        :style="{ cursor: 'pointer', maxWidth: '360px' }"
+        :style="{ cursor: 'pointer', maxWidth: '300px' }"
       >
-        <img class="card__logo" :style="{ width: '100%', height: 'auto' }" :src="`/c-logo/${friend.logoName}`">
+        <img class="card__logo" :style="{ height: '65px' }" :src="`/c-logo/${friend.logoName}`">
         <span class="card__name" :style="{ margin: '18px 0 12px', fontSize: '26px' }">{{ friend.name }}</span>
         <span class="card__desc">{{ friend.desc }}</span>
       </a>
@@ -97,6 +97,11 @@ import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
 .card__desc {
   font-size: 14px;
   color: var(--vp-c-text-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .title {
