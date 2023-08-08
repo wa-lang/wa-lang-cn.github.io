@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { COMMUNITIES, CONTRIBUTORS } from '../constants'
+import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import { COMMUNITIES, CONTRIBUTORS } from '../constants'
         target="_blank"
         :style="{ cursor: 'pointer' }"
       >
-        <img class="card__logo" :src="`/c-logo/${comms.logoName}.png`">
+        <img class="card__logo" :src="`/c-logo/${comms.logoName}`">
         <span class="card__name" :style="{ marginTop: '8px' }">{{ comms.name }}</span>
       </a>
     </div>
@@ -28,6 +28,23 @@ import { COMMUNITIES, CONTRIBUTORS } from '../constants'
         <span class="card__name">{{ ctr.name }}</span>
         <span class="card__points">贡献点：{{ ctr.points }}</span>
       </div>
+    </div>
+    <div class="title">
+      友情链接
+    </div>
+    <div class="list" :style="{ justifyItems: 'center' }">
+      <a
+        v-for="(friend, idx) in FRIENDLY_LINK"
+        :key="idx"
+        class="card"
+        :href="friend.link"
+        target="_blank"
+        :style="{ cursor: 'pointer', maxWidth: '360px' }"
+      >
+        <img class="card__logo" :style="{ width: '100%', height: 'auto' }" :src="`/c-logo/${friend.logoName}`">
+        <span class="card__name" :style="{ margin: '18px 0 12px', fontSize: '26px' }">{{ friend.name }}</span>
+        <span class="card__desc">{{ friend.desc }}</span>
+      </a>
     </div>
   </div>
 </template>
@@ -75,6 +92,11 @@ import { COMMUNITIES, CONTRIBUTORS } from '../constants'
 .card__logo {
   height: 34px;
   margin: 0 auto;
+}
+
+.card__desc {
+  font-size: 14px;
+  color: var(--vp-c-text-2);
 }
 
 .title {

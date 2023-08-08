@@ -21,85 +21,18 @@ export const CONTRIBUTORS = [
 ]
 
 export const COMMUNITIES = [
-  { name: '国产语言论坛', logoName: 'zhlang', link: 'https://zh-lang.osanswer.net/c/walang' },
-  { name: '中文开源技术交流社区', logoName: 'oschina', link: 'https://my.oschina.net/walang' },
-  { name: '开放科技社区', logoName: 'opentekr', link: 'http://opentekr.com/enterprisedetail?id=239' },
-  { name: '推特', logoName: 'twitter', link: 'https://twitter.com/wayuyan' },
+  { name: '国产语言论坛', logoName: 'zhlang.png', link: 'https://zh-lang.osanswer.net/c/walang' },
+  { name: '中文开源技术交流社区', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
+  { name: '开放科技社区', logoName: 'opentekr.png', link: 'http://opentekr.com/enterprisedetail?id=239' },
+  { name: '推特', logoName: 'twitter.png', link: 'https://twitter.com/wayuyan' },
 ]
 
-export const TEAM_MEMBERS = [
+export const FRIENDLY_LINK = [
   {
-    avatar: '/avatars/chai2010.jpeg',
-    title: '发起人、wago',
-    name: '柴树杉',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/chai2010' },
-      { icon: 'github', link: 'https://github.com/chai2010' },
-      { icon: 'twitter', link: 'https://twitter.com/chaishushan' },
-    ],
-  },
-  {
-    avatar: '/avatars/3dgen.jpeg',
-    name: '丁尔男',
-    title: '发起人、wat 后端',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/DingErNan' },
-      { icon: 'github', link: 'https://github.com/3dgen' },
-    ],
-  },
-  {
-    avatar: '/avatars/benshi001.jpeg',
-    name: '史斌',
-    title: '发起人、llvm 后端',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/benshi001' },
-      { icon: 'github', link: 'https://github.com/benshi001' },
-    ],
-  },
-  {
-    avatar: '/avatars/xxx.jpeg',
-    title: 'VS Code、Playground',
-    name: '扈梦明',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/ohxxx' },
-      { icon: 'github', link: 'https://github.com/ohxxx' },
-    ],
-  },
-  {
-    avatar: '/avatars/zhaopuming.jpeg',
-    name: '赵普明',
-    title: '凹中文语法设计',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/visus' },
-      { icon: 'github', link: 'https://github.com/zhaopuming' },
-    ],
-  },
-  {
-    avatar: '/avatars/shiinaorez.jpeg',
-    name: '宋汝阳',
-    title: ' ',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/shiinaorez' },
-      { icon: 'github', link: 'https://github.com/ShiinaOrez' },
-    ],
-  },
-  {
-    avatar: '/avatars/leaftree.jpeg',
-    name: '刘云峰',
-    title: '包管理',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/leaftree' },
-      { icon: 'github', link: 'https://github.com/leaftree' },
-    ],
-  },
-  {
-    avatar: '/avatars/imaginemiracle_wxn_1.jpeg',
-    name: '王潇南',
-    title: ' ',
-    links: [
-      { icon: { svg: ICONS.gitee }, link: 'https://gitee.com/imaginemiracle_wxn_1' },
-      { icon: 'github', link: 'https://github.com/ImagineMiracle-wxn' },
-    ],
+    name: '洛书',
+    desc: '洛书是一款由社区主导的开源、高效、强大、轻量、平台无关的程序设计语言。支持绝大多数操作系统与CPU，包括但不限于 Windows 、Linux 、RTOS、MCU。您可以在任何受支持的平台编写代码，并运行在目标平台之上。',
+    logoName: 'losu.jpg',
+    link: 'https://losu.tech/',
   },
 ]
 
