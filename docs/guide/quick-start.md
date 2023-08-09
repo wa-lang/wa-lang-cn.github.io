@@ -1,5 +1,7 @@
 # 快速开始
 
+> 注: 更系统的教程可以参考: [《凹语言手册》](https://wa-lang.org/man/)
+
 ## 本地安装和测试
 
 1. `go install wa-lang.org/wa@latest`
