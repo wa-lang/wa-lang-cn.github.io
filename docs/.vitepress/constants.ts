@@ -32,6 +32,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 《凹语言手册(MVP)》发布 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0029.html',
+  title: '🎉 凹语言开源1 周年直播预告！ 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0030.html',
 }
