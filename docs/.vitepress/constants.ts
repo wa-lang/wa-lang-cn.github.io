@@ -21,10 +21,13 @@ export const CONTRIBUTORS = [
 ]
 
 export const COMMUNITIES = [
-  { name: '国产语言论坛', logoName: 'zhlang.png', link: 'https://zh-lang.osanswer.net/c/walang' },
-  { name: '中文开源技术交流社区', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
-  { name: '开放科技社区', logoName: 'opentekr.png', link: 'http://opentekr.com/enterprisedetail?id=239' },
+  { name: '论坛', logoName: 'zhlang.png', link: 'https://zh-lang.osanswer.net/c/walang' },
   { name: '推特', logoName: 'twitter.png', link: 'https://twitter.com/wayuyan' },
+  { name: '知乎', logoName: 'zhihu.svg', link: 'https://www.zhihu.com/question/570351019' },
+  { name: 'B站', logoName: 'bilibili.png', link: 'https://space.bilibili.com/344260496' },
+  { name: '开源中国', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
+  { name: '开放科技社区', logoName: 'opentekr.png', link: 'http://opentekr.com/enterprisedetail?id=239' },
+  { name: 'GLCC开源夏令营', logoName: 'gitlink.jpg', link: 'https://www.gitlink.org.cn/wa-lang/base60' },
 ]
 
 export const FRIENDLY_LINK = [
