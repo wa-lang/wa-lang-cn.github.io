@@ -26,10 +26,8 @@ export default async () => defineConfig({
     },
 
     nav: [
-      { text: '开始', link: '/guide/', activeMatch: '/guide/' },
+      { text: '灵魂拷问', link: '/qa/', activeMatch: '/qa/' },
       { text: '手册', link: 'https://wa-lang.org/man/' },
-      // { text: '文档', link: '/reference/', activeMatch: '/reference/' },
-      { text: '案例', link: '/examples/', activeMatch: '/examples/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
       { text: 'English', link: '/en/', activeMatch: '/en/' },
@@ -128,7 +126,6 @@ export default async () => defineConfig({
         },
       ],
     },
-
     footer: {
       copyright: '版权 ©️ 凹语言开发组 2018，保留权利',
     },

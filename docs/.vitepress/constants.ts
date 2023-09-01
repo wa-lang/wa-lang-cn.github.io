@@ -22,7 +22,7 @@ export const CONTRIBUTORS = [
 
 export const COMMUNITIES = [
   { name: '论坛', logoName: 'zhlang.png', link: 'https://zh-lang.osanswer.net/c/walang' },
-  { name: '推特', logoName: 'twitter.png', link: 'https://twitter.com/wayuyan' },
+  { name: '𝕏', logoName: 'x.png', link: 'https://twitter.com/wayuyan' },
   { name: '知乎', logoName: 'zhihu.svg', link: 'https://www.zhihu.com/question/570351019' },
   { name: 'B站', logoName: 'bilibili.png', link: 'https://space.bilibili.com/344260496' },
   { name: '开源中国', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },

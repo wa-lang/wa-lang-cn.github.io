@@ -151,6 +151,12 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .VPDoc .aside {
+    display: none !important;
+  }
+}
+
 /*****************************************
 *                                        *
 *           Component: Algolia           *
