@@ -26,6 +26,7 @@ export default async () => defineConfig({
     },
 
     nav: [
+      { text: '开始', link: '/guide/', activeMatch: '/guide/' },
       { text: '灵魂拷问', link: '/qa/', activeMatch: '/qa/' },
       { text: '参考手册', link: 'https://wa-lang.org/man/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
@@ -48,6 +49,7 @@ export default async () => defineConfig({
             { text: '项目目标', link: '/guide/goals' },
             { text: '语言规范', link: '/guide/spec' },
             { text: '语法设计(中文)', link: '/guide/design-wz' },
+            { text: '成功案例', link: '/guide/examples' },
             { text: '历史版本', link: '/guide/changelog' },
           ],
         },

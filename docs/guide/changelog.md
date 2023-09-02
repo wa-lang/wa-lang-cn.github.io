@@ -4,7 +4,7 @@ title: 版本日志
 
 # 版本日志
 
-::: info v0.8.1 (2023-05-27) MVP
+::: info v0.8.1 (2023-08-11) MVP
   - MVP 版本, 细节请参考《凹语言手册》：https://wa-lang.org/man
 :::
 
