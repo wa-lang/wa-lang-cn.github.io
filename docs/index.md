@@ -16,8 +16,8 @@ hero:
       text: 灵魂拷问
       link: /qa/
     - theme: alt
-      text: 碎碎念
-      link: /smalltalk/
+      text: 参考手册
+      link: /man/
     - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/
