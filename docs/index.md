@@ -17,7 +17,7 @@ hero:
       link: /qa/
     - theme: alt
       text: 参考手册
-      link: /man/
+      link: https://wa-lang.org/man/
     - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/
