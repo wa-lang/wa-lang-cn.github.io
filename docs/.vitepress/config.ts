@@ -26,12 +26,11 @@ export default async () => defineConfig({
     },
 
     nav: [
-      { text: '开始', link: '/guide/', activeMatch: '/guide/' },
       { text: '灵魂拷问', link: '/qa/', activeMatch: '/qa/' },
       { text: '参考手册', link: 'https://wa-lang.org/man/' },
+      { text: 'Playground', link: 'https://wa-lang.org/playground/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
-      { text: 'Playground', link: 'https://wa-lang.org/playground/' },
     ],
 
     socialLinks: [
