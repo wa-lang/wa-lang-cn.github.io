@@ -11,6 +11,11 @@ export default async () => defineConfig({
   description: '针对 WASM 平台设计的通用编程语言',
   appearance: true,
 
+  locales: {
+    root: { label: '简体中文' },
+    en: { label: 'English', link: 'https://en.wa-lang.org' },
+  },
+
   themeConfig: {
     logo: '/favicon.svg',
 
