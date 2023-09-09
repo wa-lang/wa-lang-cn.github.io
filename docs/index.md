@@ -30,5 +30,5 @@ features:
   - icon: 🛠️
     title: 多操作系统、多硬件平台支持
   - icon: 🌏
-    title: 专为 WebAssembly 平台设计
+    title: 为 WebAssembly 平台设计
 ---
