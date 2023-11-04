@@ -36,6 +36,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言加入CNCF的wasm全景图 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0033.html',
+  title: '🎉 凹语言和国产语言首次线下会师 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0034.html',
 }
