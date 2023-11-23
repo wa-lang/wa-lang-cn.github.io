@@ -1,9 +1,26 @@
 <script setup lang="ts">
-import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK } from '../constants'
+import { COMMUNITIES, CONTRIBUTORS, FRIENDLY_LINK, DEMOS } from '../constants'
 </script>
 
 <template>
   <div class="content">
+    <div class="title">
+      案例展示
+    </div>
+    <div class="list" :style="{ gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))' }">
+      <a
+        v-for="(comms, idx) in DEMOS"
+        :key="idx"
+        class="card"
+        :href="comms.link"
+        target="_blank"
+        :style="{ cursor: 'pointer' }"
+      >
+        <img class="card__logo" :src="`/c-logo/${comms.logoName}`">
+        <span class="card__name" :style="{ marginTop: '8px' }">{{ comms.name }}</span>
+      </a>
+    </div>
+
     <div class="title">
       社区资讯
     </div>

@@ -31,6 +31,11 @@ export const COMMUNITIES = [
   { name: 'Gitcode', logoName: 'gitcode.png', link: 'https://gitcode.net/wa-lang/wa' },
 ]
 
+export const DEMOS = [
+  { name: 'Playground', logoName: 'wa.png', link: 'https://wa-lang.org/playground/' },
+  { name: 'Snake Game', logoName: 'wa.png', link: 'https://wa-lang.org/wa/snake/' },
+]
+
 export const FRIENDLY_LINK = [
   { name: '洛书', logoName: 'losu.png', link: 'https://losu.tech/' },
 ]
