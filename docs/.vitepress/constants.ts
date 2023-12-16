@@ -34,6 +34,8 @@ export const COMMUNITIES = [
 export const DEMOS = [
   { name: 'Playground', logoName: 'wa.png', link: 'https://wa-lang.org/playground/' },
   { name: 'Snake Game', logoName: 'wa.png', link: 'https://wa-lang.org/wa/snake/' },
+  { name: 'NES emulator', logoName: 'wa.png', link: 'https://wa-lang.org/nes/' },
+  { name: 'WebGPU', logoName: 'wa.png', link: 'https://wa-lang.org/webgpu/' },
 ]
 
 export const FRIENDLY_LINK = [
