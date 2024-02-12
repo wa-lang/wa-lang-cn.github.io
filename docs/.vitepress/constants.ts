@@ -42,6 +42,9 @@ export const DEMOS = [
   { name: 'NES emulator', logoName: 'wa.png', link: 'https://wa-lang.org/nes/' },
   { name: 'WebGPU', logoName: 'wa.png', link: 'https://wa-lang.org/webgpu/' },
   { name: '放大镜', logoName: 'wa.png', link: 'https://wa-lang.org/examples/magnifying-glass/' },
+  { name: '生命游戏', logoName: 'wa.png', link: 'https://wa-lang.org/examples/life/' },
+  { name: '分型', logoName: 'wa.png', link: 'https://wa-lang.org/examples/mandelbrot/' },
+  { name: 'QRCode', logoName: 'wa.png', link: 'https://wa-lang.org/examples/qrcode/' },
 ]
 
 export const FRIENDLY_LINK = [
