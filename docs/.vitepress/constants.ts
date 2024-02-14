@@ -52,6 +52,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言 在 KCD 深圳 2023 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0036.html',
+  title: '🎉 凹语言支持P5儿童编程 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0037.html',
 }
