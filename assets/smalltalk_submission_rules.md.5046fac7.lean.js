@@ -1,0 +1,1 @@
+import{_ as s,c as t,o,a as e}from"./app.afb28882.js";const h=JSON.parse('{"title":"碎碎念 投稿规则","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/submission_rules.md"}'),c={name:"smalltalk/submission_rules.md"},a=e("",7),l=[a];function i(d,r,n,_,p,m){return o(),t("div",null,l)}const b=s(c,[["render",i]]);export{h as __pageData,b as default};
