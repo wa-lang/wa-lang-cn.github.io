@@ -53,6 +53,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言支持P5儿童编程 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0037.html',
+  title: '🎉 凹语言支持函数重载 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0038.html',
 }
