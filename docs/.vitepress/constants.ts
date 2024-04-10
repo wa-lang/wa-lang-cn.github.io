@@ -53,6 +53,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言支持函数重载 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0038.html',
+  title: '🎉 OS2ATC大会纪录  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0039.html',
 }
