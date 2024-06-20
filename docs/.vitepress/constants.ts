@@ -53,6 +53,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 OS2ATC大会纪录  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0039.html',
+  title: '🎉 凹语言入选 Gitee GVP 项目  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0043.html',
 }
