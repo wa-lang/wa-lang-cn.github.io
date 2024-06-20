@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as s}from"./app.6580871c.js";const l="/st0043-01.jpg",f=JSON.parse('{"title":"凹语言入选 Gitee GVP 项目","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0043.md"}'),r={name:"smalltalk/st0043.md"},i=s("",6),_=[i];function o(n,c,p,d,h,m){return a(),e("div",null,_)}const u=t(r,[["render",o]]);export{f as __pageData,u as default};
