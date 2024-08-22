@@ -36,7 +36,7 @@ export const COMMUNITIES = [
   { name: '开源中国', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
   { name: '开放科技社区', logoName: 'opentekr.png', link: 'http://opentekr.com/enterprisedetail?id=239' },
   { name: 'GLCC开源夏令营', logoName: 'gitlink.jpg', link: 'https://www.gitlink.org.cn/wa-lang/base60' },
-  { name: 'Gitcode', logoName: 'gitcode.png', link: 'https://gitcode.net/wa-lang/wa' },
+  { name: 'Gitcode', logoName: 'gitcode.png', link: 'https://gitcode.com/wa-lang/wa' },
 ]
 
 export const DEMOS = [
