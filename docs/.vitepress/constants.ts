@@ -56,6 +56,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言开源2周年  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0045.html',
+  title: '🎉 凹语言支持Wasm4游戏平台  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0046.html',
 }
