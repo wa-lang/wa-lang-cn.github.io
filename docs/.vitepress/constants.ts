@@ -41,8 +41,8 @@ export const COMMUNITIES = [
 
 export const DEMOS = [
   { name: 'Playground', logoName: 'wa.png', link: 'https://wa-lang.org/playground/' },
-  { name: 'Snake Game', logoName: 'wa.png', link: 'https://wa-lang.org/wa/snake/' },
-  { name: 'WASM4/Snake Game', logoName: 'wa.png', link: 'https://wa-lang.org/wa/w4-snake/' },
+  { name: '贪吃蛇', logoName: 'wa.png', link: 'https://wa-lang.org/wa/snake/' },
+  { name: '贪吃蛇(WASM4)', logoName: 'wa.png', link: 'https://wa-lang.org/wa/w4-snake/' },
   { name: '2048游戏', logoName: 'wa.png', link: 'https://wa-lang.org/wa/w4-2048/' },
   { name: '井字游戏', logoName: 'wa.png', link: 'https://wa-lang.org/wa/w4-tic-tac-toe/' },
   { name: 'NES emulator', logoName: 'wa.png', link: 'https://wa-lang.org/nes/' },
