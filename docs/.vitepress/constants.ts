@@ -29,14 +29,13 @@ export const CONTRIBUTORS = [
 ]
 
 export const COMMUNITIES = [
-  { name: '论坛', logoName: 'zhlang.png', link: 'https://zh-lang.osanswer.net/c/walang' },
+  { name: 'Gitcode', logoName: 'gitcode.png', link: 'https://gitcode.com/wa-lang/wa' },
   { name: '𝕏', logoName: 'x.png', link: 'https://twitter.com/wayuyan' },
   { name: '知乎', logoName: 'zhihu.svg', link: 'https://www.zhihu.com/question/570351019' },
   { name: 'B站', logoName: 'bilibili.png', link: 'https://space.bilibili.com/344260496' },
   { name: '开源中国', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
   { name: '开放科技社区', logoName: 'opentekr.png', link: 'http://opentekr.com/enterprisedetail?id=239' },
   { name: 'GLCC开源夏令营', logoName: 'gitlink.jpg', link: 'https://www.gitlink.org.cn/wa-lang/base60' },
-  { name: 'Gitcode', logoName: 'gitcode.png', link: 'https://gitcode.com/wa-lang/wa' },
 ]
 
 export const DEMOS = [
