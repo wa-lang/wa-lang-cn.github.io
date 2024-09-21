@@ -61,6 +61,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言支持Wasm4游戏平台  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0046.html',
+  title: '🎉 凹语言执行速度比Go快一倍  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0051.html',
 }
