@@ -53,6 +53,7 @@ export const DEMOS = [
   { name: '生命游戏', logoName: 'wa.png', link: 'https://wa-lang.org/examples/life/' },
   { name: '分型', logoName: 'wa.png', link: 'https://wa-lang.org/examples/mandelbrot/' },
   { name: 'QRCode', logoName: 'wa.png', link: 'https://wa-lang.org/examples/qrcode/' },
+  { name: 'Brainfuck', logoName: 'wa.png', link: 'https://wa-lang.org/wa/brainfuck/' },
 ]
 
 export const FRIENDLY_LINK = [
