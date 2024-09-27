@@ -62,6 +62,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言执行速度比Go快一倍  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0051.html',
+  title: '🎉 凹语言支持Chrome内置AI  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0054.html',
 }
