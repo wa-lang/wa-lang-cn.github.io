@@ -14,7 +14,7 @@ title: 社区
 
 目前凹语言仅开通了Gitee平台的捐赠入口: [https://gitee.com/wa-lang/wa](https://gitee.com/wa-lang/wa)。
 
-滚动到Gitee凹语言仓库首页页面底部可以看到捐赠按钮:
+打开Gitee凹语言仓库首页(桌面版), 滚动到页面底部可以看到捐赠按钮:
 
 ![](/donate/wa-donate-gitee.jpg)
 
