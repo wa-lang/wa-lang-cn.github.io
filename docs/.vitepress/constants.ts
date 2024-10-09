@@ -62,6 +62,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言支持Chrome内置AI  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0054.html',
+  title: '🎉 凹语言支持map  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0056.html',
 }
