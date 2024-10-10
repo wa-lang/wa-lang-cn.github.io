@@ -1,0 +1,1 @@
+import{_ as l,c as a,o as i,a as t}from"./app.80cb5996.js";const k=JSON.parse('{"title":"版本日志","description":"","frontmatter":{"title":"版本日志"},"headers":[],"relativePath":"guide/changelog.md"}'),e={name:"guide/changelog.md"},o=t("",19),s=[o];function c(r,n,u,d,p,g){return i(),a("div",null,s)}const f=l(e,[["render",c]]);export{k as __pageData,f as default};
