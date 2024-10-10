@@ -35,7 +35,7 @@ export default async () => defineConfig({
       { text: '参考手册', link: 'https://wa-lang.org/man/' },
       { text: 'Playground', link: 'https://wa-lang.org/playground/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
-      { text: '社区', link: '/community/', activeMatch: '/community/' },
+      { text: '社区/捐助', link: '/community/', activeMatch: '/community/' },
     ],
 
     socialLinks: [
@@ -88,7 +88,7 @@ export default async () => defineConfig({
       ],
       '/community/': [
         {
-          text: '社区',
+          text: '社区/捐助',
           items: [
             { text: '凹语言社区', link: '/community/' },
             { text: '如何贡献代码', link: '/community/contribute' },
