@@ -6,7 +6,6 @@ title: 社区/捐赠
 
 - [开源中国·博客](https://my.oschina.net/walang)
 - [开源中国·代码仓库](https://gitee.com/wa-lang/wa)
-- [OpenTEKr社区·凹语言](http://opentekr.com/enterprisedetail?id=239)
 - QQ群：112919306
 - Twitter: [@wayuyan](https://twitter.com/wayuyan)
 
