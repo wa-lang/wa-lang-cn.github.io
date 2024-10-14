@@ -1,0 +1,1 @@
+import{_ as s,c as e,o as a,a as n}from"./app.42ee053e.js";const g=JSON.parse('{"title":"Execut as Go script","description":"","frontmatter":{},"headers":[],"relativePath":"en/guide/as-go-script.md"}'),t={name:"en/guide/as-go-script.md"},o=n("",4),p=[o];function l(c,r,i,d,f,u){return a(),e("div",null,p)}const h=s(t,[["render",l]]);export{g as __pageData,h as default};
