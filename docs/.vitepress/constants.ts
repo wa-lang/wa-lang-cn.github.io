@@ -61,6 +61,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言山寨马斯克星舰小游戏  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0057.html',
+  title: '🎉 凹语言登上文汇报  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0058.html',
 }
