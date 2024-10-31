@@ -199,6 +199,9 @@ Alan Donovan 迅速提交了修正 `golang.org/x/tools/go/ssa/interp` 包的 pr�
 
 .image images/st0056-01.jpg
 
+- [621595: go/ssa/interp: assign phi nodes in parallel](https://go-review.googlesource.com/c/tools/+/621595/)
+- [修正 Phi 未并行执行的问题](https://github.com/wa-lang/wa/commit/8138ee)
+
 ## Phi指令并行并非多大的共识
 
 对一些专业人士来说，“Phi并行”或许是常识，但这一知识在多大范围内被熟知？我们做了一些不严谨的调查，情况不乐观。在查阅过龙书、虎书等经典出版物后，仅在《Learn LLVM 12》一书的 91 页发现了一句相关的内容：“……在第二个 phi 指令的参数列表中使用了相同的寄存器，但该值假定为通过第一个phi指令改变它之前的值。”
