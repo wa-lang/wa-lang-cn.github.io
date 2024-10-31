@@ -1,0 +1,30 @@
+# Title of Talk
+
+My Name
+9 Mar 2020
+me@example.com
+
+## Title of Slide (must begin with ##)
+
+Some Text
+
+- bullets
+- more bullets
+- a bullet continued
+  on the next line
+
+## Section
+
+## Section 2: Example formatting {#fmt}
+
+Formatting:
+
+_italic_
+// A comment that is completely ignored.
+: Speaker notes.
+**bold**
+`program`
+Markup—_especially italic text_—can easily be overused.
+_Why use scoped\_ptr_? Use plain **\*ptr** instead.
+
+Visit [the Wa home page](https://wa-lang.org/).
