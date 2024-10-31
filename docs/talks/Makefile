@@ -1,3 +1,5 @@
+# go install github.com/wa-lang/wabook@latest
+
 default:
 	wabook serve
 
