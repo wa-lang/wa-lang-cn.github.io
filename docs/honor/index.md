@@ -37,6 +37,15 @@ title: 荣誉墙
 :::
 
 
+### 2024：凹语言入选《国产编程语言蓝皮书-2023》([#H20240218](#H20240218))
+
+::: tip [https://mp.weixin.qq.com/s/oGJCDq92ggwvrPlwmAPGAQ](https://mp.weixin.qq.com/s/oGJCDq92ggwvrPlwmAPGAQ)
+
+![](./2024-ploc/CNPL-2023.png)
+
+:::
+
+
 ### 2023：凹语言加入CNCF的wasm全景图([#H20230914](#H20230914))
 
 ::: tip [https://wa-lang.org/smalltalk/st0033.html](https://wa-lang.org/smalltalk/st0033.html)
