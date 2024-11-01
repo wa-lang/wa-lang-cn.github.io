@@ -39,7 +39,7 @@ title: 荣誉墙
 
 ### 2024：凹语言入选《国产编程语言蓝皮书-2023》([#H20240218](#H20240218))
 
-::: tip [https://mp.weixin.qq.com/s/oGJCDq92ggwvrPlwmAPGAQ](https://mp.weixin.qq.com/s/oGJCDq92ggwvrPlwmAPGAQ)
+::: tip [https://www.ploc.org.cn/ploc/CNPL-2023.pdf](https://www.ploc.org.cn/ploc/CNPL-2023.pdf)
 
 ![](./2024-ploc/CNPL-2023.png)
 
