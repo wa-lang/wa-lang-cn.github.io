@@ -61,6 +61,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言登上文汇报  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0058.html',
+  title: '🎉 Phi并行-凹语言与Go共有问题的复盘  🎉',
+  link: 'https://wa-lang.org/smalltalk/st0060.html',
 }
