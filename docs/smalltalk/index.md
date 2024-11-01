@@ -68,8 +68,7 @@ title: 碎碎念
 
 ## 分享的幻灯片
 
-<!-- @ignore -->
-- 2022-10-03: [凹语言map与Φ指令的纠葛](/talks/ssa-bug)
+- 2022-10-03: [凹语言map与Φ指令的纠葛](https://wa-lang.org/talks/ssa-bug)
 
 
 ## 投稿规则
