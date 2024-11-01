@@ -30,3 +30,13 @@ title: 荣誉墙
 ![](./2024-wenhuibao/st0058-01.png)
 :::
 
+### 2024：凹语言入选 Gitee GVP 项目([#H20240701](#H20240701))
+
+::: tip [凹语言入选 Gitee GVP 最有价值的开源项目](http://localhost:3000/smalltalk/st0043.html)
+
+![](./2024-gitee/st0043-01.jpg)
+
+![](./2024-gitee/st0043-03.png)
+
+:::
+
