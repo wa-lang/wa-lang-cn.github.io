@@ -40,3 +40,19 @@ title: 荣誉墙
 
 :::
 
+### 2023：凹语言获2022中国开源创新大赛优秀项目([#H20230309](#H20230309))
+
+::: tip [http://localhost:3000/smalltalk/st0023.html](http://localhost:3000/smalltalk/st0023.html)
+
+![](./2023-bjos/st0025-01.png)
+
+:::
+
+### 2022：凹语言获InfoQ 2022开发者最喜爱十大开源项目([#H20221231](#H20221231))
+
+::: tip [凹语言参与 InfoQ 2022 新锐开源项目评选，获得了开发者最喜爱的项目的第4名](http://localhost:3000/smalltalk/st0017.html)
+
+![](./2022-infoq/st0017-07.jpg)
+
+:::
+
