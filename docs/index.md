@@ -13,11 +13,11 @@ hero:
     alt: 凹语言
   actions:
     - theme: brand
-      text: 灵魂拷问
-      link: /qa/
+      text: 荣誉墙
+      link: /honor/
     - theme: alt
-      text: 参考手册
-      link: https://wa-lang.org/man/
+      text: 碎碎念
+      link: /smalltalk/
     - theme: alt
       text: Playground
       link: https://wa-lang.org/playground/
