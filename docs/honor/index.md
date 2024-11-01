@@ -6,9 +6,9 @@ title: 荣誉墙
 
 <div id="H20241024"></div>
 
-### 2024：GitCode长沙嘉年华([#H20241024](#H20241024))
+### 2024：凹语言获“GitCode年度十大开源人物”([#H20241024](#H20241024))
 
-::: tip [凹语言联合发起人丁尔男获“GitCode年度十大开源人物”](https://mp.weixin.qq.com/s/ErmxRS4u7bL--vsgC2ZPqw)
+::: tip [凹语言联合发起人「丁尔男」获“GitCode年度十大开源人物”](https://mp.weixin.qq.com/s/ErmxRS4u7bL--vsgC2ZPqw)
 ![](./2024-gitcode/ending.png)
 :::
 
@@ -20,13 +20,13 @@ title: 荣誉墙
 ![](./2024-gitcode/gstar-wa.jpg)
 :::
 
-### 2024：凹语言登上文汇报([#H20240831](#H20240831))
+### 2024：文汇报刊登凹语言专题([#H20240831](#H20240831))
 
-::: tip [凹语言联合发起人柴树杉获“上海·智慧工匠提名”被文汇报专题报道](https://dzb.whb.cn/imgPath/2024-08-29/40829.pdf)
+::: tip [凹语言联合发起人「柴树杉」获“上海·智慧工匠提名”被文汇报专题报道](https://dzb.whb.cn/imgPath/2024-08-29/40829.pdf)
 ![](./2024-wenhuibao/st0058-01.png)
 :::
 
-### 2024：凹语言入选 Gitee GVP 项目([#H20240701](#H20240701))
+### 2024：凹语言入选 “Gitee GVP 项目”([#H20240701](#H20240701))
 
 ::: tip [凹语言入选 Gitee GVP 最有价值的开源项目](https://wa-lang.org/smalltalk/st0043.html)
 
@@ -42,6 +42,15 @@ title: 荣誉墙
 ::: tip [https://www.ploc.org.cn/ploc/CNPL-2023.pdf](https://www.ploc.org.cn/ploc/CNPL-2023.pdf)
 
 ![](./2024-ploc/CNPL-2023.png)
+
+:::
+
+
+### 2023：凹语言入选“OSCAR尖峰开源人物”([#H20230921](#H20230921))
+
+::: tip 项目联合发起人之一「柴树杉」获得“[2023 OSCAR 尖峰开源人物](https://mp.weixin.qq.com/s/xm6jiy7cRGlgHD9e8vzOuQ)”。
+
+![](./2023-oscar/st0034-03.jpg)
 
 :::
 
