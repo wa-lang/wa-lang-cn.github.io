@@ -96,6 +96,7 @@
 <li>一个Issue引发的争议</li>
 <li>深挖Φ指令10年坑</li>
 <li>结果及思考</li>
+<li>Φ指令进化</li>
 </ul>
 
       
@@ -436,7 +437,7 @@ t7 = phi [0: t1, 1: t6]
         <h3>在战争中学习战争</h3>
         <p>通过这次事件，我们：</p>
 <ul>
-<li>学习到了 SSA 中 Phi 指令的特殊约束，并通过本文在中文社区传播这一知识；</li>
+<li>学习到了 SSA 中 Phi 指令的特殊约束，并通过本文在中文社区传播这一知识并引起讨论；</li>
 <li>构造了可以稳定触发 <strong>Phi并发</strong> 的测试用例；</li>
 <li>协助 Golang 解决了存在于 SSA 解释执行器中的错误。</li>
 </ul>
@@ -444,6 +445,30 @@ t7 = phi [0: t1, 1: t6]
 
       
       <span class="pagenumber">26</span>
+      </article>
+  
+  
+  
+      <article >
+      
+        <h2>Phi指令再进化</h2>
+      
+      <span class="pagenumber">27</span>
+      </article>
+  
+  
+  
+      <article >
+      
+        <h3>Phi指令进化为Block参数</h3>
+        <p>在更新的MLIR和SwiftIR都引入了Block参数，通过提前计算以避免Phi指令并行的干扰。</p>
+
+<div class="image">
+  <img src="images/mlir-block-args.png" height="500" width="600">
+</div>
+
+      
+      <span class="pagenumber">28</span>
       </article>
   
   
@@ -458,10 +483,12 @@ t7 = phi [0: t1, 1: t6]
 <li><a href="https://github.com/wa-lang/wa/commit/8138ee" target="_blank" rel="noopener">凹语言: 修正 Phi 未并行执行的问题</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Static_single-assignment_form" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Static_single-assignment_form</a></li>
 <li><a href="https://homes.luddy.indiana.edu/achauhan/Teaching/B629/2006-Fall/CourseMaterial/1998-spe-briggs-ssa_improv.pdf" target="_blank" rel="noopener">Practical Improvements to the Construction and Destruction of Static Single Assignment Form</a></li>
+<li><a href="https://mlir.llvm.org/docs/LangRef/#blocks" target="_blank" rel="noopener">https://mlir.llvm.org/docs/LangRef/#blocks</a></li>
+<li><a href="https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks" target="_blank" rel="noopener">https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks</a></li>
 </ul>
 
       
-      <span class="pagenumber">27</span>
+      <span class="pagenumber">29</span>
       </article>
   
   

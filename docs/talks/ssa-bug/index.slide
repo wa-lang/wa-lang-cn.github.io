@@ -29,7 +29,7 @@ https://wa-lang.org
 - 一个Issue引发的争议
 - 深挖Φ指令10年坑
 - 结果及思考
-
+- Φ指令进化
 
 // --------------------------------------------------------
 ## 凹语言简介
@@ -212,11 +212,22 @@ Alan Donovan 迅速提交了修正 `golang.org/x/tools/go/ssa/interp` 包的 pr�
 
 通过这次事件，我们：
 
-- 学习到了 SSA 中 Phi 指令的特殊约束，并通过本文在中文社区传播这一知识；
+- 学习到了 SSA 中 Phi 指令的特殊约束，并通过本文在中文社区传播这一知识并引起讨论；
 - 构造了可以稳定触发 **Phi并发** 的测试用例；
 - 协助 Golang 解决了存在于 SSA 解释执行器中的错误。
 
 经常有人质问我们：“重复发明轮子有何意义？”，这一经历正好可以用来作为回应。
+
+
+// --------------------------------------------------------
+## Phi指令再进化
+// --------------------------------------------------------
+
+## Phi指令进化为Block参数
+
+在更新的MLIR和SwiftIR都引入了Block参数，通过提前计算以避免Phi指令并行的干扰。
+
+.image images/mlir-block-args.png 500 600
 
 ## 参考链接
 
@@ -226,4 +237,6 @@ Alan Donovan 迅速提交了修正 `golang.org/x/tools/go/ssa/interp` 包的 pr�
 - [凹语言: 修正 Phi 未并行执行的问题](https://github.com/wa-lang/wa/commit/8138ee)
 - [https://en.wikipedia.org/wiki/Static_single-assignment_form](https://en.wikipedia.org/wiki/Static_single-assignment_form)
 - [Practical Improvements to the Construction and Destruction of Static Single Assignment Form](https://homes.luddy.indiana.edu/achauhan/Teaching/B629/2006-Fall/CourseMaterial/1998-spe-briggs-ssa_improv.pdf)
+- [https://mlir.llvm.org/docs/LangRef/#blocks](https://mlir.llvm.org/docs/LangRef/#blocks)
+- [https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks](https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks)
 
