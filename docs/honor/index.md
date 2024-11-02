@@ -67,7 +67,7 @@ title: 荣誉墙
 
 ::: tip [https://wa-lang.org/smalltalk/st0023.html](https://wa-lang.org/smalltalk/st0023.html)
 
-![](./2023-bjos/st0025-01.png)
+![](./2023-bjos/zhengshu-wa.jpg)
 
 当时开发团队成员获得的证书：
 
