@@ -16,7 +16,7 @@ title: 荣誉墙
 ![](./2024-gitcode/landscape-wa.png)
 :::
 
-::: tip 凹语言也首批入选“GStar项目”并顺利毕业并毕业的项目
+::: tip 凹语言首批入选“G-Star项目”
 ![](./2024-gitcode/gstar-wa.jpg)
 :::
 
@@ -55,7 +55,7 @@ title: 荣誉墙
 :::
 
 
-### 2023：凹语言加入CNCF的wasm全景图([#H20230914](#H20230914))
+### 2023：凹语言入选 CNCF WASM 全景图([#H20230914](#H20230914))
 
 ::: tip [https://wa-lang.org/smalltalk/st0033.html](https://wa-lang.org/smalltalk/st0033.html)
 
@@ -69,7 +69,7 @@ title: 荣誉墙
 
 ![](./2023-bjos/zhengshu-wa.jpg)
 
-当时开发团队成员获得的证书：
+开发团队获得的证书：
 
 ![](./2023-bjos/zhengshu-all.png)
 
