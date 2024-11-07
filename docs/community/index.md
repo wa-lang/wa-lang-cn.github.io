@@ -6,6 +6,7 @@ title: 社区/捐赠
 
 - [代码仓库@gitee](https://gitee.com/wa-lang/wa)
 - [代码仓库@gitcode](https://gitcode.com/wa-lang/wa)
+- [代码仓库@github](https://github.com/wa-lang/wa)
 - [开源中国·博客](https://my.oschina.net/walang)
 - QQ群：112919306
 - Twitter: [@wayuyan](https://twitter.com/wayuyan)
