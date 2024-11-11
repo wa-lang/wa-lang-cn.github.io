@@ -61,6 +61,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言参加 MoonBit Meetup 总结  🎉',
-  link: 'https://wa-lang.org/smalltalk/st0061.html',
+  title: '🎉 凹语言完成全部语言特性！ 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0063.html',
 }
