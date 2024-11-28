@@ -27,7 +27,7 @@ onBeforeUnmount(() => {
   <ClientOnly>
     <div class="comments">
       <giscus-widget
-        repo="wa-lang/wa-lang.github.io"
+        repo="wa-lang/wa-lang-cn.github.io"
         repo-id="MDEwOlJlcG9zaXRvcnkxNjI5NDU2MDU="
         category="General"
         category-id="DIC_kwDOCbZaRc4CQYyU"

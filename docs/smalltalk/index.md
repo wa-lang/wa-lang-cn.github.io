@@ -81,7 +81,7 @@ title: 碎碎念
 碎碎念可接收外部投稿，投稿规则：
 
 ::: info 第一步 
-找到仓库 [wa-lang.github.io](https://github.com/wa-lang/wa-lang.github.io) 的`/docs/smalltalk/` 目录
+找到仓库 [wa-lang-cn.github.io](https://github.com/wa-lang/wa-lang-cn.github.io) 的`/docs/smalltalk/` 目录
 :::
 
 ::: info 第二步

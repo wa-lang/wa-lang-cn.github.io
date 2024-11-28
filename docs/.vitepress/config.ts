@@ -20,7 +20,7 @@ export default async () => defineConfig({
     logo: '/favicon.svg',
 
     editLink: {
-      pattern: 'https://github.com/wa-lang/wa-lang.github.io/edit/master/docs/:path',
+      pattern: 'https://github.com/wa-lang/wa-lang-cn.github.io/edit/master/docs/:path',
       text: '为此页提供修改建议',
     },
 
