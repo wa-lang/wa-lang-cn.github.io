@@ -112,26 +112,6 @@ export default async () => defineConfig({
           ],
         },
       ],
-      '/en/': [
-        {
-          text: 'Guide',
-          items: [
-            { text: 'Index', link: '/en/' },
-            { text: 'Quick Start', link: '/en/guide/quick-start' },
-            { text: 'Playground', link: '/en/guide/playground' },
-            { text: 'Example: Prime', link: '/en/guide/example-prime' },
-            { text: 'Run as Go Script', link: '/en/guide/as-go-script' },
-          ],
-        },
-        {
-          text: 'Blog',
-          items: [
-            { text: 'The Wa Blog', link: '/en/blog/' },
-            { text: 'Fleet: Wa Highlight', link: '/en/blog/blog0001.md' },
-            { text: 'Wa Language and Turing & BrainFuck', link: '/en/blog/blog0002.md' },
-          ],
-        },
-      ],
     },
     footer: {
       copyright: '版权 ©️ 凹语言开发组 2018，保留权利',
