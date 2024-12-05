@@ -114,7 +114,7 @@ export default async () => defineConfig({
       ],
     },
     footer: {
-      copyright: '版权 ©️ 凹语言开发组 2018，保留权利',
+      copyright: '版权 ©️ 武汉市江夏区凹语言开发工作室，保留权利',
     },
   },
 
