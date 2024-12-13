@@ -9,8 +9,8 @@ title: 荣誉墙
 ### 2024：凹语言获 2024 上海数智融合开源技术应用创新竞赛一等奖([#H20241213](#H20241213))
 
 ::: tip 凹语言核心团队成员「扈梦明」获得 2024 上海数智融合开源技术应用创新竞赛一等奖
-![](./2024-shanghai/shanghai-hu-01.jpeg)
-![](./2024-shanghai/shanghai-hu-02.jpeg)
+![](./2024-shanghai/shanghai-hu-01.png)
+![](./2024-shanghai/shanghai-hu-02.png)
 :::
 
 
