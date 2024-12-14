@@ -63,6 +63,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言完成全部语言特性！ 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0063.html',
+  title: '🎉 凹语言获上海开源创新竞赛一等奖 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0064.html',
 }
