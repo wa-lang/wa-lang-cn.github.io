@@ -20,7 +20,7 @@ title: 荣誉墙
 ![](./2024-gitcode/ending.png)
 :::
 
-::: tip 凹语言入选“GitCode首发开源全景图”（注：左边是仓颉语言）
+::: tip 凹语言入选“GitCode首发开源全景图”
 ![](./2024-gitcode/landscape-wa.png)
 :::
 
