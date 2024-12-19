@@ -4,6 +4,15 @@ title: 荣誉墙
 
 # 荣誉墙
 
+
+<div id="H20241219"></div>
+
+### 2024：凹语言跻身PLDB排行榜前200名([#H20241219](#H20241219))
+
+::: tip [https://wa-lang.org/smalltalk/st0065.html](https://wa-lang.org/smalltalk/st0065.html)
+![](./2024-pldb/st0065-01.png)
+:::
+
 <div id="H20241213"></div>
 
 ### 2024：凹语言获 2024 上海数智融合开源技术应用创新竞赛一等奖([#H20241213](#H20241213))
