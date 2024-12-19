@@ -1,0 +1,1 @@
+import{_ as s,c as e,o as n,a}from"./app.9cb86750.js";const u=JSON.parse('{"title":"版权信息","description":"","frontmatter":{},"headers":[],"relativePath":"guide/license.md"}'),o={name:"guide/license.md"},l=a("",3),p=[l];function t(r,i,c,d,f,y){return n(),e("div",null,p)}const m=s(o,[["render",t]]);export{u as __pageData,m as default};
