@@ -56,6 +56,7 @@ export const DEMOS = [
   { name: '分型', logoName: 'wa.png', link: 'https://wa-lang.org/examples/mandelbrot/' },
   { name: 'QRCode', logoName: 'wa.png', link: 'https://wa-lang.org/examples/qrcode/' },
   { name: 'Brainfuck', logoName: 'wa.png', link: 'https://wa-lang.org/wa/brainfuck/' },
+  { name: 'Dora-SSR', logoName: 'wa.png', link: 'https://github.com/IppClub/dora-wa' },
 ]
 
 export const FRIENDLY_LINK = [
