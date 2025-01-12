@@ -5,6 +5,15 @@ title: 荣誉墙
 # 荣誉墙
 
 
+<div id="H20250112"></div>
+
+### 2025：Dora SSR游戏引擎支持凹语言([#H20250112](#H20250112))
+
+::: tip [https://wa-lang.org/smalltalk/st0067.html](https://wa-lang.org/smalltalk/st0067.html)
+![](./2025-dora-ssr/st0067-04.png)
+:::
+
+
 <div id="H20241219"></div>
 
 ### 2024：凹语言跻身PLDB排行榜前200名([#H20241219](#H20241219))

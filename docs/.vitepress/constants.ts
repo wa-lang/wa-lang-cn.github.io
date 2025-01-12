@@ -66,6 +66,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言跻身PLDB排行榜前200名 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0065.html',
+  title: '🎉 使用凹语言开发Dora SSR游戏 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0067.html',
 }
