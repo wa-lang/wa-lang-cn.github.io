@@ -13,6 +13,16 @@ title: 荣誉墙
 ![](./2025-dora-ssr/st0067-04.png)
 :::
 
+<div id="H20250107"></div>
+
+### 2025：凹语言入选《国产编程语言蓝皮书-2025》([#H20240218](#H20250107))
+
+::: tip [https://cdn-static.gitcode.com/doc/CNPL-2024-CHS.pdf](https://cdn-static.gitcode.com/doc/CNPL-2024-CHS.pdf)
+
+![](./2025-ploc/CNPL-2024-CHS.png)
+
+:::
+
 
 <div id="H20241219"></div>
 
