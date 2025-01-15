@@ -80,6 +80,7 @@ title: 碎碎念
 
 ## 幻灯片
 
+- 2025-01-16: [凹语言案例介绍](https://wa-lang.org/talks/wa-gallery)
 - 2024-11-03: [凹语言map与Φ指令的纠葛](https://wa-lang.org/talks/ssa-bug)
 
 
