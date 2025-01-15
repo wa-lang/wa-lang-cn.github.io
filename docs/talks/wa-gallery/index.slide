@@ -1,0 +1,103 @@
+# 凹语言案例介绍
+
+国产编程语言蓝皮书发布会
+
+柴树杉
+16 Jan 2025
+https://wa-lang.org
+
+## 0. 凹语言简介
+
+- 2019 年，立项；
+- 2022 年 7 月，正式开源；
+- 2023 年 8 月，发布最小可用（MVP）版；
+- 2024 年 11 月实现所有语法特性；
+- 2025 年 1 月 Dora SSR 游戏引擎支持凹语言开发。
+
+.image images/logo.svg
+
+## 1. 凹语言 Playground - 2022 - 纯 WASM 方案, 不依赖服务器
+
+.image images/playground.png 500 900
+
+.caption [[https://wa-lang.org/playground/][https://wa-lang.org/playground/]]
+
+## 2. 凹语言实现BF虚拟机 - 2022
+
+.image images/st0013-03.png 500 650
+
+.caption [[https://wa-lang.org/wa/brainfuck/][https://wa-lang.org/wa/brainfuck/]]
+
+## 3. 凹语言实现贪吃蛇 - 2022
+
+.image images/st0018-01.png 500 650
+
+.caption [[https://wa-lang.org/wa/snake/][https://wa-lang.org/wa/snake/]]
+
+## 4. 凹语言实现NES小霸王游戏机模拟器 - 2023
+
+.image images/st0036-01.png 450 800
+
+.caption [[https://wa-lang.org/nes/][https://wa-lang.org/nes/]]
+
+## 5. 凹语言 & WebGPU 模拟火星小行星 - 2023
+
+.image images/st0036-02.png 400 800
+
+.caption [[https://wa-lang.org/webgpu/][https://wa-lang.org/webgpu/]]
+
+## 6. 凹语言支持P5儿童编程 - 2024
+
+.image images/st0037-02.png 500 900
+
+.caption [[https://github.com/chai2010/wa-example-p5][https://github.com/chai2010/wa-example-p5]]
+
+## 7. 凹语言支持Wasm4游戏 - 2024
+
+.image images/st0046-03.png 350 700
+
+.caption Wasm4/贪吃蛇 [[https://wa-lang.org/wa/w4-snake/][https://wa-lang.org/wa/w4-snake/]]
+
+.caption Wasm4/2048 [[https://wa-lang.org/wa/w4-2048/][https://wa-lang.org/wa/w4-2048/]]
+
+.caption Wasm4/俄罗斯方块 [[https://wa-lang.org/wa/w4-tetris/][https://wa-lang.org/wa/w4-tetris/]]
+
+.caption Wasm4/放大镜 [[https://wa-lang.org/wa/w4-magnifying-glass/][https://wa-lang.org/wa/w4-magnifying-glass/]]
+
+.caption Wasm4/生命游戏 [[https://wa-lang.org/wa/w4-life/][https://wa-lang.org/wa/w4-life/]]
+
+## 8. 凹语言支持 Arduino Nano 33 - 2024
+
+.image images/st0015-02.jpg 450 800
+
+.caption [[https://wa-lang.org/smalltalk/st0052.html][https://wa-lang.org/smalltalk/st0052.html]]
+
+## 9. 凹语言支持 Github Action - 2024
+
+.image images/st0066-01.png 450 700
+
+.caption [[https://github.com/wa-lang/setup-wa][https://github.com/wa-lang/setup-wa]]
+
+## 10. 凹语言支持 Dora SSR 游戏引擎 - 2025
+
+.image images/st0067-01.png 500 800
+
+.caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
+
+## 11. 案例列表
+
+.image images/list.png 500 900
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+## 12. 贡献成员
+
+.image images/gongxianzhe-2024.png 400 1000
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+## 13. 参考链接
+
+- [https://wa-lang.org](https://wa-lang.org)
+- [https://gitcode.com/wa-lang/wa](https://gitcode.com/wa-lang/wa)
+- [https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ](https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ)
