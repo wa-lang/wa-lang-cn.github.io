@@ -1,6 +1,6 @@
 # 凹语言案例介绍
 
-国产编程语言蓝皮书发布会
+国产编程语言蓝皮书发布会 - 凹语言展示
 
 柴树杉
 16 Jan 2025
@@ -12,15 +12,13 @@ https://wa-lang.org
 - 2022 年 7 月，正式开源；
 - 2023 年 8 月，发布最小可用（MVP）版；
 - 2024 年 11 月实现所有语法特性；
-- 2025 年 1 月 Dora SSR 游戏引擎支持凹语言开发。
+- 2025 年 1 月开始生产环境试用；Dora SSR 游戏引擎支持凹语言开发。
 
 .image images/logo.svg
 
 ## 2. 凹语言 Playground
 
-为 WebAssembly 设计的通用编程语言！
-
-.image images/playground.png 500 900
+.image images/playground.png 520 800
 
 .caption [[https://wa-lang.org/playground/][https://wa-lang.org/playground/]]
 
@@ -60,19 +58,19 @@ https://wa-lang.org
 
 .caption [[https://wa-lang.org/smalltalk/st0052.html][https://wa-lang.org/smalltalk/st0052.html]]
 
-## 9. 游戏开发: Wasm4 复古风小游戏 - 2024
+## 9. 游戏开发: Wasm4 游戏引擎 - 2024 - 贪吃蛇
 
-.image images/st0046-03.png 350 700
+.image images/st0046-03.png 450 900
 
 .caption Wasm4/贪吃蛇 [[https://wa-lang.org/wa/w4-snake/][https://wa-lang.org/wa/w4-snake/]]
 
-.caption Wasm4/2048 [[https://wa-lang.org/wa/w4-2048/][https://wa-lang.org/wa/w4-2048/]]
+## 9. 游戏开发: Wasm4 游戏引擎 - 2024 - 更多游戏
 
-.caption Wasm4/俄罗斯方块 [[https://wa-lang.org/wa/w4-tetris/][https://wa-lang.org/wa/w4-tetris/]]
+.image images/wasm4-more.png 450 750
 
-.caption Wasm4/放大镜 [[https://wa-lang.org/wa/w4-magnifying-glass/][https://wa-lang.org/wa/w4-magnifying-glass/]]
+.caption 2048, 俄罗斯方块, 井字棋, 放大镜, 生命游戏, 迷你星舰
 
-.caption Wasm4/生命游戏 [[https://wa-lang.org/wa/w4-life/][https://wa-lang.org/wa/w4-life/]]
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
 
 ## 10. 游戏开发: Dora SSR 游戏引擎 - 2025
 
@@ -80,9 +78,15 @@ https://wa-lang.org
 
 .caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
 
+## 10. 游戏开发: Dora SSR 游戏引擎 - 2025 - 凹语言
+
+.image images/st0067-04.png 500 800
+
+.caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
+
 ## 11. 自动化构建: Github Action - 2024
 
-.image images/st0066-01.png 450 700
+.image images/github-action-setup-wa.png 500 800
 
 .caption [[https://github.com/wa-lang/setup-wa][https://github.com/wa-lang/setup-wa]]
 
@@ -102,4 +106,7 @@ https://wa-lang.org
 
 - [https://wa-lang.org](https://wa-lang.org)
 - [https://gitcode.com/wa-lang/wa](https://gitcode.com/wa-lang/wa)
+- [https://ploc.org.cn](https://ploc.org.cn)
+- [https://gitcode.com/ploc-org/CNPL](https://gitcode.com/ploc-org/CNPL)
+- [https://mp.weixin.qq.com/s/yTPiqggOfjFC3Hev8iEWTA](https://mp.weixin.qq.com/s/yTPiqggOfjFC3Hev8iEWTA)
 - [https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ](https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ)
