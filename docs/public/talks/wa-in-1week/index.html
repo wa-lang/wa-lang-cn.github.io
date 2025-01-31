@@ -53,8 +53,8 @@
         <ul>
 <li>数值
 <ul>
-<li>整数：-1, 0, 100</li>
-<li>实数 (浮点数)：1.2, 2.3e-6, -1.2e3</li>
+<li>整数：-1, 0, 42</li>
+<li>实数 (浮点数)：1.3, 2.3e-6, -1.2e3</li>
 <li>复数：2+5i, 1.2i</li>
 </ul>
 </li>
@@ -65,7 +65,7 @@
 </li>
 <li>文本 (字符串)
 <ul>
-<li>&quot;Hello&quot;, &quot;你好&quot;, &quot;123&quot;, &quot;-1.2e3&quot;, &quot;true&quot;</li>
+<li>&quot;Hello&quot;, &quot;凹语言&quot;, &quot;123&quot;, &quot;-1.2e3&quot;, &quot;true&quot;</li>
 </ul>
 </li>
 </ul>
@@ -121,15 +121,15 @@
 <li><code>main</code> 是入口函数，其他函数 <code>sin(-1.2)</code>, <code>pow(2, 3)</code></li>
 <li>运算即函数
 <ul>
-<li>1 + 2 等价于 add(1, 2)</li>
-<li>32 &gt;= 0 等价于 greatThan(32, 0)</li>
-<li>!false 等价于 not(false)</li>
-<li>true &amp;&amp; false 等价于 and(true, false)</li>
+<li><code>1 + 2</code> 等价于 <code>add(1, 2)</code></li>
+<li><code>32 &gt;= 0</code> 等价于 <code>greatThan(32, 0)</code></li>
+<li><code>!false</code> 等价于 <code>not(false)</code></li>
+<li><code>true &amp;&amp; false</code> 等价于 <code>and(true, false)</code></li>
 </ul>
 </li>
 <li>运算优先级
 <ul>
-<li>32 &gt;= 0 &amp;&amp; !false 等价于 <code>and(greatThan(32, 0), not(false))</code></li>
+<li><code>32 &gt;= 0 &amp;&amp; !false</code> 等价于 <code>and(greatThan(32, 0), not(false))</code></li>
 </ul>
 </li>
 <li>不同语言运算有细微差异
@@ -169,11 +169,11 @@ func main {
       
         <h3>5. 变量</h3>
         <ul>
-<li>常量：不可修改的值 <code>const x = 123</code></li>
-<li>全局变量：可以修改的值 <code>global x = 123</code></li>
-<li>局部变量：可以修改的值 <code>x := 123</code>
+<li>常量：不可修改的值 <code>const x = 42</code></li>
+<li>全局变量：可以修改的值 <code>global x = 42</code></li>
+<li>局部变量：可以修改的值 <code>x := 42</code>
 <ul>
-<li><code>x := 123</code> (第一次定义并设置局部变量的值)</li>
+<li><code>x := 42</code> (第一次定义并设置局部变量的值)</li>
 </ul>
 </li>
 <li><code>x = 10</code> (后续再改)</li>
