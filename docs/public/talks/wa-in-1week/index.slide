@@ -169,14 +169,23 @@ func main {
 }
 ```
 
-## 13. 凹语言编程哲学
+## 13. 凹语言 Playground
+
+.image images/playground.png 520 800
+
+.caption [[https://wa-lang.org/playground/][https://wa-lang.org/playground/]]
+
+
+## 14. 凹语言编程哲学
 
 - 简单易用、中英文编程友好
 - 少儿编程启蒙、小游戏开发友好
 - 静态类型、编译型通用语言
 - 多操作系统、多硬件平台支持
 
-## 参考链接
+.image images/logo.svg
+
+## 15. 参考链接
 
 - [https://wa-lang.org](https://wa-lang.org)
 - [https://wa-lang.org/playground](https://wa-lang.org/playground)
@@ -184,4 +193,3 @@ func main {
 - [https://github.com/wa-lang/wa](https://github.com/wa-lang/wa)
 - [http://open.qiniu.us/composition-of-programming-languages.pdf](http://open.qiniu.us/composition-of-programming-languages.pdf) (基于该模板, 感谢)
 
-.image images/logo.svg
