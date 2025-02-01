@@ -29,6 +29,7 @@ export const CONTRIBUTORS = [
   { name: 'imalasong', points: 1000 },
   { name: '杨刚', points: 4000 },
   { name: '崔爽', points: 2000 },
+  { name: '李瑾', points: 10000 },
 ]
 
 export const COMMUNITIES = [
