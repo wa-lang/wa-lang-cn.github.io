@@ -9,7 +9,7 @@ hero:
   name: 凹语言
   text: 为WebAssembly而生
   image:
-    src: /logo-shadow.svg
+    src: /wa-chan/wa-chan-front-small-logo-animate1.svg
     alt: 凹语言
   actions:
     - theme: brand
