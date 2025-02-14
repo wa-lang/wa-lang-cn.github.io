@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as t,a as r}from"./app.7aa8a6c2.js";const m=JSON.parse('{"title":"凹语言幻灯片","description":"","frontmatter":{},"headers":[],"relativePath":"talks/index.md"}'),s={name:"talks/index.md"},_=r("",2),i=[_];function n(o,c,l,d,h,p){return t(),a("div",null,i)}const u=e(s,[["render",n]]);export{m as __pageData,u as default};
