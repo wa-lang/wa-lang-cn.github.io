@@ -67,6 +67,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言吉祥物——WA酱诞生! 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0069.html',
+  title: '🎉 WA酱带来两首凹语言新歌 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0070.html',
 }
