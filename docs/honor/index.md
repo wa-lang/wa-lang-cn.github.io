@@ -5,6 +5,15 @@ title: 荣誉墙
 # 荣誉墙
 
 
+<div id="H20250227"></div>
+
+### 2025：凹语言登上长江日报([#H20250227](#H20250227))
+
+::: tip [https://wa-lang.org/smalltalk/st0071.html](https://wa-lang.org/smalltalk/st0071.html)
+![](./2025-cjrb/st0071-01.png)
+![](./2025-cjrb/st0071-02.png)
+:::
+
 <div id="H20250112"></div>
 
 ### 2025：Dora SSR游戏引擎支持凹语言([#H20250112](#H20250112))
