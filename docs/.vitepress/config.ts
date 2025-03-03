@@ -33,7 +33,7 @@ export default async () => defineConfig({
     nav: [
       { text: '荣誉墙', link: '/honor/', activeMatch: '/honor/' },
       { text: '灵魂拷问', link: '/qa/', activeMatch: '/qa/' },
-      { text: '参考手册', link: 'https://wa-lang.org/man/' },
+      { text: '学习指南', link: 'https://wa-lang.org/tutorial/' },
       { text: 'Playground', link: 'https://wa-lang.org/playground/' },
       { text: '碎碎念', link: '/smalltalk/', activeMatch: '/smalltalk/' },
       { text: '社区', link: '/community/', activeMatch: '/community/' },
