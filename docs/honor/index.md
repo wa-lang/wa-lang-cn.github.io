@@ -9,6 +9,7 @@ title: 荣誉墙
 
 ### 2025：凹语言被维基百科收录([#H20250228](#H20250228))
 
+::: tip [https://zh.wikipedia.org/wiki/凹语言](https://zh.wikipedia.org/wiki/%E5%87%B9%E8%AF%AD%E8%A8%80)
 ![](./2025-wiki/st0073-01.png)
 :::
 
