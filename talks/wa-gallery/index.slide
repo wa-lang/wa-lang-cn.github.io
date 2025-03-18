@@ -1,0 +1,112 @@
+# 凹语言案例介绍
+
+国产编程语言蓝皮书发布会 - 凹语言展示
+
+柴树杉
+16 Jan 2025
+https://wa-lang.org
+
+## 1. 凹语言历史
+
+- 2019 年，立项；
+- 2022 年 7 月，正式开源；
+- 2023 年 8 月，发布最小可用（MVP）版；
+- 2024 年 11 月实现所有语法特性；
+- 2025 年 1 月开始生产环境试用；Dora SSR 游戏引擎支持凹语言开发。
+
+.image images/logo.svg
+
+## 2. 凹语言 Playground
+
+.image images/playground.png 520 800
+
+.caption [[https://wa-lang.org/playground/][https://wa-lang.org/playground/]]
+
+## 3. 早期项目: 凹语言实现BF虚拟机 - 2022
+
+.image images/st0013-03.png 500 650
+
+.caption [[https://wa-lang.org/wa/brainfuck/][https://wa-lang.org/wa/brainfuck/]]
+
+## 4. 早期项目: 凹语言实现贪吃蛇 - 2022
+
+.image images/st0018-01.png 500 650
+
+.caption [[https://wa-lang.org/wa/snake/][https://wa-lang.org/wa/snake/]]
+
+## 5. 模拟器开发: 凹语言实现NES小霸王游戏机模拟器 - 2023
+
+.image images/st0036-01.png 450 800
+
+.caption [[https://wa-lang.org/nes/][https://wa-lang.org/nes/]]
+
+## 6. WebGPU: 模拟火星小行星 - 2023
+
+.image images/st0036-02.png 400 800
+
+.caption [[https://wa-lang.org/webgpu/][https://wa-lang.org/webgpu/]]
+
+## 7. 编程教育: P5儿童编程 - 2024
+
+.image images/st0037-02.png 500 900
+
+.caption [[https://github.com/chai2010/wa-example-p5][https://github.com/chai2010/wa-example-p5]]
+
+## 8. 硬件开发: Arduino Nano 33 - 2024
+
+.image images/st0015-02.jpg 450 800
+
+.caption [[https://wa-lang.org/smalltalk/st0052.html][https://wa-lang.org/smalltalk/st0052.html]]
+
+## 9. 游戏开发: Wasm4 游戏引擎 - 2024 - 贪吃蛇
+
+.image images/st0046-03.png 450 900
+
+.caption Wasm4/贪吃蛇 [[https://wa-lang.org/wa/w4-snake/][https://wa-lang.org/wa/w4-snake/]]
+
+## 9. 游戏开发: Wasm4 游戏引擎 - 2024 - 更多游戏
+
+.image images/wasm4-more.png 450 750
+
+.caption 2048, 俄罗斯方块, 井字棋, 放大镜, 生命游戏, 迷你星舰
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+## 10. 游戏开发: Dora SSR 游戏引擎 - 2025
+
+.image images/st0067-01.png 500 800
+
+.caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
+
+## 10. 游戏开发: Dora SSR 游戏引擎 - 2025 - 凹语言
+
+.image images/st0067-04.png 500 800
+
+.caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
+
+## 11. 自动化构建: Github Action - 2024
+
+.image images/github-action-setup-wa.png 500 800
+
+.caption [[https://github.com/wa-lang/setup-wa][https://github.com/wa-lang/setup-wa]]
+
+## 12. 案例列表
+
+.image images/list.png 500 900
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+## 13. 贡献成员
+
+.image images/gongxianzhe-2024.png 400 1000
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+## 14. 参考链接
+
+- [https://wa-lang.org](https://wa-lang.org)
+- [https://gitcode.com/wa-lang/wa](https://gitcode.com/wa-lang/wa)
+- [https://ploc.org.cn](https://ploc.org.cn)
+- [https://gitcode.com/ploc-org/CNPL](https://gitcode.com/ploc-org/CNPL)
+- [https://mp.weixin.qq.com/s/yTPiqggOfjFC3Hev8iEWTA](https://mp.weixin.qq.com/s/yTPiqggOfjFC3Hev8iEWTA)
+- [https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ](https://mp.weixin.qq.com/s/c1gTZLjHplU8r61gziF_EQ)
