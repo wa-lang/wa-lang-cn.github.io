@@ -20,6 +20,7 @@ title: 荣誉墙
 ::: tip [https://wa-lang.org/smalltalk/st0071.html](https://wa-lang.org/smalltalk/st0071.html)
 ![](./2025-cjrb/st0071-01.png)
 ![](./2025-cjrb/st0071-02.png)
+![](./2025-cjrb/st0077-03.jpg)
 :::
 
 <div id="H20250112"></div>
