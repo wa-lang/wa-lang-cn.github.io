@@ -67,6 +67,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言成为武汉开源创新联盟首批会员单位 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0077.html',
+  title: '🎉 凹语言启动首轮贡献者回馈 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0078.html',
 }
