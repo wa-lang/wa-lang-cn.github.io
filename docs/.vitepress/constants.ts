@@ -25,7 +25,7 @@ export const CONTRIBUTORS = [
   { name: 'small_broken_gong', points: 100 },
   { name: 'tk103331', points: 100 },
   { name: '蔡兴', points: 3000 },
-  { name: '王仁义', points: 1000 },
+  { name: '王任义', points: 1000 },
   { name: 'imalasong', points: 1000 },
   { name: '杨刚', points: 4000 },
   { name: '崔爽', points: 2000 },
