@@ -3,11 +3,11 @@ layout: home
 sidebar: false
 
 title: 凹语言
-titleTemplate: 为WebAssembly而生
+titleTemplate: 因为简单, 所以自由
 
 hero:
   name: 凹语言
-  text: 为WebAssembly而生
+  text: 因为简单, 所以自由
   image:
     src: /wa-chan/wa-chan-front-small-logo-animate1.svg
     alt: 凹语言
