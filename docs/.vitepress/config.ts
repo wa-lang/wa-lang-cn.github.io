@@ -115,7 +115,7 @@ export default async () => defineConfig({
       ],
     },
     footer: {
-      copyright: '版权 ©️ 武汉市凹语言科技有限公司，保留权利',
+      copyright: '版权 ©️ 武汉凹语言科技有限公司，保留权利',
     },
   },
 
