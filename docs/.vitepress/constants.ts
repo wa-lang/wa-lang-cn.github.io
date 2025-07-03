@@ -7,10 +7,10 @@ export const ICONS = {
 }
 
 export const CONTRIBUTORS = [
-  { name: '柴树杉', points: 86000 },
-  { name: '丁尔男', points: 90500 },
+  { name: '柴树杉', points: 99650 },
+  { name: '丁尔男', points: 104150 },
   { name: '史斌', points: 10000 },
-  { name: '扈梦明', points: 49000 },
+  { name: '扈梦明', points: 60000 },
   { name: '赵普明', points: 10000 },
   { name: '宋汝阳', points: 2000 },
   { name: '刘云峰', points: 1000 },
@@ -26,10 +26,12 @@ export const CONTRIBUTORS = [
   { name: 'tk103331', points: 100 },
   { name: '蔡兴(￥1000)', points: 3000 },
   { name: '王任义', points: 1000 },
-  { name: 'imalasong', points: 1000 },
+  { name: 'imalasong', points: 2000 },
   { name: '杨刚', points: 4000 },
   { name: '崔爽', points: 2000 },
-  { name: '李瑾', points: 10000 },
+  { name: '李瑾', points: 20000 },
+  { name: '王委委', points: 100 },
+  { name: '雪碧', points: 100 },
 ]
 
 export const COMMUNITIES = [
