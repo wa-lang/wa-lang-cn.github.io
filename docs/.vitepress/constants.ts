@@ -35,10 +35,10 @@ export const CONTRIBUTORS = [
 ]
 
 export const COMMUNITIES = [
-  { name: '𝕏', logoName: 'x.png', link: 'https://twitter.com/wayuyan' },
-  { name: 'B站', logoName: 'bilibili.png', link: 'https://space.bilibili.com/344260496' },
+  { name: '公众号', logoName: 'wechat.svg', link: 'https://mp.weixin.qq.com/s/W-yKrT904jCHm_OXS0f0gA' },
   { name: '知乎', logoName: 'zhihu.svg', link: 'https://www.zhihu.com/question/570351019' },
-  { name: '开源中国', logoName: 'oschina.png', link: 'https://my.oschina.net/walang' },
+  { name: 'B站', logoName: 'bilibili.png', link: 'https://space.bilibili.com/344260496' },
+  { name: '𝕏', logoName: 'x.png', link: 'https://twitter.com/wayuyan' },
 ]
 
 export const DEMOS = [
