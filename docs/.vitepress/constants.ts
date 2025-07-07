@@ -66,6 +66,7 @@ export const FRIENDLY_LINK = [
   { name: 'PLOC', logoName: 'ploc-logo.svg', link: 'https://ploc.org.cn/' },
   { name: '洛书', logoName: 'losu.png', link: 'https://losu.tech/' },
   { name: 'Dora SSR', logoName: 'dora.svg', link: 'https://dora-ssr.net/' },
+  { name: 'Deepin', logoName: 'deepin.svg', link: 'https://deepin.org/' },
 ]
 
 export const NAV_BANNER = {
