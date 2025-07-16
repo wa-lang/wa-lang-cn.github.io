@@ -8,7 +8,7 @@ import HighlightedExt from './plugins/highlightedExt'
 export default async () => defineConfig({
   lang: 'zh-CN',
   title: '凹语言',
-  description: '针对 WASM 平台设计的通用编程语言',
+  description: '因为简单, 所以自由',
   appearance: true,
 
   locales: {
@@ -120,7 +120,24 @@ export default async () => defineConfig({
   },
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.svg' }],
+    ['link', { rel: 'icon', href: '/favicon.ico', type: 'image/x-ico' }],
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+
+    // Apple 设备图标
+    ['link', { rel: 'apple-touch-icon', href: '/favicon.png' }],
+
+    // chrome 设备
+    ['link', { rel: 'icon', sizes: '192x192', href: '/logo-192x192.png', type: 'image/png' }],
+    ['link', { rel: 'icon', sizes: '512x512', href: '/logo-512x512.png', type: 'image/png' }],
+
+    // Android 添加到主屏幕
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+
+    // Android/Windows 设备图标
+    ['meta', { name: 'theme-color', content: '#ffffff' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/logo-150x150.png' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
+
     ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/redirectDocsPath.js'), 'utf-8')],
     ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/restorePreference.js'), 'utf-8')],
   ],
