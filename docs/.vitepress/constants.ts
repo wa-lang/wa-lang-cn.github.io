@@ -70,6 +70,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言亮相第三届软件创新发展大会 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0081.html',
+  title: '🎉 凹语言控制LCD1602液晶显示屏 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0082.html',
 }
