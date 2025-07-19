@@ -60,6 +60,7 @@ export const DEMOS = [
   { name: 'QRCode', logoName: 'wa.png', link: 'https://wa-lang.org/examples/qrcode/' },
   { name: 'Brainfuck', logoName: 'wa.png', link: 'https://wa-lang.org/wa/brainfuck/' },
   { name: 'Dora-SSR', logoName: 'wa.png', link: 'https://github.com/IppClub/dora-wa' },
+  { name: 'LCD1602', logoName: 'wa.png', link: 'https://wa-lang.org/smalltalk/st0082.html' },
 ]
 
 export const FRIENDLY_LINK = [
