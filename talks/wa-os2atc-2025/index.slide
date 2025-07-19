@@ -1,0 +1,135 @@
+# 凹语言社区现状和未来展望
+
+柴树杉
+29 Mar 2025
+https://wa-lang.org
+
+## 0. 凹语言简史
+
+- 2019 年，凹语言立项；
+- 2022 年 7 月，正式开源；
+- 2023 年 8 月，发布最小可用（MVP）版；
+- 2024 年 11 月实现所有语法特性；
+
+.image images/wa-chan-front-small-logo-animate1.svg
+
+
+## 1. 凹语言现状
+
+## 1.1 完成全部语言特性
+
+2024年11月11日，经过开发组的努力，最新发布的凹语言v0.19.0版本支持 defer、复数，补齐了语言特性的最后几块拼图，顺利完成年度开发目标！
+
+.image images/st0063-01.png 400 750
+
+.caption [[https://wa-lang.org/smalltalk/st0063.html][https://wa-lang.org/smalltalk/st0063.html]]
+
+## 1.2 吉祥物WA酱诞生
+
+WA酱是凹语言的拟人化吉祥物，形象设计结合了二次元萌系风格与现代科技感，以亲和力、可扩展性、自由精神为核心概念，充分展现凹语言的核心特点。
+
+.image images/wa-chan-three-view-small.png 400 800
+
+.caption [[https://wa-lang.org/smalltalk/st0069.html][https://wa-lang.org/smalltalk/st0069.html]]
+
+## 1.3 WA酱歌曲 - 《编程星辰》&《哇！编程魔法✨》
+
+WA酱是凹语言的拟人化吉祥物，最近WA酱带来两首凹语言新歌，希望大家喜欢。
+
+<div style="display: flex; width: 100%; background-color: #f4f4f4; padding: 10px; box-sizing: border-box; align-items: stretch;">
+  <div style="flex: 1; display: flex;">
+    <img src="./images/wa-chan-song.jpg" alt="Logo" style="width: 100%; height: auto; object-fit: cover;">
+  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px;">
+    <p style="margin: 0; font-size: 16px; font-weight: bold; color: #333;">🎵 WA酱角色歌曲一《编程星辰》</p>
+    <audio controls style="width: 90%; max-width: 300px; background: #ffffff; border-radius: 10px; padding: 5px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+      <source src="./wa-chan-song-1.mp3" type="audio/mp3">
+      您的浏览器不支持音频元素。
+    </audio>
+      <p style="margin: 0; font-size: 16px; font-weight: bold; color: #333;">🎵 WA酱角色歌曲二《哇！编程魔法✨》</p>
+    <audio controls style="width: 90%; max-width: 300px; background: #ffffff; border-radius: 10px; padding: 5px; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+      <source src="./wa-chan-song-2.mp3" type="audio/mp3">
+      您的浏览器不支持音频元素。
+    </audio>
+  </div>
+</div>
+
+.caption [[https://wa-lang.org/smalltalk/st0070.html][https://wa-lang.org/smalltalk/st0070.html]]
+
+## 1.4 交互式学习指南上线
+
+.image images/wa-tutorial.png 500 850
+
+.caption [[https://wa-lang.org/tutorial/][https://wa-lang.org/tutorial/]]
+
+
+## 2. 凹语言和社区
+
+## 2.1 走出去 - 参与策划国产编程语言蓝皮书
+
+由PLOC编程语言开放社区、湖北省软件行业协会联合编撰，GitCode提供技术支持。收录了20个国产编程语言相关项目，尝试为业界描绘国内编程语言生态的全景图。
+
+.image images/ploc-cnpl-2024.png 400 850
+
+.caption [[https://gitcode.com/ploc-org/CNPL/][https://gitcode.com/ploc-org/CNPL/]]
+
+
+## 2.2 迎进来 - DoraSSR游戏引擎社区支持凹语言
+
+Dora SSR是一款开源的2D游戏引擎。最近Dora SSR作者增加了对凹语言开发游戏脚本的支持，具体可以参考 [给凹语言编写游戏引擎绑定的故事](https://mp.weixin.qq.com/s/rk9LlKo2M8N5li9CNZrbhw)。
+
+.image images/dora-ssr-wa.png 400 800
+
+.caption [[https://wa-lang.org/smalltalk/st0067.html][https://wa-lang.org/smalltalk/st0067.html]]
+
+## 2.3 贡献成员
+
+.image images/gongxianzhe-2025.png 400 1000
+
+.caption [[https://wa-lang.org/][https://wa-lang.org/]]
+
+
+## 3. 凹语言未来
+
+## 3.1 重点工作方向
+
+- 功能性基础库、框架开发；
+- 后端和运行时重构，性能提升；
+- 实用项目落地；
+- 工具链、手册、脚手架优化。
+
+## 4. 附录
+
+## 4.1 模拟器开发: 凹语言实现NES小霸王游戏机模拟器 - 2023
+
+.image images/st0036-01.png 450 800
+
+.caption [[https://wa-lang.org/nes/][https://wa-lang.org/nes/]]
+
+## 4.2 WebGPU: 模拟火星小行星 - 2023
+
+.image images/st0036-02.png 400 800
+
+.caption [[https://wa-lang.org/webgpu/][https://wa-lang.org/webgpu/]]
+
+## 4.3 编程教育: P5儿童编程 - 2024
+
+.image images/st0037-02.png 500 900
+
+.caption [[https://github.com/chai2010/wa-example-p5][https://github.com/chai2010/wa-example-p5]]
+
+## 4.4 游戏开发: Wasm4 游戏引擎 - 2024 - 贪吃蛇
+
+.image images/st0046-03.png 450 900
+
+.caption Wasm4/贪吃蛇 [[https://wa-lang.org/wa/w4-snake/][https://wa-lang.org/wa/w4-snake/]]
+
+
+## 5. 参考链接
+
+- [https://wa-lang.org](https://wa-lang.org)
+- [https://gitcode.com/wa-lang/wa](https://gitcode.com/wa-lang/wa)
+- [https://github.com/wa-lang/wa](https://github.com/wa-lang/wa)
+
+.image images/wa-chan-front.png 400 400
+
