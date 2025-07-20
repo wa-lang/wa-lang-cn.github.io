@@ -71,6 +71,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言控制LCD1602液晶显示屏 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0082.html',
+  title: '🎉 凹语言开源3周年 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0083.html',
 }
