@@ -545,7 +545,7 @@ func Point.Length() => int {
   return math.sqrt(this.x*this.x + this.y*this.y)
 }
 
-fn main {
+func main {
   p := Point{x:1, y:2}
   println(p.Length())
 }
