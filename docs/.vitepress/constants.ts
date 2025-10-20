@@ -71,6 +71,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 中文编程语言的突破点在哪里？ 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0086.html',
+  title: '🎉 假如中文编程语言也有江湖… 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0088.html',
 }
