@@ -4,8 +4,8 @@ title: 社区
 
 # 凹语言社区
 
-- 知乎·问题：[https://www.zhihu.com/ring/host/1949408435075527773](https://www.zhihu.com/ring/host/1949408435075527773)
-- 知乎·圈子：[https://www.zhihu.com/topic/28467412](https://www.zhihu.com/topic/28467412)
+- 知乎·问题：[https://www.zhihu.com/topic/28467412](https://www.zhihu.com/topic/28467412)
+- 知乎·圈子：[https://www.zhihu.com/ring/host/1949408435075527773](https://www.zhihu.com/ring/host/1949408435075527773)
 - Twitter: [@wayuyan](https://twitter.com/wayuyan)
 - QQ群：112919306
 
