@@ -4,12 +4,17 @@ title: 社区
 
 # 凹语言社区
 
+- 知乎·问题：[https://www.zhihu.com/ring/host/1949408435075527773](https://www.zhihu.com/ring/host/1949408435075527773)
+- 知乎·圈子：[https://www.zhihu.com/topic/28467412](https://www.zhihu.com/topic/28467412)
+- Twitter: [@wayuyan](https://twitter.com/wayuyan)
+- QQ群：112919306
+
+## 代码仓库
+
 - [代码仓库@gitcode](https://gitcode.com/wa-lang/wa)
 - [代码仓库@github](https://github.com/wa-lang/wa)
 - [代码仓库@gitee](https://gitee.com/wa-lang/wa)
 - [代码仓库@gitea](https://gitea.com/wa-lang/wa)
-- QQ群：112919306
-- Twitter: [@wayuyan](https://twitter.com/wayuyan)
 
 ## 凹语言简史
 
