@@ -62,6 +62,7 @@ export const DEMOS = [
   { name: 'Brainfuck', logoName: 'wa.png', link: 'https://wa-lang.org/wa/brainfuck/' },
   { name: 'Dora-SSR', logoName: 'wa.png', link: 'https://github.com/IppClub/dora-wa' },
   { name: 'LCD1602', logoName: 'wa.png', link: 'https://wa-lang.org/smalltalk/st0082.html' },
+  { name: '小画家(凹中文实现)', logoName: 'wa.png', link: 'https://wa-lang.org/wa/p5-hello-wz/' },
 ]
 
 export const FRIENDLY_LINK = [
