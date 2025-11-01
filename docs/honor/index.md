@@ -5,6 +5,14 @@ title: 荣誉墙
 # 荣誉墙
 
 
+<div id="H20251101"></div>
+
+### 2025：凹语言被评为GitCode百大开源项目([#H20251101](#H20251101))
+
+::: tip [https://gitcode.com/GitCode/G-Star100](https://gitcode.com/GitCode/G-Star100)
+![](./2025-gitcode/gitcode2025-top100.jpg)
+:::
+
 <div id="H20250228"></div>
 
 ### 2025：凹语言被维基百科收录([#H20250228](#H20250228))
