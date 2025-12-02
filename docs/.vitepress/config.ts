@@ -140,6 +140,22 @@ export default async () => defineConfig({
 
     ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/redirectDocsPath.js'), 'utf-8')],
     ['script', {}, fs.readFileSync(path.resolve(__dirname, './inlined-scripts/restorePreference.js'), 'utf-8')],
+
+    // MathJax conf
+    ['script', {}, `
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
+          displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+          processEscapes: true,
+          processEnvironments: true
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
+    `],
+    ['script', { async: '', src: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js' }, ''],
   ],
 
   markdown: {

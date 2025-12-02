@@ -1,5 +1,7 @@
 import { h } from 'vue'
+import { useRoute } from 'vitepress'
 import Theme from 'vitepress/theme'
+import { watch, nextTick } from 'vue'
 import '../styles/vars.css'
 import HomePage from '../components/HomePage.vue'
 import SvgImage from '../components/SvgImage.vue'
@@ -15,7 +17,19 @@ export default {
       'doc-after': () => h(Comments),
     })
   },
-  enhanceApp({ app }) {
+  enhanceApp({ app, router }) {
     app.component('SvgImage', SvgImage)
   },
+  setup() {
+    const route = useRoute()
+    watch(
+      () => route.path,
+      () => nextTick(() => {
+        if (typeof window !== 'undefined' && (window as any).MathJax) {
+          (window as any).MathJax.typesetPromise()
+        }
+      }),
+      { immediate: true }
+    )
+  }
 }
