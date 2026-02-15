@@ -74,6 +74,6 @@ export const FRIENDLY_LINK = [
 ]
 
 export const NAV_BANNER = {
-  title: '🎉 凹语言WASM编译器国产龙芯CPU首例跑通 🎉',
-  link: 'https://wa-lang.org/smalltalk/st0098.html',
+  title: '🎉 凹语言“碎碎念”百帖记 🎉',
+  link: 'https://wa-lang.org/smalltalk/st0099.html',
 }
