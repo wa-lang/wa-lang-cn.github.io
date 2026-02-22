@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a,a as s}from"./app.9a9f499d.js";const l="/st0007.png",f=JSON.parse('{"title":"凹语言 Windows 增加 exe 图标","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0007.md"}'),r={name:"smalltalk/st0007.md"},o=s("",6),n=[o];function i(_,d,c,p,h,m){return a(),e("div",null,n)}const g=t(r,[["render",i]]);export{f as __pageData,g as default};

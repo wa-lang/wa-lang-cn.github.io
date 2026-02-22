@@ -1,0 +1,1 @@
+import{_ as s,c as t,o,a as c}from"./app.9a9f499d.js";const h=JSON.parse('{"title":"碎碎念 投稿规则","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/submission_rules.md"}'),e={name:"smalltalk/submission_rules.md"},a=c("",7),l=[a];function i(d,r,n,_,p,m){return o(),t("div",null,l)}const b=s(e,[["render",i]]);export{h as __pageData,b as default};

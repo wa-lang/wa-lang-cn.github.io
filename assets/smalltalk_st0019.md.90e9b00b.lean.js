@@ -1,0 +1,1 @@
+import{_ as l,c as t,o as a,a as r}from"./app.9a9f499d.js";const e="/st0019-01.png",u=JSON.parse('{"title":"凹语言 预祝大家2023癸卯年新春快乐！","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0019.md"}'),i={name:"smalltalk/st0019.md"},s=r("",13),o=[s];function n(p,_,c,h,m,d){return a(),t("div",null,o)}const f=l(i,[["render",n]]);export{u as __pageData,f as default};

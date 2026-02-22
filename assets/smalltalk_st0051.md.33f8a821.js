@@ -1,0 +1,77 @@
+import{_ as s,c as a,o as n,a as l}from"./app.9a9f499d.js";const d=JSON.parse('{"title":"凹语言执行速度比Go快一倍","description":"","frontmatter":{},"headers":[{"level":2,"title":"Fib 测试代码","slug":"fib-测试代码","link":"#fib-测试代码","children":[]},{"level":2,"title":"测试结果","slug":"测试结果","link":"#测试结果","children":[]},{"level":2,"title":"和 TinyGo 的对比","slug":"和-tinygo-的对比","link":"#和-tinygo-的对比","children":[]},{"level":2,"title":"总结","slug":"总结","link":"#总结","children":[]}],"relativePath":"smalltalk/st0051.md"}'),p={name:"smalltalk/st0051.md"},o=l(`<h1 id="凹语言执行速度比go快一倍" tabindex="-1">凹语言执行速度比Go快一倍 <a class="header-anchor" href="#凹语言执行速度比go快一倍" aria-hidden="true">#</a></h1><ul><li>时间：2024-09-21</li><li>撰稿：凹语言 开发组</li><li>转载请注明原文链接：<a href="https://wa-lang.org/smalltalk/st0051.html" target="_blank" rel="noreferrer">https://wa-lang.org/smalltalk/st0051.html</a></li></ul><hr><p>凹语言还在开发状态的v0.17.0版本针对后端输出的wat文件做了体积优化。以递归版本的Fib为例，输出的体积是Go的百分之一(优化后是体积是前个版本的三分之一)，执行速度快一倍。详细请参考凹语言主库下的 <a href="https://gitee.com/wa-lang/wa/tree/master/tests/bench/fib" target="_blank" rel="noreferrer">tests/bench/fib</a> 目录文档。</p><h2 id="fib-测试代码" tabindex="-1">Fib 测试代码 <a class="header-anchor" href="#fib-测试代码" aria-hidden="true">#</a></h2><p>凹语言的优点可以通过一个简单的 Fibonacci 示例来说明。下面是凹语言和Go两种语言中实现的 fib 函数。</p><p>凹语言代码:</p><div class="language-wa"><button title="Copy Code" class="copy"></button><span class="lang">wa</span><pre class="shiki" style="background-color:#2e3440ff;"><code><span class="line"><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;"> init {</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#88C0D0;">println</span><span style="color:#D8DEE9FF;">(</span><span style="color:#88C0D0;">fib</span><span style="color:#D8DEE9FF;">(</span><span style="color:#B48EAD;">46</span><span style="color:#D8DEE9FF;">))</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">fib</span><span style="color:#D8DEE9FF;">(n: </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;">) </span><span style="color:#81A1C1;">=&gt;</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;"> {</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	aux: </span><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;">(n, acc1, acc2: </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;">) </span><span style="color:#81A1C1;">=&gt;</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	aux </span><span style="color:#81A1C1;">=</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;">(n, acc1, acc2: </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;">) </span><span style="color:#81A1C1;">=&gt;</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;"> {</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">switch</span><span style="color:#D8DEE9FF;"> n {</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">case</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">0</span><span style="color:#D8DEE9FF;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> acc1</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">case</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">1</span><span style="color:#D8DEE9FF;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> acc2</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">default</span><span style="color:#D8DEE9FF;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">aux</span><span style="color:#D8DEE9FF;">(n</span><span style="color:#81A1C1;">-</span><span style="color:#B48EAD;">1</span><span style="color:#D8DEE9FF;">, acc2, acc1</span><span style="color:#81A1C1;">+</span><span style="color:#D8DEE9FF;">acc2)</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		}</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	}</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">aux</span><span style="color:#D8DEE9FF;">(n, </span><span style="color:#B48EAD;">0</span><span style="color:#D8DEE9FF;">, </span><span style="color:#B48EAD;">1</span><span style="color:#D8DEE9FF;">)</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">}</span></span>
+<span class="line"></span></code></pre></div><p>Go 代码:</p><div class="language-go"><button title="Copy Code" class="copy"></button><span class="lang">go</span><pre class="shiki" style="background-color:#2e3440ff;"><code><span class="line"><span style="color:#81A1C1;">package</span><span style="color:#D8DEE9FF;"> main</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">main</span><span style="color:#ECEFF4;">()</span><span style="color:#D8DEE9FF;"> </span><span style="color:#ECEFF4;">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#88C0D0;">println</span><span style="color:#ECEFF4;">(</span><span style="color:#88C0D0;">fib</span><span style="color:#ECEFF4;">(</span><span style="color:#B48EAD;">46</span><span style="color:#ECEFF4;">))</span></span>
+<span class="line"><span style="color:#ECEFF4;">}</span></span>
+<span class="line"><span style="color:#81A1C1;">func</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">fib</span><span style="color:#ECEFF4;">(</span><span style="color:#D8DEE9FF;">n </span><span style="color:#81A1C1;">int</span><span style="color:#ECEFF4;">)</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;"> </span><span style="color:#ECEFF4;">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#81A1C1;">var</span><span style="color:#D8DEE9FF;"> </span><span style="color:#D8DEE9;">aux</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">func</span><span style="color:#ECEFF4;">(</span><span style="color:#D8DEE9FF;">n</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc1</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc2 </span><span style="color:#81A1C1;">int</span><span style="color:#ECEFF4;">)</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#D8DEE9;">aux</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">=</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">func</span><span style="color:#ECEFF4;">(</span><span style="color:#D8DEE9FF;">n</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc1</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc2 </span><span style="color:#81A1C1;">int</span><span style="color:#ECEFF4;">)</span><span style="color:#D8DEE9FF;"> </span><span style="color:#81A1C1;">int</span><span style="color:#D8DEE9FF;"> </span><span style="color:#ECEFF4;">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">switch</span><span style="color:#D8DEE9FF;"> n </span><span style="color:#ECEFF4;">{</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">case</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">0</span><span style="color:#ECEFF4;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> acc1</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">case</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">1</span><span style="color:#ECEFF4;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> acc2</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#81A1C1;">default</span><span style="color:#ECEFF4;">:</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">			</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">aux</span><span style="color:#ECEFF4;">(</span><span style="color:#D8DEE9FF;">n</span><span style="color:#81A1C1;">-</span><span style="color:#B48EAD;">1</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc2</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> acc1</span><span style="color:#81A1C1;">+</span><span style="color:#D8DEE9FF;">acc2</span><span style="color:#ECEFF4;">)</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">		</span><span style="color:#ECEFF4;">}</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#ECEFF4;">}</span></span>
+<span class="line"><span style="color:#D8DEE9FF;">	</span><span style="color:#81A1C1;">return</span><span style="color:#D8DEE9FF;"> </span><span style="color:#88C0D0;">aux</span><span style="color:#ECEFF4;">(</span><span style="color:#D8DEE9FF;">n</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">0</span><span style="color:#ECEFF4;">,</span><span style="color:#D8DEE9FF;"> </span><span style="color:#B48EAD;">1</span><span style="color:#ECEFF4;">)</span></span>
+<span class="line"><span style="color:#ECEFF4;">}</span></span>
+<span class="line"></span></code></pre></div><h2 id="测试结果" tabindex="-1">测试结果 <a class="header-anchor" href="#测试结果" aria-hidden="true">#</a></h2><p>执行 <code>make</code> 输出结果如下：</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki" style="background-color:#2e3440ff;"><code><span class="line"><span style="color:#d8dee9ff;">$ make</span></span>
+<span class="line"><span style="color:#d8dee9ff;">wa -v</span></span>
+<span class="line"><span style="color:#d8dee9ff;">Wa version v0.17.0</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span>
+<span class="line"><span style="color:#d8dee9ff;">go version</span></span>
+<span class="line"><span style="color:#d8dee9ff;">go version go1.21.0 darwin/amd64</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span>
+<span class="line"><span style="color:#d8dee9ff;">wasmer -V</span></span>
+<span class="line"><span style="color:#d8dee9ff;">wasmer 4.3.7</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span>
+<span class="line"><span style="color:#d8dee9ff;">wa build -optimize -target=wasi -output=fib_wa.wasm fib_wa.wa</span></span>
+<span class="line"><span style="color:#d8dee9ff;">GOOS=wasip1 GOARCH=wasm go build -o fib_go.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span>
+<span class="line"><span style="color:#d8dee9ff;">du -sh fib_*.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1.3M    fib_go.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;"> 12K    fib_wa.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span>
+<span class="line"><span style="color:#d8dee9ff;">time wasmer fib_wa.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1836311903</span></span>
+<span class="line"><span style="color:#d8dee9ff;">    0.12 real         0.02 user         0.03 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;">time wasmer fib_go.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1836311903</span></span>
+<span class="line"><span style="color:#d8dee9ff;">    0.26 real         0.04 user         0.05 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span></code></pre></div><h2 id="和-tinygo-的对比" tabindex="-1">和 TinyGo 的对比 <a class="header-anchor" href="#和-tinygo-的对比" aria-hidden="true">#</a></h2><p>TinyGo 是 0.33.0 版本，编译时关闭了不必要的特性。</p><div class="language-"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki" style="background-color:#2e3440ff;"><code><span class="line"><span style="color:#d8dee9ff;">$ make tinygo</span></span>
+<span class="line"><span style="color:#d8dee9ff;">time tinygo build --target wasm -o fib_tinygo.wasm -scheduler none --no-debug fib_go.go</span></span>
+<span class="line"><span style="color:#d8dee9ff;">        0.95 real         0.89 user         0.20 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;">time wa build -optimize -target=wasi -output=fib_wa.wasm fib_wa.wa</span></span>
+<span class="line"><span style="color:#d8dee9ff;">        0.08 real         0.06 user         0.01 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;">wasm2wat fib_tinygo.wasm -o fib_tinygo.wat</span></span>
+<span class="line"><span style="color:#d8dee9ff;">du -sh fib_*.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1.3M    fib_go.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">8.0K    fib_tinygo.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">8.0K    fib_wa.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">time wasmer fib_wa.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1836311903</span></span>
+<span class="line"><span style="color:#d8dee9ff;">        0.03 real         0.01 user         0.01 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;">time wasmer fib_tinygo.wasm</span></span>
+<span class="line"><span style="color:#d8dee9ff;">1836311903</span></span>
+<span class="line"><span style="color:#d8dee9ff;">        0.02 real         0.01 user         0.01 sys</span></span>
+<span class="line"><span style="color:#d8dee9ff;"></span></span></code></pre></div><p>凹语言编译速度是TinyGo的10倍，输出的wasm体积和TinyGo一样都是8KB，凹语言输出的wasm执行时间比TinyGo稍慢。</p><h2 id="总结" tabindex="-1">总结 <a class="header-anchor" href="#总结" aria-hidden="true">#</a></h2><ul><li>凹语言是 v0.17.0 版本, Go 是 1.21.0 版本</li><li>凹语言输出的wasm体积为 12KB, Go 语言输出 1.3MB 大小的 wasm, 凹语言是Go的1/100大小(优化后是体积是前个版本的三分之一)</li><li>凹语言执行时间 0.12, Go 的执行时间是 0.26, 凹语言是Go的1/2执行时间</li></ul>`,19),e=[o];function t(c,r,y,E,F,i){return n(),a("div",null,e)}const f=s(p,[["render",t]]);export{d as __pageData,f as default};

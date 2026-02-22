@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e,a as s}from"./app.9a9f499d.js";const l="/st0044-01.jpg",f=JSON.parse('{"title":"凹语言后端实现 100% 自研","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0044.md"}'),r={name:"smalltalk/st0044.md"},o=s("",7),_=[o];function n(i,c,p,m,d,h){return e(),a("div",null,_)}const g=t(r,[["render",n]]);export{f as __pageData,g as default};

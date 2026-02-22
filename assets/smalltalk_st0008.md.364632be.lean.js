@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as s,a as t}from"./app.9a9f499d.js";const l="/st0008.png",g=JSON.parse('{"title":"凹语言 VIM 语法高亮","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0008.md"}'),n={name:"smalltalk/st0008.md"},r=t("",8),o=[r];function p(c,i,d,_,m,f){return s(),e("div",null,o)}const u=a(n,[["render",p]]);export{g as __pageData,u as default};

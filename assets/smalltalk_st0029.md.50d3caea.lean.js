@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e,a as r}from"./app.9a9f499d.js";const l="/st0029-01.png",g=JSON.parse('{"title":"凹语言手册发布","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0029.md"}'),s={name:"smalltalk/st0029.md"},n=r("",7),o=[n];function _(i,p,h,c,m,d){return e(),a("div",null,o)}const k=t(s,[["render",_]]);export{g as __pageData,k as default};

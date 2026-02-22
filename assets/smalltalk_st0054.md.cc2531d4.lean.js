@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as e}from"./app.9a9f499d.js";const D=JSON.parse('{"title":"凹语言支持Chrome内置AI","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0054.md"}'),l={name:"smalltalk/st0054.md"},o=e("",10),t=[o];function p(r,c,i,d,m,y){return n(),a("div",null,t)}const E=s(l,[["render",p]]);export{D as __pageData,E as default};

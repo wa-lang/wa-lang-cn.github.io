@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,a as c}from"./app.9a9f499d.js";const f=JSON.parse('{"title":"凹语言 开发组例会","description":"","frontmatter":{},"headers":[],"relativePath":"community/conference/c0004.md"}'),r={name:"community/conference/c0004.md"},n=c("",5),o=[n];function i(l,_,s,m,d,h){return a(),t("div",null,o)}const u=e(r,[["render",i]]);export{f as __pageData,u as default};

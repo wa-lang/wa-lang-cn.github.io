@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as n,a as l}from"./app.9a9f499d.js";const p="/st0006.png",f=JSON.parse('{"title":"凹语言 支持浏览器环境构建","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0006.md"}'),o={name:"smalltalk/st0006.md"},e=l("",17),c=[e];function t(r,E,y,F,i,D){return n(),a("div",null,c)}const C=s(o,[["render",t]]);export{f as __pageData,C as default};

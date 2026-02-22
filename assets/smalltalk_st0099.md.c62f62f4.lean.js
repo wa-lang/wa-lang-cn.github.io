@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e,a as l}from"./app.9a9f499d.js";const f=JSON.parse('{"title":"凹语言“碎碎念”百帖记","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0099.md"}'),r={name:"smalltalk/st0099.md"},s=l("",7),_=[s];function o(n,i,c,p,d,h){return e(),a("div",null,_)}const u=t(r,[["render",o]]);export{f as __pageData,u as default};

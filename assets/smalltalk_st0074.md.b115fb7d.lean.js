@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as l}from"./app.9a9f499d.js";const d=JSON.parse('{"title":"凹语言支持for range迭代器","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0074.md"}'),p={name:"smalltalk/st0074.md"},o=l("",11),e=[o];function t(c,r,D,E,y,F){return a(),n("div",null,e)}const C=s(p,[["render",t]]);export{d as __pageData,C as default};

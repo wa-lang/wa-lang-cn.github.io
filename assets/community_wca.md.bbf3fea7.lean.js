@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,a as e}from"./app.9a9f499d.js";const m=JSON.parse('{"title":"凹语言贡献者协议","description":"","frontmatter":{},"headers":[],"relativePath":"community/wca.md"}'),l={name:"community/wca.md"},p=e("",4),o=[p];function c(d,t,f,r,i,y){return a(),n("div",null,o)}const g=s(l,[["render",c]]);export{m as __pageData,g as default};

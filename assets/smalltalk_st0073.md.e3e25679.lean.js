@@ -1,0 +1,1 @@
+import{_ as t,c as a,o as e,a as r}from"./app.9a9f499d.js";const s="/st0073-01.png",k=JSON.parse('{"title":"凹语言被维基百科收录","description":"","frontmatter":{},"headers":[],"relativePath":"smalltalk/st0073.md"}'),l={name:"smalltalk/st0073.md"},i=r("",5),o=[i];function _(n,c,p,h,d,m){return e(),a("div",null,o)}const g=t(l,[["render",_]]);export{k as __pageData,g as default};
