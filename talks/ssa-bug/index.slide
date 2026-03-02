@@ -1,0 +1,242 @@
+# 凹语言map与Φ指令的纠葛
+
+柴树杉
+3 Nov 2024
+https://wa-lang.org
+
+// --------------------------------------------------------
+
+
+## 自我介绍
+
+- 凹语言联合发起人: [https://wa-lang.org](https://wa-lang.org)
+- 编程语言开放社区发起人: [https://ploc.org.cn](https://ploc.org.cn/)
+- [《WebAssembly标准入门》](https://github.com/chai2010/wasm-book-code) 作者
+- [《Go语言高级编程》](https://github.com/chai2010/advanced-go-programming-book) 作者
+
+
+.image images/logo.svg
+
+// --------------------------------------------------------
+## 主题大纲
+// --------------------------------------------------------
+
+## 主题大纲
+
+- 凹语言简介
+- SSA背景介绍
+- map优化时遇到了问题
+- 一个Issue引发的争议
+- 深挖Φ指令10年坑
+- 结果及思考
+- Φ指令进化
+
+// --------------------------------------------------------
+## 凹语言简介
+// --------------------------------------------------------
+
+- [https://wa-lang.org](https://wa-lang.org)
+- 凹语言是一个开源的、针对WebAssembly设计的通用编程语言
+
+.image images/playground-01.png
+
+## 发展历程
+
+- 2019年初，凹语言名字诞生
+- 2020年，确立“不做玩具车”目标
+- 2022年7月，正式开源，受到CSDN等媒体关注
+- 2023年8月，发布MVP版本和《凹语言手册》
+- 2024年7月，去掉wabt依赖，后端全部自研
+- 2024年10月，实现map特性
+
+// --------------------------------------------------------
+## SSA背景介绍
+// --------------------------------------------------------
+
+## SSA：静态单赋值
+
+- SSA 是一种代码的中间表示形式
+- SSA 典型特征是变量在代码中仅被赋值一次
+- SSA 形式有助于程序分析和优化
+- SSA 指令中最最特别的就是Φ指令
+- 更多信息参考：[https://en.wikipedia.org/wiki/Static_single-assignment_form](https://en.wikipedia.org/wiki/Static_single-assignment_form)。
+
+## 凹语言对Go语言SSA的依赖
+
+- 凹语言 是基于 Golang 开发的通用编程语言
+- 通过 `golang.org/x/tools/go/ssa` 包，后端对接到WASM
+- 社区的类似案例：凹语言、TinyGo、Go+ 等
+
+注意的是，**该包并未用于 Go 编译器本身**，主要用于代码分析等外部工具。
+
+// --------------------------------------------------------
+## map优化时遇到了问题
+// --------------------------------------------------------
+
+## map特性的诞生路径
+
+map诞生花了2年多时间，是凹语言最复杂的特性之一。
+
+- map是内置的KV容器，和Go语言语义相似
+- map的K和V依赖的内存管理在2022年底实现
+- map的K依赖的接口特性在2023年上半年实现
+- map的K依赖的接口比较能力在2024年9月实现
+- map的指令生成和运行时在2024年10月实现
+
+但是最初版本运行时是用数组实现，亟需优化...
+
+// --------------------------------------------------------
+## 一个Issue引发的争议
+// --------------------------------------------------------
+
+## SSA踩坑记(01)
+
+我们试图使用红黑树（RBTree）对map实现进行优化时，运行结果却始终不符合预期。经过一天的排查，我们将问题代码缩减、定位如下：
+
+.image images/st0059-01.png
+
+## SSA踩坑记(02)
+
+从程序逻辑上看，由于 `root` 在 `main` 函数中已经初始化，`insert` 函数的 20行、24行应均被执行，且输出相同的非空值，然而，上述代码的运行结果如下：
+
+    =====================
+    0x3fffff0
+    0x0
+
+既在循环体内时，`y` 被赋值，而离开循环体后，`y` 被置空？
+
+## SSA踩坑记(03)
+
+使用 `wa ssa test.wa` 命令，可得`insert` 函数的 SSA 如下：
+
+    # Location: test.wa:12:6
+    func insert():
+    0:                                                       entry P:0 S:1
+            t0 = println("=================...":string)                 ()
+            t1 = *root                                               *node
+            jump 3
+    1:                                                    for.body P:1 S:1
+            t2 = println(t6)                                            ()
+            t3 = &t6.next [#0]                                      **node
+            t4 = *t3                                                 *node
+            jump 3
+    2:                                                    for.done P:1 S:0
+            t5 = println(t7)                                            ()
+            return
+    3:                                                    for.loop P:2 S:2
+            t6 = phi [0: t1, 1: t4] #x                               *node
+            t7 = phi [0: t1, 1: t6] #y                               *node
+            t8 = t6 != nil:*node                                      bool
+            if t8 goto 1 else 2
+
+## SSA踩坑记(04)
+
+Φ指令: 上述代码中的 `t6 = phi [0: t1, 1: t4]`，它表示如果是从Block 0 进入，返回 `t1` 的值，如果是从 Block 1 进入，则返回 `t4` 的值。
+
+按照**常规逻辑**（注意这里，后面会提到），我们将上述代码的执行顺序及逻辑推演如下：
+
+1. Block 0, t1 = 0x3fffff0, jump 3
+2. Block 3, 自Block 0进入, t6(既x) = 0x3fffff0, t7(既y) = 0x3fffff0, jump 1
+3. Block 1, 打印t6(0x3fffff0), t4 = x.next = nil, jump 3
+4. Block 3, 自Block 1进入, t6 = nil, t7 = nil, jump 2
+5. 打印t7(nil), 返回
+
+既：在离开循环体后，`y` 会被错误赋值为空。我们认为这是一个生成了错误 SSA 代码的问题，于是在 Golang 仓库发起了 [Issue69929](https://github.com/golang/go/issues/69929)。
+
+## Issue69929 引争议(01)
+
+原始的描述是：`i guess the ssa lose the y = x in for loop. the test code should print(root) twice.`。我们猜测是生成的SSA可能丢失了`y = x`的赋值语句。
+
+.image images/issue69929-01.jpg 460 800
+
+
+## Issue69929 引争议(02)
+
+[Issue69929](https://github.com/golang/go/issues/69929) 发出后不久，Alan Donovan 就将它关闭了，他表示 SSA 没问题，并建议我们先学习 SSA 的基础知识。(然后就引起了一些情绪上的争议, 口述无责任八卦内容...)
+
+.image images/issue69929-02.jpg 460 800
+
+
+// --------------------------------------------------------
+## 深挖Φ指令10年坑
+// --------------------------------------------------------
+
+## 草根的坚持
+
+- 我们仔细分析了SSA代码，依然坚持 `ssa` 包存在问题的观点
+- 更重要的是我们发现：使用 `ssa/interp` 包的 `Interpret()` 也有类似问题
+- 于是我们补充提交了使用 `ssa/interp.Interpret()` 解释执行的相关证据和结果，期望重新打开该 Issue。
+
+.image images/long.jpg 400 600
+
+## 转机：大佬的高风亮节
+
+很快，Alan Donovan 证实了 Bug 确实存在，然而出问题的并不是 `ssa` 包，而是 `ssa/interp` 包，既**生成的 SSA 是正确的，但解释执行时存在错误**。并给出了参考文献：[Practical Improvements to the Construction and Destruction of Static Single Assignment Form](https://homes.luddy.indiana.edu/achauhan/Teaching/B629/2006-Fall/CourseMaterial/1998-spe-briggs-ssa_improv.pdf)。
+
+问题出在这里：
+
+    t6 = phi [0: t1, 1: t4]
+    t7 = phi [0: t1, 1: t6]
+    ...
+
+实际上这2个phi指令是并行执行的，因此并不存在执行先后的依赖关系。
+
+## 我们其实也考虑过Phi指令并行的可能...
+
+实际上在之前的私下讨论中，考虑过“Phi 应并行执行”的可能。
+
+.image images/ssa-weixin-taolun.jpg
+
+但 `ssa/interp` 包有问题确实超出了我们的意料（世界草台班子理论）。
+
+// --------------------------------------------------------
+## 结果及思考
+// --------------------------------------------------------
+
+## 问题解决，凹语言map终于用上红黑树
+
+Alan Donovan 迅速提交了修正 `golang.org/x/tools/go/ssa/interp` 包的 pr；我们也对凹语言中处理 Phi 指令的部分进行了修改。我们使用的方法和 Alan Donovan 所用的不同，但都满足了“**同一个 Block 中的 Phi 指令并行执行**”这一约束，经测试表明结果正确。至此问题解决。
+
+.image images/st0056-01.jpg
+
+- [621595: go/ssa/interp: assign phi nodes in parallel](https://go-review.googlesource.com/c/tools/+/621595/)
+- [修正 Phi 未并行执行的问题](https://github.com/wa-lang/wa/commit/8138ee)
+
+## Phi指令并行并非多大的共识
+
+对一些专业人士来说，“Phi并行”或许是常识，但这一知识在多大范围内被熟知？我们做了一些不严谨的调查，情况不乐观。在查阅过龙书、虎书等经典出版物后，仅在《Learn LLVM 12》一书的 91 页发现了一句相关的内容：“……在第二个 phi 指令的参数列表中使用了相同的寄存器，但该值假定为通过第一个phi指令改变它之前的值。”
+
+另一方面，该问题存在于 `golang.org/x/tools/go/ssa/interp` 包中的时间已经有10年之久，在基于 Golang 发展的诸多语言项目中，为何仅我们发现了它？可能的原因之一是：与很多项目使用 LLVM 作为后端不同，凹语言的后端是自制的。由于 LLVM 恰当的处理了 Phi 指令，他们避免了掉入该陷阱的同时，错过了发现 `interp` 包中隐藏问题的机会。
+
+## 在战争中学习战争
+
+通过这次事件，我们：
+
+- 学习到了 SSA 中 Phi 指令的特殊约束，并通过本文在中文社区传播这一知识并引起讨论；
+- 构造了可以稳定触发 **Phi并发** 的测试用例；
+- 协助 Golang 解决了存在于 SSA 解释执行器中的错误。
+
+经常有人质问我们：“重复发明轮子有何意义？”，这一经历正好可以用来作为回应。
+
+
+// --------------------------------------------------------
+## Phi指令再进化
+// --------------------------------------------------------
+
+## Phi指令进化为Block参数
+
+在更新的MLIR和SwiftIR都引入了Block参数，通过提前计算以避免Phi指令并行的干扰。
+
+.image images/mlir-block-args.png 500 600
+
+## 参考链接
+
+- [Phi并行-凹语言与Golang共有问题的复盘](https://wa-lang.org/smalltalk/st0060.html)
+- [Issue69929: x/tools/go/ssa/interp: phi nodes are not executed in parallel](https://github.com/golang/go/issues/69929)
+- [Go语言: go/ssa/interp: assign phi nodes in parallel](https://go-review.googlesource.com/c/tools/+/621595/)
+- [凹语言: 修正 Phi 未并行执行的问题](https://github.com/wa-lang/wa/commit/8138ee)
+- [https://en.wikipedia.org/wiki/Static_single-assignment_form](https://en.wikipedia.org/wiki/Static_single-assignment_form)
+- [Practical Improvements to the Construction and Destruction of Static Single Assignment Form](https://homes.luddy.indiana.edu/achauhan/Teaching/B629/2006-Fall/CourseMaterial/1998-spe-briggs-ssa_improv.pdf)
+- [https://mlir.llvm.org/docs/LangRef/#blocks](https://mlir.llvm.org/docs/LangRef/#blocks)
+- [https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks](https://apple-swift.readthedocs.io/en/latest/SIL.html#basic-blocks)
+
