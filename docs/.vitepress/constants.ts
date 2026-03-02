@@ -7,10 +7,10 @@ export const ICONS = {
 }
 
 export const CONTRIBUTORS = [
-  { name: '柴树杉', points: 99650 },
-  { name: '丁尔男', points: 104150 },
+  { name: '柴树杉', points: 124650 },
+  { name: '丁尔男', points: 116650 },
   { name: '史斌', points: 10000 },
-  { name: '扈梦明', points: 60000 },
+  { name: '扈梦明', points: 72500 },
   { name: '赵普明', points: 10000 },
   { name: '宋汝阳', points: 2000 },
   { name: '刘云峰', points: 1000 },
